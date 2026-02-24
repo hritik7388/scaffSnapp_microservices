@@ -6,14 +6,14 @@ FROM node:22-alpine AS builder
 WORKDIR /app
 
 # Copy only package.json & tsconfig
-COPY services/superadminService/package*.json ./ 
-COPY services/superadminService/tsconfig.json ./
+COPY services/superAdminServices/package*.json ./ 
+COPY services/superAdminServices/tsconfig.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy source files
-COPY services/superadmin-service/src ./src
+COPY services/superAdminServices/src ./src
 
 # Build TypeScript
 RUN npm run build
