@@ -5,7 +5,7 @@ FROM node:22-alpine AS builder
 
 WORKDIR /app
 
-# Copy only package.json & tsconfig for caching
+# Copy only package.json & tsconfig
 COPY services/superadminService/package*.json ./ 
 COPY services/superadminService/tsconfig.json ./
 
@@ -26,7 +26,7 @@ RUN ls -la ./dist
 # ------------------------------------------------------------
 FROM node:22-alpine
 
-# Create non-root user and group in a single layer
+# Create non-root user
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 WORKDIR /app
@@ -41,6 +41,12 @@ ENV NODE_ENV=production
 # Install production dependencies and fix permissions in one layer
 RUN npm ci --omit=dev \
     && chown -R appuser:appgroup /app
+
+# Switch to non-root user
+USER appuser
+
+# Change ownership to non-root user
+RUN chown -R appuser:appgroup /app
 
 # Switch to non-root user
 USER appuser
