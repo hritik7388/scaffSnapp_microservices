@@ -1,4 +1,4 @@
-import { Server } from 'http';
+import { Server } from 'node:http';
 import { AppDataSource } from '../data-source';
 import logger from '../config/logger';
 import { redisClient } from '../config/redis';
