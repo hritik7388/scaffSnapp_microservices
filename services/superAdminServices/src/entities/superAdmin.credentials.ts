@@ -10,17 +10,13 @@ import {
 } from "typeorm";
 import { SuperAdmin } from "./superAdmin.enities";
 
-@Entity({ name: "super_admin_credentials" })
-@Index(["email"], { unique: true })
+@Entity({ name: "super_admin_credentials" }) 
 @Index(["accountLockedUntil"])
 export class SuperAdminCredential {
   @PrimaryGeneratedColumn("increment")
   id: number;
 
-  @Column({
-    length: 255,
-    unique: true,
-  })
+  @Column({ length: 255, unique: true }) // UNIQUE handled here
   email: string;
 
   @Column({
