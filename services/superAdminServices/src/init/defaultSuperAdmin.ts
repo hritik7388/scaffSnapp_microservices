@@ -22,9 +22,13 @@ export const createDefaultSuperAdmin = async (): Promise<void> => {
   }
 
   const defaultEmail = "scaffSnap@mailinator.com";
-  const defaultPassword = "Agicent@123";
+  const defaultPassword = process.env.DEFAULT_SUPERADMIN_PASSWORD;
 
-  
+  if (!defaultEmail || !defaultPassword) {
+    throw new Error(
+      'DEFAULT_SUPERADMIN_EMAIL and DEFAULT_SUPERADMIN_PASSWORD must be defined.'
+    );
+  }
 
   const passwordHash = await bcrypt.hash(defaultPassword, 12);
 
