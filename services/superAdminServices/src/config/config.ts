@@ -20,7 +20,7 @@ interface Config {
     JWT_SECRET: string;
     JWT_EXPIRES_IN: string;
     LOG_LEVEL: string;
-    ALLOWED_ORIGINS: string[];
+    ALLOWED_ORIGINS: string;
 }
 
 export const config: Config = {
@@ -43,6 +43,4 @@ export const config: Config = {
     LOG_LEVEL: process.env.LOG_LEVEL || "info",
 
     ALLOWED_ORIGINS: (process.env.ALLOWED_ORIGINS || "http://localhost:3000")
-        .split(",")
-        .map(origin => origin.trim()),
 };
