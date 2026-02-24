@@ -3,12 +3,13 @@ import jwt from 'jsonwebtoken';
 import { config } from '../config/config';
 import { redisClient } from '../config/redis';
 
-const publicRoutes = [
-    '/',
-    '/health',
-    '/api/v1/auth/login',
-    '/api/v1/auth/register',
-];
+// Use a Set for O(1) lookup
+const publicRoutes = new Set([
+  '/',
+  '/health',
+  '/api/v1/auth/login',
+  '/api/v1/auth/register',
+].map(route => route.toLowerCase()));
 
 
 export const verifyToken = async (
@@ -16,7 +17,7 @@ export const verifyToken = async (
     res: Response,
     next: NextFunction
 ) => {
-    if (publicRoutes.includes(req.path)) return next();
+ if (publicRoutes.has(req.path.toLowerCase())) return next();
 
     try {
         const authHeader = req.headers['authorization'];
