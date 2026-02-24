@@ -42,7 +42,7 @@ export const setupGracefulShutdown = (server: Server) => {
 
             clearTimeout(forceTimeout);
 
-            logger.info('Graceful shutdown completed');
+            logger.info('Graceful shutdown completed\n--------------------------------',);
             process.exit(0);
         } catch (error: any) {
             logger.error('Error during graceful shutdown', {
