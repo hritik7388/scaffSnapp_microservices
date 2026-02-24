@@ -13,39 +13,41 @@ const publicRoutes = new Set([
 
 
 export const verifyToken = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
+  req: Request,
+  res: Response,
+  next: NextFunction
 ) => {
- if (publicRoutes.has(req.path.toLowerCase())) return next();
+  // Skip public routes
+  if (publicRoutes.has(req.path.toLowerCase())) {
+    return next();
+  }
 
-    try {
-        const authHeader = req.headers['authorization'];
-        if (!authHeader) {
-            return res.status(403).json({ message: 'Authorization header missing' });
-        }
-
-        const token = authHeader.split(' ')[1];
-        if (!token) return res.status(403).json({ message: 'Token missing' });
-
-        const decoded: any = jwt.verify(token, config.JWT_SECRET);
-
-        const redisKey = `auth:${decoded.id}:${token}`;
-        const redisToken = await redisClient.get(redisKey);
-
-        if (!redisToken) return res.status(401).json({ message: 'Unauthorized' });
-
-        req.userId = decoded.id;
-        req.token = token;
-
-        next();
-    } catch (err: unknown) {
-        // Narrow the error type
-        let message = 'Unauthorized';
-        if (err instanceof Error) {
-            message = err.message;
-        }
-
-        return res.status(401).json({ message });
+  try {
+    const authHeader = req.headers['authorization'];
+    if (!authHeader) {
+      return res.status(403).json({ message: 'Authorization header missing' });
     }
-}
+
+    const token = authHeader.split(' ')[1];
+    if (!token) return res.status(403).json({ message: 'Token missing' });
+
+    // Verify JWT
+    const decoded: any = jwt.verify(token, config.JWT_SECRET);
+
+    // Check Redis token
+    const redisKey = `auth:${decoded.id}:${token}`;
+    const redisToken = await redisClient.get(redisKey);
+    if (!redisToken) return res.status(401).json({ message: 'Unauthorized' });
+
+    // Attach user info
+    req.userId = decoded.id;
+    req.token = token;
+
+    next();
+  } catch (err: unknown) {
+    let message = 'Unauthorized';
+    if (err instanceof Error) message = err.message;
+
+    return res.status(401).json({ message });
+  }
+};
