@@ -95,5 +95,6 @@ services:
 # 🔧 Volumes
 #################################################
 volumes:
+  
   mysql_data:
   redis_data:

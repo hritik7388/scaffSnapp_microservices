@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
 
-    synchronize: false, // ❌ never true in production
+    synchronize: true, // ❌ never true in production
     logging: !isProduction,
 
     entities: [SuperAdmin, SuperAdminCredential],
