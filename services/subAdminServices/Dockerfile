@@ -6,14 +6,14 @@ FROM node:22-alpine AS builder
 WORKDIR /app
 
 # Copy only package.json & tsconfig
-COPY services/superadmin-service/package*.json ./ 
-COPY services/superadmin-service/tsconfig.json ./
+COPY services/subAdminService/package*.json ./ 
+COPY services/subAdminService/tsconfig.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy source files
-COPY services/superadmin-service/src ./src
+COPY services/subAdminService/src ./src
 
 # Build TypeScript
 RUN npm run build
@@ -26,17 +26,30 @@ RUN ls -la ./dist
 # ------------------------------------------------------------
 FROM node:22-alpine
 
+# Create non-root user
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
 WORKDIR /app
 
-# Copy dist and package.json from builder
+# Copy build output and package.json from builder
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/package*.json ./
 
 # Set environment
 ENV NODE_ENV=production
 
-# Install only production dependencies
-RUN npm ci --omit=dev
+# Install production dependencies and fix permissions in one layer
+RUN npm ci --omit=dev \
+    && chown -R appuser:appgroup /app
+
+# Switch to non-root user
+USER appuser
+
+# Change ownership to non-root user
+RUN chown -R appuser:appgroup /app
+
+# Switch to non-root user
+USER appuser
 
 # Expose port
 EXPOSE 3001
