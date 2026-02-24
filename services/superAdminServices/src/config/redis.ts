@@ -38,9 +38,4 @@ redisClient.on('close', () => {
 
 redisClient.on('end', () => {
   logger.warn('Redis connection ended');
-});
-process.on('SIGINT', async () => {
-  logger.info('Closing Redis connection...');
-  await redisClient.quit();
-  process.exit(0);
-});
+}); 
