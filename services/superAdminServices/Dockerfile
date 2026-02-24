@@ -31,15 +31,19 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 WORKDIR /app
 
-# Copy dist and package.json from builder
+# Copy build output and package.json from builder
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/package*.json ./
 
 # Set environment
 ENV NODE_ENV=production
 
-# Install only production dependencies
-RUN npm ci --omit=dev
+# Install production dependencies and fix permissions in one layer
+RUN npm ci --omit=dev \
+    && chown -R appuser:appgroup /app
+
+# Switch to non-root user
+USER appuser
 
 # Change ownership to non-root user
 RUN chown -R appuser:appgroup /app
