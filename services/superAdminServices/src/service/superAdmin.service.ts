@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import jwt, { SignOptions } from 'jsonwebtoken'; 
 import bcrypt from 'bcryptjs';  
-import crypto, { Sign } from "crypto";
+import crypto from "crypto";
 import { AppDataSource } from '../data-source';
 import { redisClient } from '../config/redis'
 import { Repository } from 'typeorm';
