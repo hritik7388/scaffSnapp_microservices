@@ -13,12 +13,12 @@ import { SuperAdminCredential } from "./superAdmin.credentials";
 
 export enum SuperAdminStatus {
     ACTIVE = "ACTIVE",
-    INACTIVE = "INACTIVE",
-    SUSPENDED = "SUSPENDED",
+    INACTIVE = "BLOCKED",
+    SUSPENDED = "DELETED",
 }
 
 export enum UserType {
-    SUPER_ADMIN = "SUPER_ADMIN",
+    SUPER_ADMIN = "SUPER ADMIN",
 }
 
 @Entity({ name: "super_admins" })

@@ -12,7 +12,7 @@ import { reqLogger } from './middlewares/req.middleware';
 import { AppDataSource } from './data-source';
 import { config } from './config/config';
 import { indexRouter } from './routes/index.routes';
-import { authRouter } from './routes/superAdmin.routes';
+import  authRouter  from './routes/superAdmin.routes';
 import { init } from './init'
 import { setupGracefulShutdown } from './utils/shutdown';
 
@@ -23,10 +23,12 @@ app.use(corsMiddleware);
 
 app.use(reqLogger);
 app.use(express.json());
+
 app.use(verifyToken);
 
+
 app.use('/', indexRouter);
-app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/superAdmin', authRouter);
 
 app.use(errorHandler);
 
