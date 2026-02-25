@@ -4,7 +4,7 @@ import { superAdminSchema } from '../schemas/superAdminSchema';
 
 
 export class AuthController {
-  private authService: AuthService;
+  private readonly authService: AuthService;
 
   constructor() {
     this.authService = new AuthService();

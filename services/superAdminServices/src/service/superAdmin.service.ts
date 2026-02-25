@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import jwt, { SignOptions } from 'jsonwebtoken'; 
 import bcrypt from 'bcryptjs';  
-import crypto from "crypto";
+import crypto from "node:crypto";
 import { AppDataSource } from '../data-source';
 import { redisClient } from '../config/redis'
 import { Repository } from 'typeorm';
@@ -15,6 +15,12 @@ import { config } from '../config/config';
 import logger from '../config/logger';
 
 
+const FAIL_TTL = 900; // 15 minutes
+const MAX_FAILS = 3;
+const PWD_CACHE_TTL = 86400; // 1 day
+const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
+
+  
 
 class AuthService {
   credentialRepository: Repository<SuperAdminCredential>;
@@ -30,6 +36,8 @@ class AuthService {
 
 
   async login(data: SuperAdminDTO, ip: string) {
+
+
     await this.checkBlock(data.email);
     const credential = await this.getCredentialWithUser(data.email);
     logger.info("credential===================>>>>",credential)
@@ -56,9 +64,8 @@ class AuthService {
 
   }
 
-
-
   
+
 
 
   private async checkBlock(email: string) {
@@ -98,24 +105,26 @@ class AuthService {
     }
   }
   private async verifyPassword(password: string, credential: SuperAdminCredential) {
-    const match = await bcrypt.compare(password, credential.passwordHash);
+    const pwdCacheKey = `pwd:${credential.id}:${credential.passwordHash}`;
+  const cached = await redisClient.exists(pwdCacheKey);
 
-    if (!match) {
+  if (cached === 1) return true;
+ const isValid = await bcrypt.compare(password, credential.passwordHash);
+    if (!isValid) {
       await this.increaseFailCount(credential.email);
       throw createError("Invalid credentials", 401);
-    }
+    } 
+  redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => {});
+  return true;
   }
 
   private async increaseFailCount(email: string) {
-    const attempts = await redisClient.incr(`fail:${email}`);
-
-    if (attempts === 1) {
-      await redisClient.expire(`fail:${email}`, 900); // 15 min
-    }
-
-    if (attempts >= 3) {
-      await redisClient.set(`block:${email}`, 1, "EX", 900);
-    }
+ const attempts = await redisClient.incr(`fail:${email}`);
+  if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
+  if (attempts >= MAX_FAILS) {
+    await redisClient.set(`block:${email}`, "1", "EX", FAIL_TTL);
+    throw createError("Account blocked due to multiple failed attempts", 429);
+  }
   }
 
   private async clearFailCounter(email: string) {
