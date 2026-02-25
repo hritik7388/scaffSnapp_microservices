@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
-import jwt, { SignOptions } from 'jsonwebtoken'; 
-import bcrypt from 'bcryptjs';  
+import jwt, { SignOptions } from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
 import crypto from "node:crypto";
 import { AppDataSource } from '../data-source';
 import { redisClient } from '../config/redis'
@@ -10,7 +10,7 @@ import { SuperAdminCredential } from '../entities/superAdmin.credentials';
 import { SuperAdmin, UserType } from '../entities/superAdmin.enities';
 import { createError } from '../utils';
 import { SuperAdminDTO } from '../schemas/superAdminSchema';
-import { DeviceSession } from '../entities/device-session.entity'; 
+import { DeviceSession } from '../entities/device-session.entity';
 import { config } from '../config/config';
 import logger from '../config/logger';
 
@@ -20,17 +20,17 @@ const MAX_FAILS = 3;
 const PWD_CACHE_TTL = 86400; // 1 day
 const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
-  
+
 
 class AuthService {
   credentialRepository: Repository<SuperAdminCredential>;
   userRepository: Repository<SuperAdmin>;
-  deviceRepository: Repository<DeviceSession> 
+  deviceRepository: Repository<DeviceSession>
 
   constructor() {
     this.credentialRepository = AppDataSource.getRepository(SuperAdminCredential);
     this.userRepository = AppDataSource.getRepository(SuperAdmin);
-    this.deviceRepository=AppDataSource.getRepository(DeviceSession)
+    this.deviceRepository = AppDataSource.getRepository(DeviceSession)
   }
 
 
@@ -40,31 +40,32 @@ class AuthService {
 
     await this.checkBlock(data.email);
     const credential = await this.getCredentialWithUser(data.email);
-    logger.info("credential===================>>>>",credential)
+    logger.info("credential===================>>>>", credential)
     this.validateUserStatus(credential.user);
     await this.verifyPassword(data.password, credential);
-    await this.clearFailCounter(data.email);
+    await this.clearFailCounter(data.email,credential);
     const tokens = this.generateTokens(credential.user.id);
 
     await this.saveLoginIp(credential.user.id, ip);
- await this.createDeviceSession(
-    credential.user.id,
-    tokens.refreshToken,
-    ip,
-    data.deviceType,      
-    data.deviceName,      
-    data.deviceToken      
-  );
+    await this.createDeviceSession(
+      credential.user.id,
+      tokens.refreshToken,
+      ip,
+      data.deviceType,
+      data.deviceName,
+      data.deviceToken
+    );
 
 
-    return { message: "Login successful" ,
-      tokens:tokens
+    return {
+      message: "Login successful",
+      tokens: tokens
     };
 
 
   }
 
-  
+
 
 
 
@@ -86,13 +87,22 @@ class AuthService {
       .getOne();
 
     if (!credential) {
+      await this.increaseFailCount(email);
       throw new Error("Invalid credentials");
+    }
+
+    if (credential.accountLockedUntil && credential.accountLockedUntil > new Date()) {
+      throw createError(
+        `Account locked until ${credential.accountLockedUntil.toISOString()}`,
+        429
+      );
     }
 
     return credential;
   }
   private validateUserStatus(user: SuperAdmin) {
     if (!user.isVerified) {
+
       throw createError("User not verified", 403);
     }
 
@@ -106,84 +116,110 @@ class AuthService {
   }
   private async verifyPassword(password: string, credential: SuperAdminCredential) {
     const pwdCacheKey = `pwd:${credential.id}:${credential.passwordHash}`;
-  const cached = await redisClient.exists(pwdCacheKey);
+    const cached = await redisClient.exists(pwdCacheKey);
 
-  if (cached === 1) return true;
- const isValid = await bcrypt.compare(password, credential.passwordHash);
+    if (cached === 1) return true;
+    const isValid = await bcrypt.compare(password, credential.passwordHash);
     if (!isValid) {
       await this.increaseFailCount(credential.email);
+      credential.failedLoginAttempts += 1;
+      if (credential.failedLoginAttempts >= MAX_FAILS) {
+        credential.accountLockedUntil = new Date(Date.now() + FAIL_TTL * 1000);
+      }
+      await this.credentialRepository.save(credential);
       throw createError("Invalid credentials", 401);
-    } 
-  redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => {});
-  return true;
+    }
+    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => { });
+    return true;
   }
 
   private async increaseFailCount(email: string) {
- const attempts = await redisClient.incr(`fail:${email}`);
-  if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
-  if (attempts >= MAX_FAILS) {
-    await redisClient.set(`block:${email}`, "1", "EX", FAIL_TTL);
-    throw createError("Account blocked due to multiple failed attempts", 429);
-  }
+    const attempts = await redisClient.incr(`fail:${email}`);
+    if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
+    if (attempts >= MAX_FAILS) {
+      await redisClient.set(`block:${email}`, "1", "EX", FAIL_TTL);
+      throw createError("Account blocked due to multiple failed attempts", 429);
+    }
   }
 
-  private async clearFailCounter(email: string) {
+  private async clearFailCounter(email: string,credential:SuperAdminCredential) {
     await redisClient.del(`fail:${email}`);
     await redisClient.del(`block:${email}`);
+    if (credential) {
+    credential.failedLoginAttempts = 0;
+    credential.accountLockedUntil = null;
+    await this.credentialRepository.save(credential);
   }
+}
   private async saveLoginIp(userId: number, ip: string) {
     await this.deviceRepository.save({
-     userId,
-  ipAddress: ip,
-  deviceType: "web",
-  expiresAt: new Date(Date.now() + 15 * 60 * 1000)
+      userId,
+      ipAddress: ip,
+      deviceType: "web",
+      expiresAt: new Date(Date.now() + 15 * 60 * 1000)
     });
   }
 
   private generateTokens(userId: number) {
-  const accessToken = jwt.sign(
-    { sub: userId, type: "access" }, 
-    config.JWT_SECRET as jwt.Secret,   // ✅ cast to Secret
-    { expiresIn:  process.env.JWT_EXPIRES_IN || "24h" }as SignOptions
-  );
+    const accessToken = jwt.sign(
+      { sub: userId, type: "access" },
+      config.JWT_SECRET as jwt.Secret,   // ✅ cast to Secret
+      { expiresIn: process.env.JWT_EXPIRES_IN || "24h" } as SignOptions
+    );
 
-  const refreshToken = jwt.sign(
-    { sub: userId, type: "refresh" }, 
-     
-    config.JWT_SECRET as jwt.Secret, 
-    { expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || "7d" }as SignOptions
-  );
+    const refreshToken = jwt.sign(
+      { sub: userId, type: "refresh" },
 
-  return { accessToken, refreshToken };
-}
+      config.JWT_SECRET as jwt.Secret,
+      { expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || "7d" } as SignOptions
+    );
+
+    return { accessToken, refreshToken };
+  }
 
   private hashToken(token: string) {
     return crypto.createHash("sha256").update(token).digest("hex");
   }
 
-private async createDeviceSession(
-  userId: number,
-  refreshToken: string,
-  ip: string,
-  deviceType?: string,
-  deviceName?: string,
-  deviceToken?: string
-) {
-  const refreshTokenHash = this.hashToken(refreshToken);
+  private async createDeviceSession(
+    userId: number,
+    refreshToken: string,
+    ip: string,
+    deviceType?: string,
+    deviceName?: string,
+    deviceToken?: string
+  ) {
+    const refreshTokenHash = this.hashToken(refreshToken);
 
-  const session = this.deviceRepository.create({
-    userId,
-    refreshTokenHash,
-    ipAddress: ip,
-    deviceType,
-    deviceToken,
-    deviceName,
-    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
-    isRevoked: false,
-  });
+    // check if a session already exists for same user + same deviceToken
+    let session = await this.deviceRepository.findOne({
+      where: { userId, deviceToken }
+    });
 
-  return await this.deviceRepository.save(session);
-}
+    if (session) {
+      // update existing session
+      session.refreshTokenHash = refreshTokenHash;
+      session.ipAddress = ip;
+      session.deviceType = deviceType;
+      session.deviceName = deviceName;
+      session.expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+      session.isRevoked = false;
+    } else {
+      // create new session
+      session = this.deviceRepository.create({
+        userId,
+        refreshTokenHash:refreshTokenHash,
+        ipAddress: ip,
+        deviceType,
+        deviceToken,
+        deviceName,
+        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        isRevoked: false,
+      });
+    }
+
+    return await this.deviceRepository.save(session);
+  }
 }
 
 export default AuthService;

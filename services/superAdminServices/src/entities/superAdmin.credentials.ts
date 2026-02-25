@@ -38,7 +38,7 @@ export class SuperAdminCredential {
     type: "timestamp",
     nullable: true,
   })
-  accountLockedUntil?: Date;
+  accountLockedUntil?: Date|null;
 
   @Column({
     name: "password_changed_at",
