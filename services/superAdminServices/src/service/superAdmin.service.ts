@@ -70,10 +70,13 @@ class AuthService {
 
 
   private async checkBlock(email: string) {
-    const blocked = await redisClient.get(`block:${email}`);
-    if (blocked) {
-      throw new Error("Account blocked for 15 minutes");
-    }
+    const ttl = await redisClient.ttl(`block:${email}`); // time left in seconds
+  if (ttl && ttl > 0) {
+    throw createError(
+      `Account blocked. Try again in ${Math.ceil(ttl / 60)} minutes.`,
+      429
+    );
+  }
   }
 
 
@@ -115,31 +118,64 @@ class AuthService {
     }
   }
   private async verifyPassword(password: string, credential: SuperAdminCredential) {
-    const pwdCacheKey = `pwd:${credential.id}:${credential.passwordHash}`;
-    const cached = await redisClient.exists(pwdCacheKey);
+  const pwdCacheKey = `pwd:${credential.id}:${credential.passwordHash}`;
+  const cached = await redisClient.exists(pwdCacheKey);
 
-    if (cached === 1) return true;
-    const isValid = await bcrypt.compare(password, credential.passwordHash);
-    if (!isValid) {
-      await this.increaseFailCount(credential.email);
-      credential.failedLoginAttempts += 1;
-      if (credential.failedLoginAttempts >= MAX_FAILS) {
-        credential.accountLockedUntil = new Date(Date.now() + FAIL_TTL * 1000);
-      }
-      await this.credentialRepository.save(credential);
-      throw createError("Invalid credentials", 401);
-    }
-    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => { });
-    return true;
+  // If password was recently verified, skip bcrypt (optional)
+  if (cached === 1) return true;
+
+  const isValid = await bcrypt.compare(password, credential.passwordHash);
+  
+  if (!isValid) { 
+    await this.increaseFailCount(credential.email);
+    throw createError("Invalid credentials", 401);
+  }
+
+  // ✅ Correct password → cache for 1 day
+  redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => {});
+  return true;
   }
 
   private async increaseFailCount(email: string) {
+   const credential = await this.credentialRepository.findOne({
+    where: { email },
+    relations: ["user"]
+  });
+
+  if (!credential) {
+    // No user found, just track in Redis
     const attempts = await redisClient.incr(`fail:${email}`);
     if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
-    if (attempts >= MAX_FAILS) {
-      await redisClient.set(`block:${email}`, "1", "EX", FAIL_TTL);
-      throw createError("Account blocked due to multiple failed attempts", 429);
-    }
+    return;
+  }
+
+  // Increment DB failed login attempts
+  credential.failedLoginAttempts += 1;
+
+  // If max fails reached, block account in DB
+  if (credential.failedLoginAttempts >= MAX_FAILS) {
+    const lockUntil = new Date(Date.now() + FAIL_TTL * 1000); // 15 minutes from now
+    credential.accountLockedUntil = lockUntil;
+  }
+
+  await this.credentialRepository.save(credential);
+
+  // Also increment Redis counter
+  const attempts = await redisClient.incr(`fail:${email}`);
+  if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
+
+  // Throw errors
+  if (credential.failedLoginAttempts >= MAX_FAILS) {
+    throw createError(
+      `Account blocked due to multiple failed attempts. Try again at ${credential.accountLockedUntil?.toISOString()}`,
+      429
+    );
+  } else {
+    throw createError(
+      `Invalid credentials. ${MAX_FAILS - credential.failedLoginAttempts} attempts remaining.`,
+      401
+    );
+  }
   }
 
   private async clearFailCounter(email: string,credential:SuperAdminCredential) {
