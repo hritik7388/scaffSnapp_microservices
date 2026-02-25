@@ -11,13 +11,12 @@ import { SuperAdmin, UserType } from '../entities/superAdmin.enities';
 import { createError } from '../utils';
 import { SuperAdminDTO } from '../schemas/superAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
-import { config } from '../config/config';
-import logger from '../config/logger';
+import { config } from '../config/config'; 
 
 
-const FAIL_TTL = 900; // 15 minutes
+const FAIL_TTL = 180;  
 const MAX_FAILS = 3;
-const PWD_CACHE_TTL = 86400; // 1 day
+const PWD_CACHE_TTL = 86400; 
 const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 
@@ -39,11 +38,10 @@ class AuthService {
 
 
     await this.checkBlock(data.email);
-    const credential = await this.getCredentialWithUser(data.email);
-    logger.info("credential===================>>>>", credential)
+    const credential = await this.getCredentialWithUser(data.email); 
     this.validateUserStatus(credential.user);
     await this.verifyPassword(data.password, credential);
-    await this.clearFailCounter(data.email,credential);
+    await this.clearFailCounter(data.email, credential);
     const tokens = this.generateTokens(credential.user.id);
 
     await this.saveLoginIp(credential.user.id, ip);
@@ -71,12 +69,12 @@ class AuthService {
 
   private async checkBlock(email: string) {
     const ttl = await redisClient.ttl(`block:${email}`); // time left in seconds
-  if (ttl && ttl > 0) {
-    throw createError(
-      `Account blocked. Try again in ${Math.ceil(ttl / 60)} minutes.`,
-      429
-    );
-  }
+    if (ttl && ttl > 0) {
+      throw createError(
+        `Account blocked. Try again in ${Math.ceil(ttl / 60)} minutes.`,
+        429
+      );
+    }
   }
 
 
@@ -118,75 +116,65 @@ class AuthService {
     }
   }
   private async verifyPassword(password: string, credential: SuperAdminCredential) {
-  const pwdCacheKey = `pwd:${credential.id}:${credential.passwordHash}`;
-  const cached = await redisClient.exists(pwdCacheKey);
+    const pwdCacheKey = `pwd:${credential.id}:${credential.passwordHash}`;
+    const cached = await redisClient.exists(pwdCacheKey); 
 
-  // If password was recently verified, skip bcrypt (optional)
-  if (cached === 1) return true;
+    if (cached === 1) return true;
 
-  const isValid = await bcrypt.compare(password, credential.passwordHash);
-  
-  if (!isValid) { 
-    await this.increaseFailCount(credential.email);
-    throw createError("Invalid credentials", 401);
-  }
+    const isValid = await bcrypt.compare(password, credential.passwordHash);
 
-  // ✅ Correct password → cache for 1 day
-  redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => {});
-  return true;
+    if (!isValid) {
+      await this.increaseFailCount(credential.email);
+      throw createError("Invalid credentials", 401);
+    } 
+
+    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => { });
+    return true;
   }
 
   private async increaseFailCount(email: string) {
-   const credential = await this.credentialRepository.findOne({
-    where: { email },
-    relations: ["user"]
-  });
+    const credential = await this.credentialRepository.findOne({
+      where: { email },
+      relations: ["user"]
+    });
 
-  if (!credential) {
-    // No user found, just track in Redis
+    if (!credential) { 
+      const attempts = await redisClient.incr(`fail:${email}`);
+      if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
+      return;
+    } 
+
+    credential.failedLoginAttempts += 1; 
+    if (credential.failedLoginAttempts >= MAX_FAILS) {
+      const lockUntil = new Date(Date.now() + FAIL_TTL * 1000); // 15 minutes from now
+      credential.accountLockedUntil = lockUntil;
+    }
+
+    await this.credentialRepository.save(credential); 
     const attempts = await redisClient.incr(`fail:${email}`);
-    if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
-    return;
+    if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL); 
+    if (credential.failedLoginAttempts >= MAX_FAILS) {
+      throw createError(
+        `Account blocked due to multiple failed attempts. Try again at ${credential.accountLockedUntil?.toISOString()}`,
+        429
+      );
+    } else {
+      throw createError(
+        `Invalid credentials. ${MAX_FAILS - credential.failedLoginAttempts} attempts remaining.`,
+        401
+      );
+    }
   }
 
-  // Increment DB failed login attempts
-  credential.failedLoginAttempts += 1;
-
-  // If max fails reached, block account in DB
-  if (credential.failedLoginAttempts >= MAX_FAILS) {
-    const lockUntil = new Date(Date.now() + FAIL_TTL * 1000); // 15 minutes from now
-    credential.accountLockedUntil = lockUntil;
-  }
-
-  await this.credentialRepository.save(credential);
-
-  // Also increment Redis counter
-  const attempts = await redisClient.incr(`fail:${email}`);
-  if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
-
-  // Throw errors
-  if (credential.failedLoginAttempts >= MAX_FAILS) {
-    throw createError(
-      `Account blocked due to multiple failed attempts. Try again at ${credential.accountLockedUntil?.toISOString()}`,
-      429
-    );
-  } else {
-    throw createError(
-      `Invalid credentials. ${MAX_FAILS - credential.failedLoginAttempts} attempts remaining.`,
-      401
-    );
-  }
-  }
-
-  private async clearFailCounter(email: string,credential:SuperAdminCredential) {
+  private async clearFailCounter(email: string, credential: SuperAdminCredential) {
     await redisClient.del(`fail:${email}`);
     await redisClient.del(`block:${email}`);
     if (credential) {
-    credential.failedLoginAttempts = 0;
-    credential.accountLockedUntil = null;
-    await this.credentialRepository.save(credential);
+      credential.failedLoginAttempts = 0;
+      credential.accountLockedUntil = null;
+      await this.credentialRepository.save(credential);
+    }
   }
-}
   private async saveLoginIp(userId: number, ip: string) {
     await this.deviceRepository.save({
       userId,
@@ -225,26 +213,22 @@ class AuthService {
     deviceName?: string,
     deviceToken?: string
   ) {
-    const refreshTokenHash = this.hashToken(refreshToken);
-
-    // check if a session already exists for same user + same deviceToken
+    const refreshTokenHash = this.hashToken(refreshToken); 
     let session = await this.deviceRepository.findOne({
       where: { userId, deviceToken }
     });
 
-    if (session) {
-      // update existing session
+    if (session) { 
       session.refreshTokenHash = refreshTokenHash;
       session.ipAddress = ip;
       session.deviceType = deviceType;
       session.deviceName = deviceName;
       session.expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
       session.isRevoked = false;
-    } else {
-      // create new session
+    } else { 
       session = this.deviceRepository.create({
         userId,
-        refreshTokenHash:refreshTokenHash,
+        refreshTokenHash: refreshTokenHash,
         ipAddress: ip,
         deviceType,
         deviceToken,
