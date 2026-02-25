@@ -21,7 +21,7 @@ export class DeviceSession {
     @Column({ name: 'user_id' })
     userId: number;
 
-    @Column({ name: 'refresh_token_hash', length: 255 })
+    @Column({ nullable: true })
     refreshTokenHash: string;
 
     @Column({ name: 'device_name', nullable: true })

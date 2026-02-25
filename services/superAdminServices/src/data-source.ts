@@ -1,6 +1,7 @@
 import { DataSource } from "typeorm";
 import { SuperAdmin } from "./entities/superAdmin.enities";
 import { SuperAdminCredential } from "./entities/superAdmin.credentials";
+import { DeviceSession } from "./entities/device-session.entity";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -15,7 +16,7 @@ export const AppDataSource = new DataSource({
     synchronize: true, // ❌ never true in production
     logging: !isProduction,
 
-    entities: [SuperAdmin, SuperAdminCredential],
+    entities: [SuperAdmin, SuperAdminCredential,DeviceSession],
     migrations: ["dist/migrations/*.js"],
 
     extra: {

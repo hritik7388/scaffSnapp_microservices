@@ -6,4 +6,4 @@ const authController = new AuthController();
 authRouter.post('/login', authController.login.bind(authController));
 authRouter.post('/logout', authController.logout.bind(authController));
 
-export { authRouter };
+export default authRouter ;

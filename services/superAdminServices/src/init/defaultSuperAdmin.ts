@@ -21,7 +21,7 @@ export const createDefaultSuperAdmin = async (): Promise<void> => {
     return;
   }
 
-  const defaultEmail = "scaffSnap@mailinator.com";
+  const defaultEmail = process.env.DEFAULT_SUPERADMIN_EMAIL;
   const defaultPassword = process.env.DEFAULT_SUPERADMIN_PASSWORD;
 
   if (!defaultEmail || !defaultPassword) {
