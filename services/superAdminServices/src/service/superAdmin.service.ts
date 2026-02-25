@@ -58,9 +58,7 @@ class AuthService {
 
 
 
-  async logout(userId: number, token: string) {
-
-  }
+  
 
 
   private async checkBlock(email: string) {
