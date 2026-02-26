@@ -11,12 +11,12 @@ import { SuperAdmin, UserType } from '../entities/superAdmin.enities';
 import { createError } from '../utils';
 import { SuperAdminDTO } from '../schemas/superAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
-import { config } from '../config/config'; 
+import { config } from '../config/config';
 
 
-const FAIL_TTL = 180;  
+const FAIL_TTL = 180;
 const MAX_FAILS = 3;
-const PWD_CACHE_TTL = 86400; 
+const PWD_CACHE_TTL = 300;
 const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 
@@ -38,13 +38,11 @@ class AuthService {
 
 
     await this.checkBlock(data.email);
-    const credential = await this.getCredentialWithUser(data.email); 
+    const credential = await this.getCredentialWithUser(data.email);
     this.validateUserStatus(credential.user);
     await this.verifyPassword(data.password, credential);
     await this.clearFailCounter(data.email, credential);
     const tokens = this.generateTokens(credential.user.id);
-
-    await this.saveLoginIp(credential.user.id, ip);
     await this.createDeviceSession(
       credential.user.id,
       tokens.refreshToken,
@@ -69,7 +67,7 @@ class AuthService {
 
   private async checkBlock(email: string) {
     const ttl = await redisClient.ttl(`block:${email}`); // time left in seconds
-    if (ttl && ttl > 0) {
+    if (ttl > 0) {
       throw createError(
         `Account blocked. Try again in ${Math.ceil(ttl / 60)} minutes.`,
         429
@@ -117,7 +115,7 @@ class AuthService {
   }
   private async verifyPassword(password: string, credential: SuperAdminCredential) {
     const pwdCacheKey = `pwd:${credential.id}:${credential.passwordHash}`;
-    const cached = await redisClient.exists(pwdCacheKey); 
+    const cached = await redisClient.exists(pwdCacheKey);
 
     if (cached === 1) return true;
 
@@ -125,10 +123,9 @@ class AuthService {
 
     if (!isValid) {
       await this.increaseFailCount(credential.email);
-      throw createError("Invalid credentials", 401);
-    } 
+    }
 
-    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1").catch(() => { });
+    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1")
     return true;
   }
 
@@ -138,34 +135,55 @@ class AuthService {
       relations: ["user"]
     });
 
-    if (!credential) { 
-      const attempts = await redisClient.incr(`fail:${email}`);
-      if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL);
-      return;
-    } 
+    const redisFailKey = `fail:${email}`;
+    const redisBlockKey = `block:${email}`;
 
-    credential.failedLoginAttempts += 1; 
-    if (credential.failedLoginAttempts >= MAX_FAILS) {
-      const lockUntil = new Date(Date.now() + FAIL_TTL * 1000); // 15 minutes from now
-      credential.accountLockedUntil = lockUntil;
+    // Increase Redis counter
+    const attempts = await redisClient.incr(redisFailKey);
+    if (attempts === 1) {
+      await redisClient.expire(redisFailKey, FAIL_TTL);
     }
 
-    await this.credentialRepository.save(credential); 
-    const attempts = await redisClient.incr(`fail:${email}`);
-    if (attempts === 1) await redisClient.expire(`fail:${email}`, FAIL_TTL); 
+    // If credential doesn't exist
+    if (!credential) {
+      if (attempts >= MAX_FAILS) {
+        await redisClient.setex(redisBlockKey, FAIL_TTL, "1");
+        throw createError(
+          `Account blocked due to multiple failed attempts. Try again later.`,
+          429
+        );
+      }
+
+      throw createError(
+        `Invalid credentials. ${MAX_FAILS - attempts} attempts remaining.`,
+        401
+      );
+    }
+
+    // Update DB counter
+    credential.failedLoginAttempts = attempts;
+
+    if (credential.failedLoginAttempts >= MAX_FAILS) {
+      const lockUntil = new Date(Date.now() + FAIL_TTL * 1000);
+      credential.accountLockedUntil = lockUntil;
+
+      await redisClient.setex(redisBlockKey, FAIL_TTL, "1");
+    }
+
+    await this.credentialRepository.save(credential);
+
     if (credential.failedLoginAttempts >= MAX_FAILS) {
       throw createError(
         `Account blocked due to multiple failed attempts. Try again at ${credential.accountLockedUntil?.toISOString()}`,
         429
       );
-    } else {
-      throw createError(
-        `Invalid credentials. ${MAX_FAILS - credential.failedLoginAttempts} attempts remaining.`,
-        401
-      );
     }
-  }
 
+    throw createError(
+      `Invalid credentials. ${MAX_FAILS - credential.failedLoginAttempts} attempts remaining.`,
+      401
+    );
+  }
   private async clearFailCounter(email: string, credential: SuperAdminCredential) {
     await redisClient.del(`fail:${email}`);
     await redisClient.del(`block:${email}`);
@@ -187,14 +205,14 @@ class AuthService {
   private generateTokens(userId: number) {
     const accessToken = jwt.sign(
       { sub: userId, type: "access" },
-      config.JWT_SECRET as jwt.Secret,   // ✅ cast to Secret
+      config.JWT_ACCESS_SECRET as jwt.Secret,   // ✅ cast to Secret
       { expiresIn: process.env.JWT_EXPIRES_IN || "24h" } as SignOptions
     );
 
     const refreshToken = jwt.sign(
       { sub: userId, type: "refresh" },
 
-      config.JWT_SECRET as jwt.Secret,
+      config.JWT_REFRESH_SECRET as jwt.Secret,
       { expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || "7d" } as SignOptions
     );
 
@@ -213,19 +231,19 @@ class AuthService {
     deviceName?: string,
     deviceToken?: string
   ) {
-    const refreshTokenHash = this.hashToken(refreshToken); 
+    const refreshTokenHash = this.hashToken(refreshToken);
     let session = await this.deviceRepository.findOne({
       where: { userId, deviceToken }
     });
 
-    if (session) { 
+    if (session) {
       session.refreshTokenHash = refreshTokenHash;
       session.ipAddress = ip;
       session.deviceType = deviceType;
       session.deviceName = deviceName;
-      session.expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+      session.expiresAt = new Date(Date.now() + REFRESH_TTL);
       session.isRevoked = false;
-    } else { 
+    } else {
       session = this.deviceRepository.create({
         userId,
         refreshTokenHash: refreshTokenHash,
@@ -233,7 +251,7 @@ class AuthService {
         deviceType,
         deviceToken,
         deviceName,
-        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        expiresAt: new Date(Date.now() + REFRESH_TTL),
         isRevoked: false,
       });
     }
