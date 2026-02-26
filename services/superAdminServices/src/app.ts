@@ -32,18 +32,24 @@ app.use('/api/v1/superAdmin', authRouter);
 
 app.use(errorHandler);
 
-AppDataSource.initialize()
-    .then(async () => {
-        await init();
+async function bootstrap() {
+  try {
+    await AppDataSource.initialize();
 
-        const server = app.listen(config.PORT, () => {
-            logger.info(
-                `${config.SERVICE_NAME} is running on http://localhost:${config.PORT}`,
-            );
-        });
+    await init();
 
-        setupGracefulShutdown(server);
-    })
-    .catch((err) => {
-        logger.error('error during Data Source initialization', err);
+    const server = app.listen(config.PORT, () => {
+      logger.info(
+        `${config.SERVICE_NAME} is running on http://localhost:${config.PORT}`
+      );
     });
+
+    setupGracefulShutdown(server);
+
+  } catch (err) {
+    logger.error("Error during Data Source initialization", err);
+    process.exit(1);
+  }
+}
+
+bootstrap();
