@@ -2,17 +2,17 @@ import { AppDataSource } from "../data-source";
 import { createDefaultSuperAdmin } from "../init/defaultSuperAdmin";
 
 async function run() {
-  await AppDataSource.initialize();
+    await AppDataSource.initialize();
 
-  const email = process.argv[2];
+    const email = process.argv[2];
 
-  if (!email) {
-    throw new Error("Usage: npm run seed:superadmin admin@email.com");
-  }
+    if (!email) {
+        throw new Error("Usage: npm run seed:superadmin admin@email.com");
+    }
 
-  await createDefaultSuperAdmin(email);
+    await createDefaultSuperAdmin(email);
 
-  process.exit(0);
+    process.exit(0);
 }
 
 run();

@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { DataSource } from "typeorm";
 import { SuperAdmin } from "./entities/superAdmin.enities";
 import { SuperAdminCredential } from "./entities/superAdmin.credentials";

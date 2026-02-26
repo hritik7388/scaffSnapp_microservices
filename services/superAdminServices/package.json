@@ -9,6 +9,7 @@
     "build": "tsc",
     "lint": "eslint --fix",
     "format": "prettier --write 'src/**/*.ts'",
+    "seed:superadmin": "ts-node src/scripts/seed-superadmin.ts",
     "test": "jest"
   },
   "keywords": [],
