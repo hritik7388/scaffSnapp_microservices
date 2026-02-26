@@ -192,14 +192,7 @@ class AuthService {
       await this.credentialRepository.save(credential);
     }
   }
-  private async saveLoginIp(userId: number, ip: string) {
-    await this.deviceRepository.save({
-      userId,
-      ipAddress: ip,
-      deviceType: "web",
-      expiresAt: new Date(Date.now() + 15 * 60 * 1000)
-    });
-  }
+
 
   private generateTokens(userId: number) {
     const accessToken = jwt.sign(
