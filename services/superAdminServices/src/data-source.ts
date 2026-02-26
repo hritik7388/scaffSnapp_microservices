@@ -16,7 +16,7 @@ export const AppDataSource = new DataSource({
     synchronize: true, // ❌ never true in production
     logging: !isProduction,
 
-    entities: [SuperAdmin, SuperAdminCredential,DeviceSession],
+    entities: [SuperAdmin, SuperAdminCredential, DeviceSession],
     migrations: ["dist/migrations/*.js"],
 
     extra: {

@@ -10,7 +10,7 @@ import {
 } from "typeorm";
 import { SuperAdmin } from "./superAdmin.enities";
 
-@Entity({ name: "super_admin_credentials" }) 
+@Entity({ name: "super_admin_credentials" })
 @Index(["accountLockedUntil"])
 export class SuperAdminCredential {
   @PrimaryGeneratedColumn("increment")
@@ -38,7 +38,7 @@ export class SuperAdminCredential {
     type: "timestamp",
     nullable: true,
   })
-  accountLockedUntil?: Date|null;
+  accountLockedUntil?: Date | null;
 
   @Column({
     name: "password_changed_at",

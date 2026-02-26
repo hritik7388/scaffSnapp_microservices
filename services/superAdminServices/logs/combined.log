@@ -6431,3 +6431,51 @@
 {"level":"info","message":"Default SuperAdmin already exists. Skipping seeding.","service":"superadmin-service"}
 {"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
 {"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"superadmin-service"}
+{"level":"info","message":"HTTP server closed 1","service":"superadmin-service"}
+{"level":"info","message":"Database connection closed 1","service":"superadmin-service"}
+{"level":"info","message":"Redis connection established","service":"superadmin-service"}
+{"level":"info","message":"Redis ready to use","service":"superadmin-service"}
+{"level":"info","message":"Starting infrastructure initialization...","service":"superadmin-service"}
+{"level":"info","message":"Redis connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Kafka producer connected","service":"superadmin-service"}
+{"level":"info","message":"Kafka connected successfully","service":"superadmin-service"}
+{"email":"scaffSnap@mailinator.com","level":"info","message":"Default SuperAdmin created successfully","service":"superadmin-service"}
+{"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
+{"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"superadmin-service"}
+{"level":"info","message":"HTTP server closed 1","service":"superadmin-service"}
+{"level":"info","message":"Database connection closed 1","service":"superadmin-service"}
+{"level":"info","message":"Redis connection established","service":"superadmin-service"}
+{"level":"info","message":"Redis ready to use","service":"superadmin-service"}
+{"level":"info","message":"Starting infrastructure initialization...","service":"superadmin-service"}
+{"level":"info","message":"Redis connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Kafka producer connected","service":"superadmin-service"}
+{"level":"info","message":"Kafka connected successfully","service":"superadmin-service"}
+{"email":"scaffSnap@mailinator.com","level":"info","message":"Default SuperAdmin created successfully","service":"superadmin-service"}
+{"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
+{"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"superadmin-service"}
+{"level":"info","message":"HTTP server closed 1","service":"superadmin-service"}
+{"level":"info","message":"Database connection closed 1","service":"superadmin-service"}
+2026-02-26 11:55:06 [info] : Redis connection established
+2026-02-26 11:55:06 [info] : Redis ready to use
+2026-02-26 11:55:06 [info] : Starting infrastructure initialization...
+2026-02-26 11:55:06 [info] : Redis connected successfully
+2026-02-26 11:55:06 [info] : Kafka producer connected
+2026-02-26 11:55:06 [info] : Kafka connected successfully
+2026-02-26 11:55:06 [info] : Default SuperAdmin already exists. Skipping seeding.
+2026-02-26 11:55:06 [info] : All infrastructure initialized successfully ✅
+2026-02-26 11:55:06 [info] : superadmin-service is running on http://localhost:3001
+2026-02-26 11:55:20 [info] : Received SIGTERM. Starting graceful shutdown...
+2026-02-26 11:55:20 [info] : HTTP server closed 1
+2026-02-26 11:55:20 [info] : Database connection closed 1
+2026-02-26 11:55:23 [info] : Redis connection established
+2026-02-26 11:55:23 [info] : Redis ready to use
+2026-02-26 11:55:24 [info] : Starting infrastructure initialization...
+2026-02-26 11:55:24 [info] : Redis connected successfully
+2026-02-26 11:55:24 [info] : Kafka producer connected
+2026-02-26 11:55:24 [info] : Kafka connected successfully
+2026-02-26 11:55:24 [info] : Default SuperAdmin already exists. Skipping seeding.
+2026-02-26 11:55:24 [info] : All infrastructure initialized successfully ✅
+2026-02-26 11:55:24 [info] : superadmin-service is running on http://localhost:3001

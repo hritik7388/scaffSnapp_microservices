@@ -9,9 +9,7 @@ import bcrypt from 'bcryptjs';
 import logger from '../config/logger';
 
 export const createDefaultSuperAdmin = async (): Promise<void> => {
-  const superAdminRepo = AppDataSource.getRepository(SuperAdmin);
-
-  // Efficient existence check
+  const superAdminRepo = AppDataSource.getRepository(SuperAdmin); 
   const existingAdmin = await superAdminRepo.findOne({
     where: { userType: UserType.SUPER_ADMIN },
   });

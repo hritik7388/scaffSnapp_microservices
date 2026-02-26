@@ -3,6 +3,6 @@ import { AuthController } from '../controllers/superAdmin.controller';
 
 const authRouter = Router();
 const authController = new AuthController();
-authRouter.post('/login', authController.login.bind(authController)); 
+authRouter.post('/login', authController.login.bind(authController));
 
-export default authRouter ;
+export default authRouter;

@@ -17,28 +17,21 @@ const logFormat = winston.format.combine(
 
 const logger = winston.createLogger({
     level: config.LOG_LEVEL || 'info',
+    format: logFormat,
     defaultMeta: { service: config.SERVICE_NAME },
     transports: [
-        new winston.transports.Console(),
-
-        // Error logs file
+        new winston.transports.Console(), 
         new winston.transports.File({
             filename: 'logs/error.log',
             level: 'error',
-        }),
-
-        // All logs file
+        }), 
         new winston.transports.File({
             filename: 'logs/combined.log',
         }),
-    ],
-
-    // Catch unhandled exceptions
+    ], 
     exceptionHandlers: [
         new winston.transports.File({ filename: 'logs/exceptions.log' }),
-    ],
-
-    // Catch unhandled promise rejections
+    ], 
     rejectionHandlers: [
         new winston.transports.File({ filename: 'logs/rejections.log' }),
     ],
