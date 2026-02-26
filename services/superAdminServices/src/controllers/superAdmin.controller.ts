@@ -1,4 +1,4 @@
-import { Request, Response } from 'express'; 
+import { Request, Response } from 'express';
 import AuthService from '../service/superAdmin.service';
 import { superAdminSchema } from '../schemas/superAdminSchema';
 
@@ -25,5 +25,5 @@ export class AuthController {
     });
 
   }
- 
+
 }

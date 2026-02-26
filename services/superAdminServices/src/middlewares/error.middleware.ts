@@ -9,27 +9,20 @@ export const errorHandler = (
   res: Response,
   next: NextFunction
 ): void => {
-  // Log the raw error first
   logger.error(error);
-
-  // Handle Zod validation errors
   if (error instanceof z.ZodError) {
     res.status(400).json({
       status: 'error',
       message: 'Invalid input',
-      errors: error.issues, // detailed validation issues
+      errors: error.issues,
     });
     return;
   }
-
-  // Ensure error conforms to CustomError interface
   const customError = error as CustomError;
 
   const statusCode = customError.statusCode || 500;
   const status = customError.status || 'error';
   const message = customError.message || 'Internal server error';
-
-  // Detailed logging for non-production environments
   if (process.env.NODE_ENV !== 'production') {
     logger.error({
       message,
@@ -40,9 +33,8 @@ export const errorHandler = (
       query: req.query,
     });
   }
-
-  // Send structured response
   res.status(statusCode).json({
+    statusCode,
     status,
     message,
   });

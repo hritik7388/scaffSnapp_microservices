@@ -125,7 +125,7 @@ class AuthService {
       await this.increaseFailCount(credential.email);
     }
 
-    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1") 
+    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1")
   }
 
   private async increaseFailCount(email: string) {

@@ -12,7 +12,7 @@ import { reqLogger } from './middlewares/req.middleware';
 import { AppDataSource } from './data-source';
 import { config } from './config/config';
 import { indexRouter } from './routes/index.routes';
-import  authRouter  from './routes/superAdmin.routes';
+import authRouter from './routes/superAdmin.routes';
 import { init } from './init'
 import { setupGracefulShutdown } from './utils/shutdown';
 
