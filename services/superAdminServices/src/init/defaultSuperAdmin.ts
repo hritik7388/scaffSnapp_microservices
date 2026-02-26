@@ -5,11 +5,15 @@ import {
   SuperAdminStatus,
 } from '../entities/superAdmin.enities';
 import { SuperAdminCredential } from '../entities/superAdmin.credentials';
-import bcrypt from 'bcryptjs';
 import logger from '../config/logger';
+import Crypto from 'node:crypto'
 
-export const createDefaultSuperAdmin = async (): Promise<void> => {
-  const superAdminRepo = AppDataSource.getRepository(SuperAdmin); 
+export const createDefaultSuperAdmin = async (email?: string): Promise<void> => {
+  if (!email) {
+    return
+  }
+
+  const superAdminRepo = AppDataSource.getRepository(SuperAdmin);
   const existingAdmin = await superAdminRepo.findOne({
     where: { userType: UserType.SUPER_ADMIN },
   });
@@ -18,23 +22,14 @@ export const createDefaultSuperAdmin = async (): Promise<void> => {
     logger.info('Default SuperAdmin already exists. Skipping seeding.');
     return;
   }
-
-  const defaultEmail = process.env.DEFAULT_SUPERADMIN_EMAIL;
-  const defaultPassword = process.env.DEFAULT_SUPERADMIN_PASSWORD;
-
-  if (!defaultEmail || !defaultPassword) {
-    throw new Error(
-      'DEFAULT_SUPERADMIN_EMAIL and DEFAULT_SUPERADMIN_PASSWORD must be defined.'
-    );
-  }
-
-  const passwordHash = await bcrypt.hash(defaultPassword, 12);
+  const tempPassword = Crypto.randomBytes(10).toString("base64url");
 
   const credential = new SuperAdminCredential();
-  credential.email = defaultEmail;
-  credential.passwordHash = passwordHash;
+  credential.email = email;
+  credential.passwordHash = tempPassword;
 
   const superAdmin = new SuperAdmin();
+
   superAdmin.firstName = 'Default';
   superAdmin.lastName = 'SuperAdmin';
   superAdmin.phoneNumber = '9999999999';
@@ -57,7 +52,5 @@ export const createDefaultSuperAdmin = async (): Promise<void> => {
 
   await superAdminRepo.save(superAdmin);
 
-  logger.info('Default SuperAdmin created successfully', {
-    email: defaultEmail,
-  });
+  logger.info('Default SuperAdmin created successfully', { email });
 };

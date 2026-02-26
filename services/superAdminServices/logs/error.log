@@ -1874,3 +1874,51 @@
 {"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
 {"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
 {"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+2026-02-26 11:57:41 [error] : write ECONNRESET
+2026-02-26 11:57:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:45 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:54 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:06 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:11 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:21 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:24 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:27 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:30 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:45 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:54 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:03 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:06 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:09 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:12 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:15 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:18 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:21 [error] : write EPIPE

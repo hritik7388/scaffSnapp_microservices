@@ -25,7 +25,12 @@ export class SuperAdminCredential {
     select: false, // 🔐 password never returned by default
   })
   passwordHash: string;
-
+  
+@Column({
+    name: "must_change_password",
+    default: true, // 🔥 by default true for new accounts
+  })
+  mustChangePassword: boolean;
   // 🔐 Login security fields
   @Column({
     name: "failed_login_attempts",
@@ -45,6 +50,7 @@ export class SuperAdminCredential {
     type: "timestamp",
     nullable: true,
   })
+
   passwordChangedAt?: Date;
 
   // 🔗 Relation

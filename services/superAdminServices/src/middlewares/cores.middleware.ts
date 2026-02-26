@@ -6,7 +6,9 @@ const allowedOrigins = new Set(
 
 const corsOptions: CorsOptions = {
   origin: (origin, callback) => { 
-    if (!origin) return callback(null, true); 
+    if (!origin) return callback(null, true);
+
+    // Check existence in the Set
     if (allowedOrigins.has(origin)) {
       callback(null, true);
     } else {
