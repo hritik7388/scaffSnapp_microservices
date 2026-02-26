@@ -12,3 +12,227 @@
 {"date":"Wed Feb 25 2026 16:53:30 GMT+0530 (India Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(148,9): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(149,5): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(150,5): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(151,42): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\n\nError: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(148,9): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(149,5): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(150,5): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(151,42): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\n\n    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)\n    at Module.m._compile (/tmp/ts-node-dev-hook-930638005189776.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-930638005189776.js:114:20)\n    at require.extensions.<computed> (/tmp/ts-node-dev-hook-930638005189776.js:71:20)\n    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)","os":{"loadavg":[5.32,2.57,1.77],"uptime":25522.16},"process":{"argv":["/snap/node/11096/bin/node","src/app.ts"],"cwd":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices","execPath":"/snap/node/11096/bin/node","gid":1002,"memoryUsage":{"arrayBuffers":49823,"external":2336440,"heapTotal":58519552,"heapUsed":33326480,"rss":109469696},"pid":547729,"uid":1002,"version":"v20.20.0"},"service":"superadmin-service","stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(148,9): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(149,5): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(150,5): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\nsrc/service/superAdmin.service.ts(151,42): error TS2552: Cannot find name 'credential'. Did you mean 'credentials'?\n\n    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)\n    at Module.m._compile (/tmp/ts-node-dev-hook-930638005189776.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-930638005189776.js:114:20)\n    at require.extensions.<computed> (/tmp/ts-node-dev-hook-930638005189776.js:71:20)\n    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)","trace":[{"column":7,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1521,"method":"_compile","native":false},{"column":25,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1623,"method":".js","native":false},{"column":20,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1266,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1091,"method":"_load","native":false}]}
 {"date":"Wed Feb 25 2026 16:53:43 GMT+0530 (India Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(150,5): error TS2322: Type 'null' is not assignable to type 'Date | undefined'.\n\nError: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(150,5): error TS2322: Type 'null' is not assignable to type 'Date | undefined'.\n\n    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)\n    at Module.m._compile (/tmp/ts-node-dev-hook-930638005189776.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-930638005189776.js:114:20)\n    at require.extensions.<computed> (/tmp/ts-node-dev-hook-930638005189776.js:71:20)\n    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)","os":{"loadavg":[5.61,2.72,1.82],"uptime":25534.52},"process":{"argv":["/snap/node/11096/bin/node","src/app.ts"],"cwd":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices","execPath":"/snap/node/11096/bin/node","gid":1002,"memoryUsage":{"arrayBuffers":49823,"external":2336726,"heapTotal":55111680,"heapUsed":23150920,"rss":98721792},"pid":548207,"uid":1002,"version":"v20.20.0"},"service":"superadmin-service","stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(150,5): error TS2322: Type 'null' is not assignable to type 'Date | undefined'.\n\n    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)\n    at Module.m._compile (/tmp/ts-node-dev-hook-930638005189776.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-930638005189776.js:114:20)\n    at require.extensions.<computed> (/tmp/ts-node-dev-hook-930638005189776.js:71:20)\n    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)","trace":[{"column":7,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1521,"method":"_compile","native":false},{"column":25,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1623,"method":".js","native":false},{"column":20,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1266,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1091,"method":"_load","native":false}]}
 {"date":"Wed Feb 25 2026 16:54:23 GMT+0530 (India Standard Time)","error":{},"exception":true,"level":"error","message":"uncaughtException: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(150,5): error TS2322: Type 'null' is not assignable to type 'Date | undefined'.\n\nError: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(150,5): error TS2322: Type 'null' is not assignable to type 'Date | undefined'.\n\n    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)\n    at Module.m._compile (/tmp/ts-node-dev-hook-930638005189776.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-930638005189776.js:114:20)\n    at require.extensions.<computed> (/tmp/ts-node-dev-hook-930638005189776.js:71:20)\n    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)","os":{"loadavg":[3.82,2.6,1.82],"uptime":25574.6},"process":{"argv":["/snap/node/11096/bin/node","src/app.ts"],"cwd":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices","execPath":"/snap/node/11096/bin/node","gid":1002,"memoryUsage":{"arrayBuffers":49823,"external":2336726,"heapTotal":55635968,"heapUsed":23195496,"rss":97046528},"pid":549119,"uid":1002,"version":"v20.20.0"},"service":"superadmin-service","stack":"Error: ⨯ Unable to compile TypeScript:\nsrc/service/superAdmin.service.ts(46,16): error TS2554: Expected 2 arguments, but got 1.\nsrc/service/superAdmin.service.ts(150,5): error TS2322: Type 'null' is not assignable to type 'Date | undefined'.\n\n    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts:1:7)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)\n    at Module.m._compile (/tmp/ts-node-dev-hook-930638005189776.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-930638005189776.js:114:20)\n    at require.extensions.<computed> (/tmp/ts-node-dev-hook-930638005189776.js:71:20)\n    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)","trace":[{"column":7,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1521,"method":"_compile","native":false},{"column":25,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js","function":"Module._compile","line":521,"method":"_compile","native":false},{"column":33,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1623,"method":".js","native":false},{"column":20,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"/tmp/ts-node-dev-hook-930638005189776.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1266,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1091,"method":"_load","native":false}]}
+2026-02-26 12:03:22 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(35,29): error TS2322: Type '() => string' is not assignable to type 'string'.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 12:03:35 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(31,74): error TS2554: Expected 0 arguments, but got 1.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 13:04:10 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(24,8): error TS2304: Cannot find name 'defaultEmail'.
+src/init/defaultSuperAdmin.ts(33,22): error TS2304: Cannot find name 'defaultEmail'.
+src/init/defaultSuperAdmin.ts(61,12): error TS2304: Cannot find name 'defaultEmail'.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 13:04:48 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(24,8): error TS2304: Cannot find name 'defaultEmail'.
+src/init/defaultSuperAdmin.ts(34,22): error TS2304: Cannot find name 'defaultEmail'.
+src/init/defaultSuperAdmin.ts(62,12): error TS2304: Cannot find name 'defaultEmail'.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 13:05:09 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(25,22): error TS2304: Cannot find name 'defaultEmail'.
+src/init/defaultSuperAdmin.ts(26,29): error TS2304: Cannot find name 'passwordHash'.
+src/init/defaultSuperAdmin.ts(53,12): error TS2304: Cannot find name 'defaultEmail'.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 13:05:20 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(26,3): error TS2322: Type '(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; error?: string | $ZodErrorMap<NonNullable<$ZodIssueInvalidType<unknown> | $ZodIssueInvalidStringFormat>> | undefined; message?: string | undefined; } | undefined) => ZodEmail' is not assignable to type 'string'.
+src/init/defaultSuperAdmin.ts(27,29): error TS2304: Cannot find name 'passwordHash'.
+src/init/defaultSuperAdmin.ts(54,12): error TS2304: Cannot find name 'defaultEmail'.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 13:05:43 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(27,22): error TS2304: Cannot find name 'email'.
+src/init/defaultSuperAdmin.ts(55,12): error TS2304: Cannot find name 'defaultEmail'.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 13:06:22 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/defaultSuperAdmin.ts(26,22): error TS2304: Cannot find name 'email'.
+src/init/defaultSuperAdmin.ts(54,12): error TS2304: Cannot find name 'defaultEmail'.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8643925479724255.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8643925479724255.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8643925479724255.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-02-26 14:20:11 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:31:37 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:32:58 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:33:16 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:34:19 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:35:00 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:36:20 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:36:54 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:37:13 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/init/defaultSuperAdmin.ts:10:1)
+2026-02-26 14:56:42 [error] : Error: Package subpath './umd/types' is not defined by "exports" in /home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/bcryptjs/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:322:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:670:9)
+    at resolveExports (node:internal/modules/cjs/loader:638:36)
+    at Function.Module._findPath (node:internal/modules/cjs/loader:711:31)
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1193:27)
+    at Function.Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/scripts/seed-superadmin.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)

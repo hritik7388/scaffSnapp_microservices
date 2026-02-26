@@ -1874,3 +1874,140 @@
 {"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
 {"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
 {"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+2026-02-26 11:57:41 [error] : write ECONNRESET
+2026-02-26 11:57:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:45 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:54 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:57:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:06 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:11 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:21 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:24 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:27 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:30 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:45 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:54 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:58:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:03 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:06 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:09 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:12 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:15 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:18 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 11:59:21 [error] : write EPIPE
+2026-02-26 13:44:30 [error] : write ECONNRESET
+2026-02-26 13:44:30 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:44:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:45:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:45:03 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 13:45:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 14:59:07 [error] : CannotExecuteNotConnectedError: Cannot execute operation on "default" connection because connection is not yet established.
+    at DataSource.destroy (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/data-source/DataSource.ts:307:19)
+    at DataSource.initialize (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/data-source/DataSource.ts:282:24)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-02-26 15:23:02 [error] : CannotExecuteNotConnectedError: Cannot execute operation on "default" connection because connection is not yet established.
+    at DataSource.destroy (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/src/data-source/DataSource.ts:307:19)
+    at DataSource.initialize (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/src/data-source/DataSource.ts:282:24)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-02-26 15:23:26 [error] : QueryFailedError: Duplicate foreign key constraint name 'FK_336070a77b04552cd1640dc56a7'
+    at Query.onResult (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/typeorm/src/driver/mysql/MysqlQueryRunner.ts:248:33)
+    at Query.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:36:14)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-02-26 16:28:41 [error] : Error: Access denied for user ''@'172.18.0.1' (using password: NO)
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-02-26 16:39:22 [error] : Error: Access denied for user ''@'172.18.0.1' (using password: NO)
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-02-26 17:06:00 [error] : Error: Access denied for user ''@'172.18.0.1' (using password: NO)
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-02-26 17:08:42 [error] : Error: Access denied for user ''@'172.18.0.1' (using password: NO)
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
