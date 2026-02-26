@@ -32,7 +32,7 @@ export const verifyToken = async (
     if (!token) return res.status(403).json({ message: 'Token missing' });
 
     // Verify JWT
-    const decoded: any = jwt.verify(token, config.JWT_SECRET);
+    const decoded: any = jwt.verify(token, config.JWT_ACCESS_SECRET);
 
     // Check Redis token
     const redisKey = `auth:${decoded.id}:${token}`;

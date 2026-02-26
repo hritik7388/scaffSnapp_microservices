@@ -125,8 +125,7 @@ class AuthService {
       await this.increaseFailCount(credential.email);
     }
 
-    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1")
-    return true;
+    redisClient.setex(pwdCacheKey, PWD_CACHE_TTL, "1") 
   }
 
   private async increaseFailCount(email: string) {
@@ -231,32 +230,41 @@ class AuthService {
     deviceName?: string,
     deviceToken?: string
   ) {
+    if (!deviceToken) {
+      throw createError("Device token is required", 400);
+    }
+
     const refreshTokenHash = this.hashToken(refreshToken);
+
+    // Find existing session by userId + deviceToken
     let session = await this.deviceRepository.findOne({
       where: { userId, deviceToken }
     });
+
+    const expiresAt = new Date(Date.now() + REFRESH_TTL);
 
     if (session) {
       session.refreshTokenHash = refreshTokenHash;
       session.ipAddress = ip;
       session.deviceType = deviceType;
       session.deviceName = deviceName;
-      session.expiresAt = new Date(Date.now() + REFRESH_TTL);
+      session.expiresAt = expiresAt;
       session.isRevoked = false;
-    } else {
-      session = this.deviceRepository.create({
-        userId,
-        refreshTokenHash: refreshTokenHash,
-        ipAddress: ip,
-        deviceType,
-        deviceToken,
-        deviceName,
-        expiresAt: new Date(Date.now() + REFRESH_TTL),
-        isRevoked: false,
-      });
-    }
 
-    return await this.deviceRepository.save(session);
+      return await this.deviceRepository.save(session);
+    }
+    const newSession = this.deviceRepository.create({
+      userId,
+      refreshTokenHash,
+      ipAddress: ip,
+      deviceType,
+      deviceToken,
+      deviceName,
+      expiresAt,
+      isRevoked: false,
+    });
+
+    return await this.deviceRepository.save(newSession);
   }
 }
 
