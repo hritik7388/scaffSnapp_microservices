@@ -17,7 +17,8 @@ interface Config {
     DATABASE_URL: string;
     REDIS_URL: string;
     KAFKA_BROKER: string;
-    JWT_SECRET: string;
+    JWT_ACCESS_SECRET: string;
+    JWT_REFRESH_SECRET: string,
     JWT_EXPIRES_IN: string;
     LOG_LEVEL: string;
     ALLOWED_ORIGINS: string;
@@ -36,7 +37,9 @@ export const config: Config = {
 
     KAFKA_BROKER: requiredEnv("KAFKA_BROKER"),
 
-    JWT_SECRET: requiredEnv("JWT_SECRET"),
+    JWT_ACCESS_SECRET: requiredEnv("JWT_ACCESS_SECRET"),
+
+    JWT_REFRESH_SECRET: requiredEnv("JWT_REFRESH_SECRET"),
 
     JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "24h",
 
