@@ -6422,3 +6422,12 @@
 {"email":"scaffSnap@mailinator.com","level":"info","message":"Default SuperAdmin created successfully","service":"superadmin-service"}
 {"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
 {"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
+{"level":"info","message":"Redis connection established","service":"superadmin-service"}
+{"level":"info","message":"Redis ready to use","service":"superadmin-service"}
+{"level":"info","message":"Starting infrastructure initialization...","service":"superadmin-service"}
+{"level":"info","message":"Redis connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Kafka producer connected","service":"superadmin-service"}
+{"level":"info","message":"Kafka connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Default SuperAdmin already exists. Skipping seeding.","service":"superadmin-service"}
+{"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
+{"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
