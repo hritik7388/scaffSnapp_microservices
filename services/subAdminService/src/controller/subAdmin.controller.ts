@@ -23,7 +23,7 @@ export class SubAdminController {
         });
     }
 
-    async login(req: Request, res: Response): Promise<any> {
+    async subAdminLogin(req: Request, res: Response): Promise<any> {
         const ip =
             (req.headers['x-forwarded-for'] as string)?.split(',')[0] ||
             req.socket.remoteAddress ||
