@@ -92,12 +92,12 @@ services:
   subadminservices:
     build:
       context: .
-      dockerfile: services/subAdminServices/Dockerfile
+      dockerfile: services/subAdminService/Dockerfile
     container_name: subadminservices
     ports:
       - "3002:3002"
     env_file:
-      - services/subAdminServices/.env.production
+      - services/subAdminService/.env.production
     depends_on:
       mysql:
         condition: service_healthy
