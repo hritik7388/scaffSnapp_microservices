@@ -6979,3 +6979,30 @@
 2026-02-26 17:11:56 [info] : Kafka connected successfully
 2026-02-26 17:11:56 [info] : All infrastructure initialized successfully ✅
 2026-02-26 17:11:56 [info] : superadmin-service is running on http://localhost:3001
+2026-02-26 19:01:56 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-02-26 19:01:56 [warn] : Redis connection closed
+2026-02-26 19:01:56 [info] : Redis connection established
+2026-02-26 19:01:56 [error] : write EPIPE
+2026-02-26 19:01:57 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-02-26 19:01:57 [warn] : Redis connection closed
+2026-02-26 19:01:57 [info] : Redis connection established
+2026-02-26 19:01:57 [error] : read ECONNRESET
+2026-02-26 19:01:57 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-02-26 19:01:57 [warn] : Redis connection closed
+2026-02-26 19:01:57 [info] : Redis connection established
+2026-02-26 19:01:57 [error] : write EPIPE
+2026-02-26 19:01:57 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-02-26 19:01:57 [warn] : Redis connection closed
+2026-02-26 19:01:57 [error] : Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+2026-02-26 19:01:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 19:01:58 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-02-26 19:01:58 [warn] : Redis connection closed
+2026-02-26 19:01:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 19:01:58 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-02-26 19:01:58 [warn] : Redis connection closed
+2026-02-26 19:01:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 19:01:59 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-02-26 19:01:59 [warn] : Redis connection closed
+2026-02-26 19:02:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-02-26 19:02:00 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-02-26 19:02:00 [warn] : Redis connection closed

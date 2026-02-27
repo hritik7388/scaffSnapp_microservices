@@ -9,23 +9,24 @@ import {
     Index,
     JoinColumn,
 } from "typeorm";
-import { SuperAdminCredential } from "./superAdmin.credentials";
+import { SubAdminCredential } from "./subAdmin.credentials";
 
-export enum SuperAdminStatus {
+export enum SubAdminStatus {
     ACTIVE = "ACTIVE",
     BLOCKED = "BLOCKED",
+    SUSPENDED = "SUSPENDED",
     DELETED = "DELETED",
 }
 
 export enum UserType {
-    SUPER_ADMIN = "SUPER ADMIN",
+    SUB_ADMIN = "SUB_ADMIN",
 }
 
-@Entity({ name: "super_admins" })
+@Entity({ name: "sub_admins" })
 @Index(["phoneNumber"], { unique: true })
 @Index(["status"])
 @Index(["createdAt"])
-export class SuperAdmin {
+export class SubAdmin {
     @PrimaryGeneratedColumn("increment")
     id: number;
 
@@ -44,16 +45,16 @@ export class SuperAdmin {
     @Column({
         type: "enum",
         enum: UserType,
-        default: UserType.SUPER_ADMIN,
+        default: UserType.SUB_ADMIN,
     })
     userType: UserType;
 
     @Column({
         type: "enum",
-        enum: SuperAdminStatus,
-        default: SuperAdminStatus.ACTIVE,
+        enum: SubAdminStatus,
+        default: SubAdminStatus.ACTIVE,
     })
-    status: SuperAdminStatus;
+    status: SubAdminStatus;
 
     @Column({ default: false })
     isVerified: boolean;
@@ -67,18 +68,18 @@ export class SuperAdmin {
     @Column({ nullable: true, select: false })
     otp?: string; // select: false for security
 
-    @Column({ type: "timestamp", nullable: true })
-    otpExpireTime?: Date;
-
     @Column({ name: "profile_image", nullable: true })
     profileImage?: string;
 
-    @OneToOne(() => SuperAdminCredential, (credential) => credential.user, {
+    @Column({ type: "timestamp", nullable: true })
+    otpExpireTime?: Date;
+
+    @OneToOne(() => SubAdminCredential, (credential) => credential.user, {
         cascade: true,
         onDelete: "CASCADE",
     })
     @JoinColumn({ name: "credential_id" })
-    credential: SuperAdminCredential;
+    credential: SubAdminCredential;
 
     @CreateDateColumn({ name: "created_at" })
     createdAt: Date;
