@@ -9,7 +9,7 @@ import { Repository } from 'typeorm';
 import { SuperAdminCredential } from '../entities/superAdmin.credentials';
 import { SuperAdmin, UserType } from '../entities/superAdmin.enities';
 import { createError } from '../utils';
-import { SuperAdminDTO } from '../schemas/superAdminSchema';
+import { ForegetpasswordDTO, SuperAdminDTO } from '../schemas/superAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
 import { config } from '../config/config';
 
@@ -21,7 +21,7 @@ const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 
 
-class AuthService {
+class SuperAdminService {
   credentialRepository: Repository<SuperAdminCredential>;
   userRepository: Repository<SuperAdmin>;
   deviceRepository: Repository<DeviceSession>
@@ -59,6 +59,12 @@ class AuthService {
     };
 
 
+  }
+
+  async forgetPassword(data: ForegetpasswordDTO) {
+    await this.checkBlock(data.email);
+
+    const credential = await this.getCredentialWithUser(data.email);
   }
 
 
@@ -110,7 +116,7 @@ class AuthService {
     }
 
     if (user.userType !== UserType.SUPER_ADMIN) {
-      throw createError("Not authorized", 403);
+      throw createError("Not authorized or Not SuperAdmin", 403);
     }
   }
   private async verifyPassword(password: string, credential: SuperAdminCredential) {
@@ -261,6 +267,6 @@ class AuthService {
   }
 }
 
-export default AuthService;
+export default SuperAdminService;
 
 

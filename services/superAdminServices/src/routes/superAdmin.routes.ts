@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { AuthController } from '../controllers/superAdmin.controller';
+import { SuperAdminController } from '../controllers/superAdmin.controller';
 
-const authRouter = Router();
-const authController = new AuthController();
-authRouter.post('/login', authController.login.bind(authController));
+const superAdminRouter = Router();
+const superAdminController = new SuperAdminController();
+superAdminRouter.post('/login', superAdminController.login.bind(superAdminController));
 
-export default authRouter;
+export default superAdminRouter;

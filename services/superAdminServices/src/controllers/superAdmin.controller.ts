@@ -1,13 +1,13 @@
 import { Request, Response } from 'express';
-import AuthService from '../service/superAdmin.service';
+import SuperAdminService from '../service/superAdmin.service';
 import { superAdminSchema } from '../schemas/superAdminSchema';
 
 
-export class AuthController {
-  private readonly authService: AuthService;
+export class SuperAdminController {
+  private readonly superAdminAuthService: SuperAdminService;
 
   constructor() {
-    this.authService = new AuthService();
+    this.superAdminAuthService = new SuperAdminService();
   }
 
   async login(req: Request, res: Response): Promise<any> {
@@ -17,7 +17,7 @@ export class AuthController {
       '';
 
     const parseResult = superAdminSchema.parse(req.body);
-    const userData = await this.authService.login(parseResult, ip);
+    const userData = await this.superAdminAuthService.login(parseResult, ip);
     return res.status(200).json({
       message: userData.message,
       tokens: userData.tokens,
