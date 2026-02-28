@@ -8,7 +8,7 @@ import {
     CreateDateColumn,
     Index,
 } from 'typeorm';
-import { SuperAdmin } from '../entities/superAdmin.enities';
+import { SubAdmin } from './subAdmin.enities';
 
 @Entity({ name: 'device_sessions' })
 @Index(['userId'])
@@ -42,8 +42,8 @@ export class DeviceSession {
     @Column({ name: 'is_revoked', default: false })
     isRevoked: boolean;
 
-    @ManyToOne(() => SuperAdmin, { onDelete: 'CASCADE' })
-    user: SuperAdmin;
+    @ManyToOne(() => SubAdmin, { onDelete: 'CASCADE' })
+    user: SubAdmin;
 
     @CreateDateColumn({ name: 'created_at' })
     createdAt: Date;

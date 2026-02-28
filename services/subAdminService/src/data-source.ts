@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { DataSource } from "typeorm";
-import { SuperAdmin } from "./entities/superAdmin.enities";
-import { SuperAdminCredential } from "./entities/superAdmin.credentials";
+import { SubAdmin } from "./entities/subAdmin.enities";
+import { SubAdminCredential } from "./entities/subAdmin.credentials";
 import { DeviceSession } from "./entities/device-session.entity";
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -17,7 +17,7 @@ export const AppDataSource = new DataSource({
     synchronize: true, // ❌ never true in production
     logging: !isProduction,
 
-    entities: [SuperAdmin, SuperAdminCredential, DeviceSession],
+    entities: [SubAdmin, SubAdminCredential, DeviceSession],
     migrations: ["dist/migrations/*.js"],
 
     extra: {

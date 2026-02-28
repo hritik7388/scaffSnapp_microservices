@@ -8,11 +8,11 @@ import {
   DeleteDateColumn,
   Index,
 } from "typeorm";
-import { SuperAdmin } from "./superAdmin.enities";
+import { SubAdmin } from "./subAdmin.enities";
 
-@Entity({ name: "super_admin_credentials" })
+@Entity({ name: "sub_admin_credentials" })
 @Index(["accountLockedUntil"])
-export class SuperAdminCredential {
+export class SubAdminCredential {
   @PrimaryGeneratedColumn("increment")
   id: number;
 
@@ -25,8 +25,8 @@ export class SuperAdminCredential {
     select: false, // 🔐 password never returned by default
   })
   passwordHash: string;
-  
-@Column({
+
+  @Column({
     name: "must_change_password",
     default: true, // 🔥 by default true for new accounts
   })
@@ -54,10 +54,10 @@ export class SuperAdminCredential {
   passwordChangedAt?: Date;
 
   // 🔗 Relation
-  @OneToOne(() => SuperAdmin, (superAdmin) => superAdmin.credential, {
+  @OneToOne(() => SubAdmin, (subAdmin) => subAdmin.credential, {
     onDelete: "CASCADE",
   })
-  user: SuperAdmin;
+  user: SubAdmin;
 
   // 📅 Timestamps
   @CreateDateColumn({ name: "created_at" })

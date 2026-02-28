@@ -7,8 +7,9 @@ import { redisClient } from '../config/redis';
 const publicRoutes = new Set([
   '/',
   '/health',
-  '/api/v1/superAdmin/login',
-  '/api/v1/superAdmin/register',
+  '/api/v1/subAdmin/register',
+  '/api/v1/subAdmin/login',
+  '/api/v1/subAdmin/register',
 ].map(route => route.toLowerCase()));
 
 
