@@ -556,3 +556,1082 @@
 {"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"superadmin-service"}
 {"level":"info","message":"HTTP server closed 1","service":"superadmin-service"}
 {"level":"info","message":"Database connection closed 1","service":"superadmin-service"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"fatal":true,"level":"error","message":"error during Data Source initialization connect ECONNREFUSED 127.0.0.1:3306","port":3306,"service":"superadminservices","stack":"Error: connect ECONNREFUSED 127.0.0.1:3306\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)","syscall":"connect"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #1, retrying in 100ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #2, retrying in 200ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #3, retrying in 300ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #4, retrying in 400ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #5, retrying in 500ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #6, retrying in 600ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #7, retrying in 700ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #8, retrying in 800ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #9, retrying in 900ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #10, retrying in 1000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #11, retrying in 1100ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #12, retrying in 1200ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #13, retrying in 1300ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #14, retrying in 1400ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #15, retrying in 1500ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #16, retrying in 1600ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #17, retrying in 1700ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #18, retrying in 1800ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #19, retrying in 1900ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #20, retrying in 2000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #21, retrying in 2100ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #22, retrying in 2200ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #23, retrying in 2300ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #24, retrying in 2400ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #25, retrying in 2500ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #26, retrying in 2600ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #27, retrying in 2700ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #28, retrying in 2800ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #29, retrying in 2900ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #30, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #31, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #32, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #33, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #34, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #35, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #36, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #37, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #38, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #39, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #40, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #41, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #42, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #43, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #44, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #45, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #46, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #47, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #48, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #49, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #50, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #51, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #52, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #53, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #54, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #55, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #56, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #57, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #58, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #59, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #60, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #61, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #62, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #63, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #64, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #65, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #66, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #67, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #68, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #69, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #70, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #71, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #72, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #73, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #74, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #75, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #76, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #77, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #78, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #79, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #80, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #81, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #82, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #83, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #84, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #85, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #86, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #87, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #88, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #89, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #90, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #91, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #92, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #93, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #94, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #95, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #96, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #97, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #98, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #99, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #100, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #101, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #102, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #103, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #104, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #105, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #106, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #107, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #108, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #109, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #110, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #111, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #112, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #113, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #114, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #115, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #116, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #117, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #118, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #119, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #120, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #121, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #122, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #123, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #124, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #125, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #126, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #127, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #128, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #129, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #130, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #131, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #132, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #133, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #134, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #135, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #136, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #137, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #138, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #139, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #140, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #141, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #142, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #143, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #144, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #145, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #146, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #147, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #148, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #149, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #150, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #151, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #152, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #153, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #154, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #155, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #156, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #157, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #158, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #159, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #160, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #161, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #162, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #163, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #164, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #165, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #166, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #167, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #168, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #169, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #170, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #171, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #172, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #173, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #174, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #175, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #176, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #177, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #178, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #179, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #180, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #181, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #182, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #183, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #184, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #185, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #186, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #187, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #188, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #189, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #190, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #191, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #192, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #193, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #194, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #195, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #196, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #197, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #198, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #199, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #200, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #201, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #202, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #203, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #204, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #205, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #206, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #207, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #208, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #209, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #210, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #211, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #212, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #213, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #214, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #215, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #216, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #217, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #218, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #219, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #220, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #221, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #222, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #223, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #224, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #225, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #226, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #227, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #228, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #229, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #230, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #231, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #232, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #233, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #234, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #235, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #236, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #237, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #238, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #239, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #240, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #241, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #242, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #243, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #244, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #245, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #246, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #247, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #248, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #249, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #250, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #251, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #252, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #253, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #254, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #255, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #256, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #257, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #258, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #259, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #260, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #261, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #262, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #263, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #264, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #265, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #266, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #267, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #268, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #269, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #270, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #271, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #272, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #273, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #274, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #275, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #276, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #277, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #278, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #279, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #280, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #281, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #282, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #283, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #284, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #285, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #286, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #287, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #288, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #289, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #290, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #291, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #292, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #293, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #294, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #295, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #296, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #297, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #298, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #299, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #300, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #301, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #302, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #303, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #304, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #305, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #306, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #307, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #308, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #309, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #310, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #311, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #312, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #313, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #314, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #315, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #316, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #317, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #318, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #319, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #320, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #321, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #322, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #323, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #324, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #325, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #326, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #327, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #328, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #329, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #330, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #331, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #332, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #333, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #334, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #335, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #336, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #337, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #338, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadminservices"}
+{"level":"warn","message":"Redis reconnect attempt #339, retrying in 3000ms","service":"superadminservices"}
+{"level":"warn","message":"Redis connection closed","service":"superadminservices"}
+{"level":"info","message":"Redis connection established","service":"superadminservices"}
+{"level":"info","message":"Redis ready to use","service":"superadminservices"}
+{"level":"info","message":"Redis connection established","service":"superadmin-service"}
+{"level":"info","message":"Redis ready to use","service":"superadmin-service"}
+{"level":"info","message":"Starting infrastructure initialization...","service":"superadmin-service"}
+{"level":"info","message":"Redis connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Kafka producer connected","service":"superadmin-service"}
+{"level":"info","message":"Kafka connected successfully","service":"superadmin-service"}
+{"email":"scaffSnap@mailinator.com","level":"info","message":"Default SuperAdmin created successfully","service":"superadmin-service"}
+{"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
+{"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"superadmin-service"}
+{"level":"info","message":"HTTP server closed 1","service":"superadmin-service"}
+{"level":"info","message":"Database connection closed 1","service":"superadmin-service"}
+{"level":"info","message":"Redis connection closed 1","service":"superadmin-service"}
+{"level":"info","message":"Redis connection established","service":"superadmin-service"}
+{"level":"info","message":"Redis ready to use","service":"superadmin-service"}
+{"level":"info","message":"Starting infrastructure initialization...","service":"superadmin-service"}
+{"level":"info","message":"Redis connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Kafka producer connected","service":"superadmin-service"}
+{"level":"info","message":"Kafka connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Default SuperAdmin already exists. Skipping seeding.","service":"superadmin-service"}
+{"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
+{"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
+{"level":"info","message":"Received SIGINT. Starting graceful shutdown...","service":"superadmin-service"}
+{"level":"info","message":"HTTP server closed 1","service":"superadmin-service"}
+{"level":"info","message":"Database connection closed 1","service":"superadmin-service"}
+{"level":"info","message":"Redis connection closed 1","service":"superadmin-service"}
+{"level":"info","message":"Redis connection established","service":"superadmin-service"}
+{"level":"info","message":"Redis ready to use","service":"superadmin-service"}
+{"level":"info","message":"Starting infrastructure initialization...","service":"superadmin-service"}
+{"level":"info","message":"Redis connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Kafka producer connected","service":"superadmin-service"}
+{"level":"info","message":"Kafka connected successfully","service":"superadmin-service"}
+{"level":"info","message":"Default SuperAdmin already exists. Skipping seeding.","service":"superadmin-service"}
+{"level":"info","message":"All infrastructure initialized successfully ✅","service":"superadmin-service"}
+{"level":"info","message":"superadmin-service is running on http://localhost:3001","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error read ECONNRESET","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #1, retrying in 100ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #2, retrying in 200ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #3, retrying in 300ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #4, retrying in 400ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #5, retrying in 500ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #6, retrying in 600ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #7, retrying in 700ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
+{"level":"error","message":"Redis connection error connect ECONNREFUSED 127.0.0.1:6380","service":"superadmin-service"}
+{"level":"warn","message":"Redis reconnect attempt #8, retrying in 800ms","service":"superadmin-service"}
+{"level":"warn","message":"Redis connection closed","service":"superadmin-service"}
