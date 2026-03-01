@@ -208,7 +208,7 @@ class SubAdminService {
         }
 
         if (user.userType !== UserType.SUB_ADMIN) {
-            throw createError("Not authorized or Not SuperAdmin", 403);
+            throw createError("Not authorized or Not SubAdmin", 403);
         }
     }
     private async verifyPassword(password: string, credential: SubAdminCredential) {

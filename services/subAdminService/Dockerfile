@@ -52,7 +52,7 @@ RUN chown -R appuser:appgroup /app
 USER appuser
 
 # Expose port
-EXPOSE 3001
+EXPOSE 3002
 
 # Start the service
 CMD ["node", "dist/app.js"]
