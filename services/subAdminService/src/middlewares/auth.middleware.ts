@@ -8,8 +8,7 @@ const publicRoutes = new Set([
   '/',
   '/health',
   '/api/v1/subAdmin/register',
-  '/api/v1/subAdmin/login',
-  '/api/v1/subAdmin/register',
+  '/api/v1/subAdmin/subadminLogin', 
 ].map(route => route.toLowerCase()));
 
 
