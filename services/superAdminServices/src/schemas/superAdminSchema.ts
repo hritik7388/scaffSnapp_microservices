@@ -30,13 +30,6 @@ export const superAdminSchema = z.object({
     .optional()
 });
 
-export const forgetPasswordSchema=z.object({
-    email: z
-    .string()
-    .trim()
-    .toLowerCase()
-    .email("Invalid email format"),
-})
+ 
 
-export type SuperAdminDTO = z.infer<typeof superAdminSchema>;
-export type ForegetpasswordDTO = z.infer<typeof forgetPasswordSchema>;
+export type SuperAdminDTO = z.infer<typeof superAdminSchema>; 

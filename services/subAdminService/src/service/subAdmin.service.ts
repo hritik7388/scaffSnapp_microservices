@@ -9,7 +9,7 @@ import { Repository } from 'typeorm';
 import { SubAdminCredential } from '../entities/subAdmin.credentials';
 import { SubAdmin, UserType } from '../entities/subAdmin.enities';
 import { createError } from '../utils';
-import { ForegetpasswordDTO, RegisterSubAdminDTO, SubAdminDTO } from '../schemas/subAdminSchema';
+import {  RegisterSubAdminDTO, SubAdminDTO } from '../schemas/subAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
 import { config } from '../config/config';
 import { publishSubAdminCreated } from "../events/procedure/subadmin-created.procedure";
@@ -17,8 +17,7 @@ import logger from "../config/logger";
 
 
 const FAIL_TTL = 180;
-const MAX_FAILS = 3;
-const PWD_CACHE_TTL = 300;
+const MAX_FAILS = 3; 
 const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 
