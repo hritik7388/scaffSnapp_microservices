@@ -963,3 +963,107 @@
 2026-03-01 10:07:57 [info] : Kafka connected successfully
 2026-03-01 10:07:57 [info] : All infrastructure initialized successfully ✅
 2026-03-01 10:07:57 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:25:34 [info] : Redis connection established
+2026-03-01 10:25:34 [info] : Redis ready to use
+2026-03-01 10:25:34 [info] : Starting infrastructure initialization...
+2026-03-01 10:25:34 [info] : Redis connected successfully
+2026-03-01 10:25:35 [info] : Kafka producer connected
+2026-03-01 10:25:35 [info] : Kafka connected successfully
+2026-03-01 10:25:35 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:25:35 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:25:46 [info] : Redis connection established
+2026-03-01 10:25:52 [info] : Redis connection established
+2026-03-01 10:25:52 [info] : Redis ready to use
+2026-03-01 10:25:52 [info] : Starting infrastructure initialization...
+2026-03-01 10:25:52 [info] : Redis connected successfully
+2026-03-01 10:25:52 [info] : Kafka producer connected
+2026-03-01 10:25:52 [info] : Kafka connected successfully
+2026-03-01 10:25:52 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:25:52 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:25:55 [info] : Redis connection established
+2026-03-01 10:25:55 [info] : Redis ready to use
+2026-03-01 10:25:55 [info] : Starting infrastructure initialization...
+2026-03-01 10:25:55 [info] : Redis connected successfully
+2026-03-01 10:25:55 [info] : Kafka producer connected
+2026-03-01 10:25:55 [info] : Kafka connected successfully
+2026-03-01 10:25:55 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:25:55 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:25:58 [info] : Redis connection established
+2026-03-01 10:26:06 [info] : Redis connection established
+2026-03-01 10:26:06 [info] : Redis ready to use
+2026-03-01 10:26:06 [info] : Starting infrastructure initialization...
+2026-03-01 10:26:06 [info] : Redis connected successfully
+2026-03-01 10:26:06 [info] : Kafka producer connected
+2026-03-01 10:26:06 [info] : Kafka connected successfully
+2026-03-01 10:26:06 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:26:06 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:26:13 [info] : Redis connection established
+2026-03-01 10:26:13 [info] : Redis ready to use
+2026-03-01 10:26:13 [info] : Starting infrastructure initialization...
+2026-03-01 10:26:13 [info] : Redis connected successfully
+2026-03-01 10:26:13 [info] : Kafka producer connected
+2026-03-01 10:26:13 [info] : Kafka connected successfully
+2026-03-01 10:26:13 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:26:13 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:26:15 [info] : Redis connection established
+2026-03-01 10:26:28 [info] : Redis connection established
+2026-03-01 10:26:28 [info] : Redis ready to use
+2026-03-01 10:26:31 [info] : Redis connection established
+2026-03-01 10:26:31 [info] : Redis ready to use
+2026-03-01 10:26:31 [info] : Starting infrastructure initialization...
+2026-03-01 10:26:31 [info] : Redis connected successfully
+2026-03-01 10:26:32 [info] : Kafka producer connected
+2026-03-01 10:26:32 [info] : Kafka connected successfully
+2026-03-01 10:26:32 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:26:32 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:26:37 [info] : Redis connection established
+2026-03-01 10:27:28 [info] : Redis connection established
+2026-03-01 10:27:28 [info] : Redis ready to use
+2026-03-01 10:27:29 [info] : Starting infrastructure initialization...
+2026-03-01 10:27:29 [info] : Redis connected successfully
+2026-03-01 10:27:29 [info] : Kafka producer connected
+2026-03-01 10:27:29 [info] : Kafka connected successfully
+2026-03-01 10:27:29 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:27:29 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:28:03 [info] : Redis connection established
+2026-03-01 10:28:03 [info] : Redis ready to use
+2026-03-01 10:28:04 [info] : Starting infrastructure initialization...
+2026-03-01 10:28:04 [info] : Redis connected successfully
+2026-03-01 10:28:04 [info] : Kafka producer connected
+2026-03-01 10:28:04 [info] : Kafka connected successfully
+2026-03-01 10:28:04 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:28:04 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:29:43 [info] : Redis connection established
+2026-03-01 10:29:43 [info] : Redis ready to use
+2026-03-01 10:29:43 [info] : Starting infrastructure initialization...
+2026-03-01 10:29:43 [info] : Redis connected successfully
+2026-03-01 10:29:43 [info] : Kafka producer connected
+2026-03-01 10:29:43 [info] : Kafka connected successfully
+2026-03-01 10:29:43 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:29:43 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:43:30 [info] : Redis connection established
+2026-03-01 10:43:47 [info] : Redis connection established
+2026-03-01 10:43:47 [info] : Redis ready to use
+2026-03-01 10:43:48 [info] : Starting infrastructure initialization...
+2026-03-01 10:43:48 [info] : Redis connected successfully
+2026-03-01 10:43:48 [info] : Kafka producer connected
+2026-03-01 10:43:48 [info] : Kafka connected successfully
+2026-03-01 10:43:48 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:43:48 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:43:56 [info] : Redis connection established
+2026-03-01 10:44:12 [info] : Redis connection established
+2026-03-01 10:44:12 [info] : Redis ready to use
+2026-03-01 10:44:12 [info] : Starting infrastructure initialization...
+2026-03-01 10:44:12 [info] : Redis connected successfully
+2026-03-01 10:44:12 [info] : Kafka producer connected
+2026-03-01 10:44:12 [info] : Kafka connected successfully
+2026-03-01 10:44:12 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:44:12 [info] : subadmin-service is running on http://localhost:3002
+2026-03-01 10:49:54 [info] : Redis connection established
+2026-03-01 10:49:54 [info] : Redis ready to use
+2026-03-01 10:49:55 [info] : Starting infrastructure initialization...
+2026-03-01 10:49:55 [info] : Redis connected successfully
+2026-03-01 10:49:56 [info] : Kafka producer connected
+2026-03-01 10:49:56 [info] : Kafka connected successfully
+2026-03-01 10:49:56 [info] : All infrastructure initialized successfully ✅
+2026-03-01 10:49:56 [info] : subadmin-service is running on http://localhost:3002
