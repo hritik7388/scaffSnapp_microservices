@@ -91,11 +91,7 @@ class SubAdminService {
 
     }
 
-    async forgetPassword(data: ForegetpasswordDTO) {
-        await this.checkBlock(data.email);
-
-        const credential = await this.getCredentialWithUser(data.email);
-    }
+ 
     private normalizeEmail(email: string): string {
         return email.toLowerCase().trim();
     }
