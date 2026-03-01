@@ -9,7 +9,7 @@ import { Repository } from 'typeorm';
 import { SuperAdminCredential } from '../entities/superAdmin.credentials';
 import { SuperAdmin, UserType } from '../entities/superAdmin.enities';
 import { createError } from '../utils';
-import { ForegetpasswordDTO, SuperAdminDTO } from '../schemas/superAdminSchema';
+import {  SuperAdminDTO } from '../schemas/superAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
 import { config } from '../config/config';
 
