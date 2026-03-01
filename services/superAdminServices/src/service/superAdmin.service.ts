@@ -60,12 +60,7 @@ class SuperAdminService {
 
 
   }
-
-  async forgetPassword(data: ForegetpasswordDTO) {
-    await this.checkBlock(data.email);
-
-    const credential = await this.getCredentialWithUser(data.email);
-  }
+ 
 
 
 
