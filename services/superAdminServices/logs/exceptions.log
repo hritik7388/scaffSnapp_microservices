@@ -11,3 +11,16 @@ src/service/superAdmin.service.ts(229,64): error TS2552: Cannot find name 'SubAd
     at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1266:32)
     at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-03-02 15:35:55 [error] : Error: ⨯ Unable to compile TypeScript:
+src/service/superAdmin.service.ts(429,25): error TS2554: Expected 2 arguments, but got 1.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/service/superAdmin.service.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-8367715602345922.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-8367715602345922.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-8367715602345922.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
