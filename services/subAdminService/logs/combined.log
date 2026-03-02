@@ -1014,3 +1014,1118 @@
     at emitErrorNT (node:internal/streams/destroy:169:8)
     at emitErrorCloseNT (node:internal/streams/destroy:128:3)
     at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2026-03-02 10:17:09 [info] : Redis connection established
+2026-03-02 10:17:09 [info] : Redis ready to use
+2026-03-02 10:17:09 [info] : Starting infrastructure initialization...
+2026-03-02 10:17:09 [info] : Redis connected successfully
+2026-03-02 10:17:09 [info] : Kafka producer connected
+2026-03-02 10:17:09 [info] : Kafka connected successfully
+2026-03-02 10:17:09 [info] : All infrastructure initialized successfully ✅
+2026-03-02 10:17:09 [info] : subadmin-service is running on http://localhost:3002
+2026-03-02 11:48:17 [info] : Received SIGINT. Starting graceful shutdown...
+2026-03-02 11:48:17 [info] : HTTP server closed 1
+2026-03-02 11:48:17 [info] : Database connection closed 1
+2026-03-02 11:48:37 [info] : Redis connection established
+2026-03-02 11:48:37 [info] : Redis ready to use
+2026-03-02 11:48:37 [info] : Starting infrastructure initialization...
+2026-03-02 11:48:37 [info] : Redis connected successfully
+2026-03-02 11:48:37 [info] : Kafka producer connected
+2026-03-02 11:48:37 [info] : Kafka connected successfully
+2026-03-02 11:48:37 [info] : All infrastructure initialized successfully ✅
+2026-03-02 11:48:37 [info] : subadmin-service is running on http://localhost:3002
+2026-03-02 12:00:57 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-02 12:00:57 [warn] : Redis connection closed
+2026-03-02 12:00:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:00:57 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-02 12:00:57 [warn] : Redis connection closed
+2026-03-02 12:00:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:00:58 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-02 12:00:58 [warn] : Redis connection closed
+2026-03-02 12:00:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:00:58 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-02 12:00:58 [warn] : Redis connection closed
+2026-03-02 12:00:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:00:58 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-02 12:00:58 [warn] : Redis connection closed
+2026-03-02 12:00:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:00:59 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-02 12:00:59 [warn] : Redis connection closed
+2026-03-02 12:00:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:00:59 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-02 12:00:59 [warn] : Redis connection closed
+2026-03-02 12:01:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:00 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-02 12:01:00 [warn] : Redis connection closed
+2026-03-02 12:01:01 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:01 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-02 12:01:01 [warn] : Redis connection closed
+2026-03-02 12:01:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:02 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-02 12:01:02 [warn] : Redis connection closed
+2026-03-02 12:01:03 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:03 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-02 12:01:03 [warn] : Redis connection closed
+2026-03-02 12:01:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:04 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-02 12:01:04 [warn] : Redis connection closed
+2026-03-02 12:01:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:05 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-02 12:01:05 [warn] : Redis connection closed
+2026-03-02 12:01:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:07 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-02 12:01:07 [warn] : Redis connection closed
+2026-03-02 12:01:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:08 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-02 12:01:08 [warn] : Redis connection closed
+2026-03-02 12:01:09 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:09 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-02 12:01:09 [warn] : Redis connection closed
+2026-03-02 12:01:11 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:11 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-02 12:01:11 [warn] : Redis connection closed
+2026-03-02 12:01:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:13 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-02 12:01:13 [warn] : Redis connection closed
+2026-03-02 12:01:15 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:15 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-02 12:01:15 [warn] : Redis connection closed
+2026-03-02 12:01:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:01:16 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-02 12:01:16 [warn] : Redis connection closed
+2026-03-02 12:01:18 [info] : Redis connection established
+2026-03-02 12:01:19 [info] : Redis ready to use
+2026-03-02 12:12:34 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-02 12:12:34 [warn] : Redis connection closed
+2026-03-02 12:12:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:34 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-02 12:12:34 [warn] : Redis connection closed
+2026-03-02 12:12:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:35 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-02 12:12:35 [warn] : Redis connection closed
+2026-03-02 12:12:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:35 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-02 12:12:35 [warn] : Redis connection closed
+2026-03-02 12:12:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:35 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-02 12:12:35 [warn] : Redis connection closed
+2026-03-02 12:12:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:36 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-02 12:12:36 [warn] : Redis connection closed
+2026-03-02 12:12:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:36 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-02 12:12:36 [warn] : Redis connection closed
+2026-03-02 12:12:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:37 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-02 12:12:37 [warn] : Redis connection closed
+2026-03-02 12:12:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:38 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-02 12:12:38 [warn] : Redis connection closed
+2026-03-02 12:12:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:39 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-02 12:12:39 [warn] : Redis connection closed
+2026-03-02 12:12:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:40 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-02 12:12:40 [warn] : Redis connection closed
+2026-03-02 12:12:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:41 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-02 12:12:41 [warn] : Redis connection closed
+2026-03-02 12:12:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:42 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-02 12:12:42 [warn] : Redis connection closed
+2026-03-02 12:12:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:43 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-02 12:12:43 [warn] : Redis connection closed
+2026-03-02 12:12:45 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:45 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-02 12:12:45 [warn] : Redis connection closed
+2026-03-02 12:12:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:46 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-02 12:12:46 [warn] : Redis connection closed
+2026-03-02 12:12:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:48 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-02 12:12:48 [warn] : Redis connection closed
+2026-03-02 12:12:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:50 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-02 12:12:50 [warn] : Redis connection closed
+2026-03-02 12:12:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:51 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-02 12:12:51 [warn] : Redis connection closed
+2026-03-02 12:12:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:53 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-02 12:12:53 [warn] : Redis connection closed
+2026-03-02 12:12:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:55 [warn] : Redis reconnect attempt #21, retrying in 2100ms
+2026-03-02 12:12:55 [warn] : Redis connection closed
+2026-03-02 12:12:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:12:57 [warn] : Redis reconnect attempt #22, retrying in 2200ms
+2026-03-02 12:12:57 [warn] : Redis connection closed
+2026-03-02 12:13:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:00 [warn] : Redis reconnect attempt #23, retrying in 2300ms
+2026-03-02 12:13:00 [warn] : Redis connection closed
+2026-03-02 12:13:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:02 [warn] : Redis reconnect attempt #24, retrying in 2400ms
+2026-03-02 12:13:02 [warn] : Redis connection closed
+2026-03-02 12:13:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:04 [warn] : Redis reconnect attempt #25, retrying in 2500ms
+2026-03-02 12:13:04 [warn] : Redis connection closed
+2026-03-02 12:13:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:07 [warn] : Redis reconnect attempt #26, retrying in 2600ms
+2026-03-02 12:13:07 [warn] : Redis connection closed
+2026-03-02 12:13:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:10 [warn] : Redis reconnect attempt #27, retrying in 2700ms
+2026-03-02 12:13:10 [warn] : Redis connection closed
+2026-03-02 12:13:12 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:12 [warn] : Redis reconnect attempt #28, retrying in 2800ms
+2026-03-02 12:13:12 [warn] : Redis connection closed
+2026-03-02 12:13:15 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:15 [warn] : Redis reconnect attempt #29, retrying in 2900ms
+2026-03-02 12:13:15 [warn] : Redis connection closed
+2026-03-02 12:13:18 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:18 [warn] : Redis reconnect attempt #30, retrying in 3000ms
+2026-03-02 12:13:18 [warn] : Redis connection closed
+2026-03-02 12:13:21 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:21 [warn] : Redis reconnect attempt #31, retrying in 3000ms
+2026-03-02 12:13:21 [warn] : Redis connection closed
+2026-03-02 12:13:24 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:24 [warn] : Redis reconnect attempt #32, retrying in 3000ms
+2026-03-02 12:13:24 [warn] : Redis connection closed
+2026-03-02 12:13:27 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:27 [warn] : Redis reconnect attempt #33, retrying in 3000ms
+2026-03-02 12:13:27 [warn] : Redis connection closed
+2026-03-02 12:13:30 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:30 [warn] : Redis reconnect attempt #34, retrying in 3000ms
+2026-03-02 12:13:30 [warn] : Redis connection closed
+2026-03-02 12:13:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:33 [warn] : Redis reconnect attempt #35, retrying in 3000ms
+2026-03-02 12:13:33 [warn] : Redis connection closed
+2026-03-02 12:13:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:36 [warn] : Redis reconnect attempt #36, retrying in 3000ms
+2026-03-02 12:13:36 [warn] : Redis connection closed
+2026-03-02 12:13:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:39 [warn] : Redis reconnect attempt #37, retrying in 3000ms
+2026-03-02 12:13:39 [warn] : Redis connection closed
+2026-03-02 12:13:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:42 [warn] : Redis reconnect attempt #38, retrying in 3000ms
+2026-03-02 12:13:42 [warn] : Redis connection closed
+2026-03-02 12:13:45 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:45 [warn] : Redis reconnect attempt #39, retrying in 3000ms
+2026-03-02 12:13:45 [warn] : Redis connection closed
+2026-03-02 12:13:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:48 [warn] : Redis reconnect attempt #40, retrying in 3000ms
+2026-03-02 12:13:48 [warn] : Redis connection closed
+2026-03-02 12:13:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:51 [warn] : Redis reconnect attempt #41, retrying in 3000ms
+2026-03-02 12:13:51 [warn] : Redis connection closed
+2026-03-02 12:13:54 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:54 [warn] : Redis reconnect attempt #42, retrying in 3000ms
+2026-03-02 12:13:54 [warn] : Redis connection closed
+2026-03-02 12:13:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:13:57 [warn] : Redis reconnect attempt #43, retrying in 3000ms
+2026-03-02 12:13:57 [warn] : Redis connection closed
+2026-03-02 12:14:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:14:00 [warn] : Redis reconnect attempt #44, retrying in 3000ms
+2026-03-02 12:14:00 [warn] : Redis connection closed
+2026-03-02 12:14:03 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:14:03 [warn] : Redis reconnect attempt #45, retrying in 3000ms
+2026-03-02 12:14:03 [warn] : Redis connection closed
+2026-03-02 12:14:06 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:14:06 [warn] : Redis reconnect attempt #46, retrying in 3000ms
+2026-03-02 12:14:06 [warn] : Redis connection closed
+2026-03-02 12:14:09 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:14:09 [warn] : Redis reconnect attempt #47, retrying in 3000ms
+2026-03-02 12:14:09 [warn] : Redis connection closed
+2026-03-02 12:14:12 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 12:14:12 [warn] : Redis reconnect attempt #48, retrying in 3000ms
+2026-03-02 12:14:12 [warn] : Redis connection closed
+2026-03-02 12:14:15 [info] : Redis connection established
+2026-03-02 12:14:15 [error] : write ECONNRESET
+2026-03-02 12:14:15 [warn] : Redis reconnect attempt #49, retrying in 3000ms
+2026-03-02 12:14:15 [warn] : Redis connection closed
+2026-03-02 12:14:18 [info] : Redis connection established
+2026-03-02 12:14:18 [info] : Redis ready to use
+2026-03-02 13:58:39 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-02 13:58:39 [warn] : Redis connection closed
+2026-03-02 13:58:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:39 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-02 13:58:39 [warn] : Redis connection closed
+2026-03-02 13:58:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:39 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-02 13:58:39 [warn] : Redis connection closed
+2026-03-02 13:58:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:40 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-02 13:58:40 [warn] : Redis connection closed
+2026-03-02 13:58:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:40 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-02 13:58:40 [warn] : Redis connection closed
+2026-03-02 13:58:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:40 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-02 13:58:40 [warn] : Redis connection closed
+2026-03-02 13:58:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:41 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-02 13:58:41 [warn] : Redis connection closed
+2026-03-02 13:58:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:42 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-02 13:58:42 [warn] : Redis connection closed
+2026-03-02 13:58:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:43 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-02 13:58:43 [warn] : Redis connection closed
+2026-03-02 13:58:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:43 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-02 13:58:43 [warn] : Redis connection closed
+2026-03-02 13:58:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:44 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-02 13:58:44 [warn] : Redis connection closed
+2026-03-02 13:58:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:46 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-02 13:58:46 [warn] : Redis connection closed
+2026-03-02 13:58:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:47 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-02 13:58:47 [warn] : Redis connection closed
+2026-03-02 13:58:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:48 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-02 13:58:48 [warn] : Redis connection closed
+2026-03-02 13:58:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:49 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-02 13:58:49 [warn] : Redis connection closed
+2026-03-02 13:58:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:51 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-02 13:58:51 [warn] : Redis connection closed
+2026-03-02 13:58:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:53 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-02 13:58:53 [warn] : Redis connection closed
+2026-03-02 13:58:54 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:54 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-02 13:58:54 [warn] : Redis connection closed
+2026-03-02 13:58:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:56 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-02 13:58:56 [warn] : Redis connection closed
+2026-03-02 13:58:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:58:58 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-02 13:58:58 [warn] : Redis connection closed
+2026-03-02 13:59:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:00 [warn] : Redis reconnect attempt #21, retrying in 2100ms
+2026-03-02 13:59:00 [warn] : Redis connection closed
+2026-03-02 13:59:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:02 [warn] : Redis reconnect attempt #22, retrying in 2200ms
+2026-03-02 13:59:02 [warn] : Redis connection closed
+2026-03-02 13:59:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:04 [warn] : Redis reconnect attempt #23, retrying in 2300ms
+2026-03-02 13:59:04 [warn] : Redis connection closed
+2026-03-02 13:59:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:07 [warn] : Redis reconnect attempt #24, retrying in 2400ms
+2026-03-02 13:59:07 [warn] : Redis connection closed
+2026-03-02 13:59:09 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:09 [warn] : Redis reconnect attempt #25, retrying in 2500ms
+2026-03-02 13:59:09 [warn] : Redis connection closed
+2026-03-02 13:59:12 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:12 [warn] : Redis reconnect attempt #26, retrying in 2600ms
+2026-03-02 13:59:12 [warn] : Redis connection closed
+2026-03-02 13:59:14 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:14 [warn] : Redis reconnect attempt #27, retrying in 2700ms
+2026-03-02 13:59:14 [warn] : Redis connection closed
+2026-03-02 13:59:17 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:17 [warn] : Redis reconnect attempt #28, retrying in 2800ms
+2026-03-02 13:59:17 [warn] : Redis connection closed
+2026-03-02 13:59:20 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:20 [warn] : Redis reconnect attempt #29, retrying in 2900ms
+2026-03-02 13:59:20 [warn] : Redis connection closed
+2026-03-02 13:59:23 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:23 [warn] : Redis reconnect attempt #30, retrying in 3000ms
+2026-03-02 13:59:23 [warn] : Redis connection closed
+2026-03-02 13:59:26 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:26 [warn] : Redis reconnect attempt #31, retrying in 3000ms
+2026-03-02 13:59:26 [warn] : Redis connection closed
+2026-03-02 13:59:29 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:29 [warn] : Redis reconnect attempt #32, retrying in 3000ms
+2026-03-02 13:59:29 [warn] : Redis connection closed
+2026-03-02 13:59:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:32 [warn] : Redis reconnect attempt #33, retrying in 3000ms
+2026-03-02 13:59:32 [warn] : Redis connection closed
+2026-03-02 13:59:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:35 [warn] : Redis reconnect attempt #34, retrying in 3000ms
+2026-03-02 13:59:35 [warn] : Redis connection closed
+2026-03-02 13:59:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:38 [warn] : Redis reconnect attempt #35, retrying in 3000ms
+2026-03-02 13:59:38 [warn] : Redis connection closed
+2026-03-02 13:59:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:41 [warn] : Redis reconnect attempt #36, retrying in 3000ms
+2026-03-02 13:59:41 [warn] : Redis connection closed
+2026-03-02 13:59:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:44 [warn] : Redis reconnect attempt #37, retrying in 3000ms
+2026-03-02 13:59:44 [warn] : Redis connection closed
+2026-03-02 13:59:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:47 [warn] : Redis reconnect attempt #38, retrying in 3000ms
+2026-03-02 13:59:47 [warn] : Redis connection closed
+2026-03-02 13:59:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:50 [warn] : Redis reconnect attempt #39, retrying in 3000ms
+2026-03-02 13:59:50 [warn] : Redis connection closed
+2026-03-02 13:59:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:53 [warn] : Redis reconnect attempt #40, retrying in 3000ms
+2026-03-02 13:59:53 [warn] : Redis connection closed
+2026-03-02 13:59:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:56 [warn] : Redis reconnect attempt #41, retrying in 3000ms
+2026-03-02 13:59:56 [warn] : Redis connection closed
+2026-03-02 13:59:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 13:59:59 [warn] : Redis reconnect attempt #42, retrying in 3000ms
+2026-03-02 13:59:59 [warn] : Redis connection closed
+2026-03-02 14:00:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:00:02 [warn] : Redis reconnect attempt #43, retrying in 3000ms
+2026-03-02 14:00:02 [warn] : Redis connection closed
+2026-03-02 14:00:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:00:05 [warn] : Redis reconnect attempt #44, retrying in 3000ms
+2026-03-02 14:00:05 [warn] : Redis connection closed
+2026-03-02 14:00:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:00:08 [warn] : Redis reconnect attempt #45, retrying in 3000ms
+2026-03-02 14:00:08 [warn] : Redis connection closed
+2026-03-02 14:00:11 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:00:11 [warn] : Redis reconnect attempt #46, retrying in 3000ms
+2026-03-02 14:00:11 [warn] : Redis connection closed
+2026-03-02 14:00:14 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:00:14 [warn] : Redis reconnect attempt #47, retrying in 3000ms
+2026-03-02 14:00:14 [warn] : Redis connection closed
+2026-03-02 14:00:17 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:00:17 [warn] : Redis reconnect attempt #48, retrying in 3000ms
+2026-03-02 14:00:17 [warn] : Redis connection closed
+2026-03-02 14:00:20 [info] : Redis connection established
+2026-03-02 14:00:20 [info] : Redis ready to use
+2026-03-02 14:29:46 [info] : Received SIGINT. Starting graceful shutdown...
+2026-03-02 14:29:46 [info] : HTTP server closed 1
+2026-03-02 14:29:46 [info] : Database connection closed 1
+2026-03-02 14:29:46 [info] : Redis connection closed 1
+2026-03-02 14:30:03 [info] : Redis connection established
+2026-03-02 14:30:03 [info] : Redis ready to use
+2026-03-02 14:30:03 [info] : Starting infrastructure initialization...
+2026-03-02 14:30:03 [info] : Redis connected successfully
+2026-03-02 14:30:03 [info] : Kafka producer connected
+2026-03-02 14:30:03 [info] : Kafka connected successfully
+2026-03-02 14:30:03 [info] : All infrastructure initialized successfully ✅
+2026-03-02 14:30:03 [info] : subadmin-service is running on http://localhost:3002
+2026-03-02 14:31:12 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-02 14:31:12 [warn] : Redis connection closed
+2026-03-02 14:31:12 [info] : Redis connection established
+2026-03-02 14:31:12 [error] : write ECONNRESET
+2026-03-02 14:31:12 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-02 14:31:12 [warn] : Redis connection closed
+2026-03-02 14:31:12 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:12 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-02 14:31:12 [warn] : Redis connection closed
+2026-03-02 14:31:12 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:12 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-02 14:31:12 [warn] : Redis connection closed
+2026-03-02 14:31:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:13 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-02 14:31:13 [warn] : Redis connection closed
+2026-03-02 14:31:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:13 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-02 14:31:13 [warn] : Redis connection closed
+2026-03-02 14:31:14 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:14 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-02 14:31:14 [warn] : Redis connection closed
+2026-03-02 14:31:15 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:15 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-02 14:31:15 [warn] : Redis connection closed
+2026-03-02 14:31:15 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:15 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-02 14:31:15 [warn] : Redis connection closed
+2026-03-02 14:31:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:16 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-02 14:31:16 [warn] : Redis connection closed
+2026-03-02 14:31:17 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:17 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-02 14:31:17 [warn] : Redis connection closed
+2026-03-02 14:31:18 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:18 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-02 14:31:18 [warn] : Redis connection closed
+2026-03-02 14:31:20 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:20 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-02 14:31:20 [warn] : Redis connection closed
+2026-03-02 14:31:21 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:21 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-02 14:31:21 [warn] : Redis connection closed
+2026-03-02 14:31:22 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:22 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-02 14:31:22 [warn] : Redis connection closed
+2026-03-02 14:31:24 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:24 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-02 14:31:24 [warn] : Redis connection closed
+2026-03-02 14:31:26 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:26 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-02 14:31:26 [warn] : Redis connection closed
+2026-03-02 14:31:27 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:27 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-02 14:31:27 [warn] : Redis connection closed
+2026-03-02 14:31:29 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:29 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-02 14:31:29 [warn] : Redis connection closed
+2026-03-02 14:31:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:31 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-02 14:31:31 [warn] : Redis connection closed
+2026-03-02 14:31:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:33 [warn] : Redis reconnect attempt #21, retrying in 2100ms
+2026-03-02 14:31:33 [warn] : Redis connection closed
+2026-03-02 14:31:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:35 [warn] : Redis reconnect attempt #22, retrying in 2200ms
+2026-03-02 14:31:35 [warn] : Redis connection closed
+2026-03-02 14:31:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:37 [warn] : Redis reconnect attempt #23, retrying in 2300ms
+2026-03-02 14:31:37 [warn] : Redis connection closed
+2026-03-02 14:31:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:40 [warn] : Redis reconnect attempt #24, retrying in 2400ms
+2026-03-02 14:31:40 [warn] : Redis connection closed
+2026-03-02 14:31:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:42 [warn] : Redis reconnect attempt #25, retrying in 2500ms
+2026-03-02 14:31:42 [warn] : Redis connection closed
+2026-03-02 14:31:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:44 [warn] : Redis reconnect attempt #26, retrying in 2600ms
+2026-03-02 14:31:44 [warn] : Redis connection closed
+2026-03-02 14:31:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:47 [warn] : Redis reconnect attempt #27, retrying in 2700ms
+2026-03-02 14:31:47 [warn] : Redis connection closed
+2026-03-02 14:31:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:50 [warn] : Redis reconnect attempt #28, retrying in 2800ms
+2026-03-02 14:31:50 [warn] : Redis connection closed
+2026-03-02 14:31:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:53 [warn] : Redis reconnect attempt #29, retrying in 2900ms
+2026-03-02 14:31:53 [warn] : Redis connection closed
+2026-03-02 14:31:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:56 [warn] : Redis reconnect attempt #30, retrying in 3000ms
+2026-03-02 14:31:56 [warn] : Redis connection closed
+2026-03-02 14:31:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:31:59 [warn] : Redis reconnect attempt #31, retrying in 3000ms
+2026-03-02 14:31:59 [warn] : Redis connection closed
+2026-03-02 14:32:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:02 [warn] : Redis reconnect attempt #32, retrying in 3000ms
+2026-03-02 14:32:02 [warn] : Redis connection closed
+2026-03-02 14:32:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:05 [warn] : Redis reconnect attempt #33, retrying in 3000ms
+2026-03-02 14:32:05 [warn] : Redis connection closed
+2026-03-02 14:32:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:08 [warn] : Redis reconnect attempt #34, retrying in 3000ms
+2026-03-02 14:32:08 [warn] : Redis connection closed
+2026-03-02 14:32:11 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:11 [warn] : Redis reconnect attempt #35, retrying in 3000ms
+2026-03-02 14:32:11 [warn] : Redis connection closed
+2026-03-02 14:32:14 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:14 [warn] : Redis reconnect attempt #36, retrying in 3000ms
+2026-03-02 14:32:14 [warn] : Redis connection closed
+2026-03-02 14:32:17 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:17 [warn] : Redis reconnect attempt #37, retrying in 3000ms
+2026-03-02 14:32:17 [warn] : Redis connection closed
+2026-03-02 14:32:20 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:20 [warn] : Redis reconnect attempt #38, retrying in 3000ms
+2026-03-02 14:32:20 [warn] : Redis connection closed
+2026-03-02 14:32:23 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:23 [warn] : Redis reconnect attempt #39, retrying in 3000ms
+2026-03-02 14:32:23 [warn] : Redis connection closed
+2026-03-02 14:32:26 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:26 [warn] : Redis reconnect attempt #40, retrying in 3000ms
+2026-03-02 14:32:26 [warn] : Redis connection closed
+2026-03-02 14:32:29 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:29 [warn] : Redis reconnect attempt #41, retrying in 3000ms
+2026-03-02 14:32:29 [warn] : Redis connection closed
+2026-03-02 14:32:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:32 [warn] : Redis reconnect attempt #42, retrying in 3000ms
+2026-03-02 14:32:32 [warn] : Redis connection closed
+2026-03-02 14:32:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:35 [warn] : Redis reconnect attempt #43, retrying in 3000ms
+2026-03-02 14:32:35 [warn] : Redis connection closed
+2026-03-02 14:32:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:38 [warn] : Redis reconnect attempt #44, retrying in 3000ms
+2026-03-02 14:32:38 [warn] : Redis connection closed
+2026-03-02 14:32:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:41 [warn] : Redis reconnect attempt #45, retrying in 3000ms
+2026-03-02 14:32:41 [warn] : Redis connection closed
+2026-03-02 14:32:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:44 [warn] : Redis reconnect attempt #46, retrying in 3000ms
+2026-03-02 14:32:44 [warn] : Redis connection closed
+2026-03-02 14:32:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:47 [warn] : Redis reconnect attempt #47, retrying in 3000ms
+2026-03-02 14:32:47 [warn] : Redis connection closed
+2026-03-02 14:32:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:50 [warn] : Redis reconnect attempt #48, retrying in 3000ms
+2026-03-02 14:32:50 [warn] : Redis connection closed
+2026-03-02 14:32:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:53 [warn] : Redis reconnect attempt #49, retrying in 3000ms
+2026-03-02 14:32:53 [warn] : Redis connection closed
+2026-03-02 14:32:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:56 [warn] : Redis reconnect attempt #50, retrying in 3000ms
+2026-03-02 14:32:56 [warn] : Redis connection closed
+2026-03-02 14:32:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:32:59 [warn] : Redis reconnect attempt #51, retrying in 3000ms
+2026-03-02 14:32:59 [warn] : Redis connection closed
+2026-03-02 14:33:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:33:02 [warn] : Redis reconnect attempt #52, retrying in 3000ms
+2026-03-02 14:33:02 [warn] : Redis connection closed
+2026-03-02 14:33:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:33:05 [warn] : Redis reconnect attempt #53, retrying in 3000ms
+2026-03-02 14:33:05 [warn] : Redis connection closed
+2026-03-02 14:33:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:33:08 [warn] : Redis reconnect attempt #54, retrying in 3000ms
+2026-03-02 14:33:08 [warn] : Redis connection closed
+2026-03-02 14:33:11 [info] : Redis connection established
+2026-03-02 14:33:11 [info] : Redis ready to use
+2026-03-02 14:35:27 [info] : Received SIGINT. Starting graceful shutdown...
+2026-03-02 14:35:27 [info] : HTTP server closed 1
+2026-03-02 14:35:27 [info] : Database connection closed 1
+2026-03-02 14:35:27 [info] : Redis connection closed 1
+2026-03-02 14:35:44 [info] : Redis connection established
+2026-03-02 14:35:44 [info] : Redis ready to use
+2026-03-02 14:35:44 [info] : Starting infrastructure initialization...
+2026-03-02 14:35:44 [info] : Redis connected successfully
+2026-03-02 14:35:44 [info] : Kafka producer connected
+2026-03-02 14:35:44 [info] : Kafka connected successfully
+2026-03-02 14:35:44 [info] : All infrastructure initialized successfully ✅
+2026-03-02 14:35:44 [info] : subadmin-service is running on http://localhost:3002
+2026-03-02 14:51:35 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-02 14:51:35 [warn] : Redis connection closed
+2026-03-02 14:51:35 [info] : Redis connection established
+2026-03-02 14:51:35 [error] : write EPIPE
+2026-03-02 14:51:35 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-02 14:51:35 [warn] : Redis connection closed
+2026-03-02 14:51:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:35 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-02 14:51:35 [warn] : Redis connection closed
+2026-03-02 14:51:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:36 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-02 14:51:36 [warn] : Redis connection closed
+2026-03-02 14:51:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:36 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-02 14:51:36 [warn] : Redis connection closed
+2026-03-02 14:51:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:37 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-02 14:51:37 [warn] : Redis connection closed
+2026-03-02 14:51:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:37 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-02 14:51:37 [warn] : Redis connection closed
+2026-03-02 14:51:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:38 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-02 14:51:38 [warn] : Redis connection closed
+2026-03-02 14:51:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:39 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-02 14:51:39 [warn] : Redis connection closed
+2026-03-02 14:51:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:40 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-02 14:51:40 [warn] : Redis connection closed
+2026-03-02 14:51:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:41 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-02 14:51:41 [warn] : Redis connection closed
+2026-03-02 14:51:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:42 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-02 14:51:42 [warn] : Redis connection closed
+2026-03-02 14:51:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:43 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-02 14:51:43 [warn] : Redis connection closed
+2026-03-02 14:51:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:44 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-02 14:51:44 [warn] : Redis connection closed
+2026-03-02 14:51:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:46 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-02 14:51:46 [warn] : Redis connection closed
+2026-03-02 14:51:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:47 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-02 14:51:47 [warn] : Redis connection closed
+2026-03-02 14:51:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:49 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-02 14:51:49 [warn] : Redis connection closed
+2026-03-02 14:51:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:50 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-02 14:51:50 [warn] : Redis connection closed
+2026-03-02 14:51:52 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:52 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-02 14:51:52 [warn] : Redis connection closed
+2026-03-02 14:51:54 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:54 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-02 14:51:54 [warn] : Redis connection closed
+2026-03-02 14:51:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:56 [warn] : Redis reconnect attempt #21, retrying in 2100ms
+2026-03-02 14:51:56 [warn] : Redis connection closed
+2026-03-02 14:51:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:51:58 [warn] : Redis reconnect attempt #22, retrying in 2200ms
+2026-03-02 14:51:58 [warn] : Redis connection closed
+2026-03-02 14:52:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:00 [warn] : Redis reconnect attempt #23, retrying in 2300ms
+2026-03-02 14:52:00 [warn] : Redis connection closed
+2026-03-02 14:52:03 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:03 [warn] : Redis reconnect attempt #24, retrying in 2400ms
+2026-03-02 14:52:03 [warn] : Redis connection closed
+2026-03-02 14:52:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:05 [warn] : Redis reconnect attempt #25, retrying in 2500ms
+2026-03-02 14:52:05 [warn] : Redis connection closed
+2026-03-02 14:52:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:08 [warn] : Redis reconnect attempt #26, retrying in 2600ms
+2026-03-02 14:52:08 [warn] : Redis connection closed
+2026-03-02 14:52:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:10 [warn] : Redis reconnect attempt #27, retrying in 2700ms
+2026-03-02 14:52:10 [warn] : Redis connection closed
+2026-03-02 14:52:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:13 [warn] : Redis reconnect attempt #28, retrying in 2800ms
+2026-03-02 14:52:13 [warn] : Redis connection closed
+2026-03-02 14:52:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:16 [warn] : Redis reconnect attempt #29, retrying in 2900ms
+2026-03-02 14:52:16 [warn] : Redis connection closed
+2026-03-02 14:52:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:19 [warn] : Redis reconnect attempt #30, retrying in 3000ms
+2026-03-02 14:52:19 [warn] : Redis connection closed
+2026-03-02 14:52:22 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:22 [warn] : Redis reconnect attempt #31, retrying in 3000ms
+2026-03-02 14:52:22 [warn] : Redis connection closed
+2026-03-02 14:52:25 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:25 [warn] : Redis reconnect attempt #32, retrying in 3000ms
+2026-03-02 14:52:25 [warn] : Redis connection closed
+2026-03-02 14:52:28 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:28 [warn] : Redis reconnect attempt #33, retrying in 3000ms
+2026-03-02 14:52:28 [warn] : Redis connection closed
+2026-03-02 14:52:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:31 [warn] : Redis reconnect attempt #34, retrying in 3000ms
+2026-03-02 14:52:31 [warn] : Redis connection closed
+2026-03-02 14:52:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:34 [warn] : Redis reconnect attempt #35, retrying in 3000ms
+2026-03-02 14:52:34 [warn] : Redis connection closed
+2026-03-02 14:52:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:37 [warn] : Redis reconnect attempt #36, retrying in 3000ms
+2026-03-02 14:52:37 [warn] : Redis connection closed
+2026-03-02 14:52:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:40 [warn] : Redis reconnect attempt #37, retrying in 3000ms
+2026-03-02 14:52:40 [warn] : Redis connection closed
+2026-03-02 14:52:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:43 [warn] : Redis reconnect attempt #38, retrying in 3000ms
+2026-03-02 14:52:43 [warn] : Redis connection closed
+2026-03-02 14:52:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:46 [warn] : Redis reconnect attempt #39, retrying in 3000ms
+2026-03-02 14:52:46 [warn] : Redis connection closed
+2026-03-02 14:52:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:49 [warn] : Redis reconnect attempt #40, retrying in 3000ms
+2026-03-02 14:52:49 [warn] : Redis connection closed
+2026-03-02 14:52:52 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:52 [warn] : Redis reconnect attempt #41, retrying in 3000ms
+2026-03-02 14:52:52 [warn] : Redis connection closed
+2026-03-02 14:52:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:55 [warn] : Redis reconnect attempt #42, retrying in 3000ms
+2026-03-02 14:52:55 [warn] : Redis connection closed
+2026-03-02 14:52:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:52:58 [warn] : Redis reconnect attempt #43, retrying in 3000ms
+2026-03-02 14:52:58 [warn] : Redis connection closed
+2026-03-02 14:53:01 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:01 [warn] : Redis reconnect attempt #44, retrying in 3000ms
+2026-03-02 14:53:01 [warn] : Redis connection closed
+2026-03-02 14:53:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:04 [warn] : Redis reconnect attempt #45, retrying in 3000ms
+2026-03-02 14:53:04 [warn] : Redis connection closed
+2026-03-02 14:53:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:07 [warn] : Redis reconnect attempt #46, retrying in 3000ms
+2026-03-02 14:53:07 [warn] : Redis connection closed
+2026-03-02 14:53:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:10 [warn] : Redis reconnect attempt #47, retrying in 3000ms
+2026-03-02 14:53:10 [warn] : Redis connection closed
+2026-03-02 14:53:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:13 [warn] : Redis reconnect attempt #48, retrying in 3000ms
+2026-03-02 14:53:13 [warn] : Redis connection closed
+2026-03-02 14:53:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:16 [warn] : Redis reconnect attempt #49, retrying in 3000ms
+2026-03-02 14:53:16 [warn] : Redis connection closed
+2026-03-02 14:53:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:19 [warn] : Redis reconnect attempt #50, retrying in 3000ms
+2026-03-02 14:53:19 [warn] : Redis connection closed
+2026-03-02 14:53:22 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:22 [warn] : Redis reconnect attempt #51, retrying in 3000ms
+2026-03-02 14:53:22 [warn] : Redis connection closed
+2026-03-02 14:53:25 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:25 [warn] : Redis reconnect attempt #52, retrying in 3000ms
+2026-03-02 14:53:25 [warn] : Redis connection closed
+2026-03-02 14:53:28 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:28 [warn] : Redis reconnect attempt #53, retrying in 3000ms
+2026-03-02 14:53:28 [warn] : Redis connection closed
+2026-03-02 14:53:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:31 [warn] : Redis reconnect attempt #54, retrying in 3000ms
+2026-03-02 14:53:31 [warn] : Redis connection closed
+2026-03-02 14:53:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:53:34 [warn] : Redis reconnect attempt #55, retrying in 3000ms
+2026-03-02 14:53:34 [warn] : Redis connection closed
+2026-03-02 14:53:37 [info] : Redis connection established
+2026-03-02 14:53:37 [info] : Redis ready to use
+2026-03-02 14:56:32 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-02 14:56:32 [warn] : Redis connection closed
+2026-03-02 14:56:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:32 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-02 14:56:32 [warn] : Redis connection closed
+2026-03-02 14:56:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:32 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-02 14:56:32 [warn] : Redis connection closed
+2026-03-02 14:56:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:33 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-02 14:56:33 [warn] : Redis connection closed
+2026-03-02 14:56:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:33 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-02 14:56:33 [warn] : Redis connection closed
+2026-03-02 14:56:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:33 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-02 14:56:33 [warn] : Redis connection closed
+2026-03-02 14:56:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:34 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-02 14:56:34 [warn] : Redis connection closed
+2026-03-02 14:56:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:35 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-02 14:56:35 [warn] : Redis connection closed
+2026-03-02 14:56:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:36 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-02 14:56:36 [warn] : Redis connection closed
+2026-03-02 14:56:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:36 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-02 14:56:36 [warn] : Redis connection closed
+2026-03-02 14:56:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:37 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-02 14:56:37 [warn] : Redis connection closed
+2026-03-02 14:56:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:39 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-02 14:56:39 [warn] : Redis connection closed
+2026-03-02 14:56:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:40 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-02 14:56:40 [warn] : Redis connection closed
+2026-03-02 14:56:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:41 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-02 14:56:41 [warn] : Redis connection closed
+2026-03-02 14:56:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:43 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-02 14:56:43 [warn] : Redis connection closed
+2026-03-02 14:56:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:44 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-02 14:56:44 [warn] : Redis connection closed
+2026-03-02 14:56:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:46 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-02 14:56:46 [warn] : Redis connection closed
+2026-03-02 14:56:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:47 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-02 14:56:47 [warn] : Redis connection closed
+2026-03-02 14:56:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:49 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-02 14:56:49 [warn] : Redis connection closed
+2026-03-02 14:56:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:51 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-02 14:56:51 [warn] : Redis connection closed
+2026-03-02 14:56:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:53 [warn] : Redis reconnect attempt #21, retrying in 2100ms
+2026-03-02 14:56:53 [warn] : Redis connection closed
+2026-03-02 14:56:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:55 [warn] : Redis reconnect attempt #22, retrying in 2200ms
+2026-03-02 14:56:55 [warn] : Redis connection closed
+2026-03-02 14:56:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:56:57 [warn] : Redis reconnect attempt #23, retrying in 2300ms
+2026-03-02 14:56:57 [warn] : Redis connection closed
+2026-03-02 14:57:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:00 [warn] : Redis reconnect attempt #24, retrying in 2400ms
+2026-03-02 14:57:00 [warn] : Redis connection closed
+2026-03-02 14:57:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:02 [warn] : Redis reconnect attempt #25, retrying in 2500ms
+2026-03-02 14:57:02 [warn] : Redis connection closed
+2026-03-02 14:57:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:05 [warn] : Redis reconnect attempt #26, retrying in 2600ms
+2026-03-02 14:57:05 [warn] : Redis connection closed
+2026-03-02 14:57:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:07 [warn] : Redis reconnect attempt #27, retrying in 2700ms
+2026-03-02 14:57:07 [warn] : Redis connection closed
+2026-03-02 14:57:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:10 [warn] : Redis reconnect attempt #28, retrying in 2800ms
+2026-03-02 14:57:10 [warn] : Redis connection closed
+2026-03-02 14:57:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:13 [warn] : Redis reconnect attempt #29, retrying in 2900ms
+2026-03-02 14:57:13 [warn] : Redis connection closed
+2026-03-02 14:57:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:16 [warn] : Redis reconnect attempt #30, retrying in 3000ms
+2026-03-02 14:57:16 [warn] : Redis connection closed
+2026-03-02 14:57:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:19 [warn] : Redis reconnect attempt #31, retrying in 3000ms
+2026-03-02 14:57:19 [warn] : Redis connection closed
+2026-03-02 14:57:22 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:22 [warn] : Redis reconnect attempt #32, retrying in 3000ms
+2026-03-02 14:57:22 [warn] : Redis connection closed
+2026-03-02 14:57:25 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:25 [warn] : Redis reconnect attempt #33, retrying in 3000ms
+2026-03-02 14:57:25 [warn] : Redis connection closed
+2026-03-02 14:57:28 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:28 [warn] : Redis reconnect attempt #34, retrying in 3000ms
+2026-03-02 14:57:28 [warn] : Redis connection closed
+2026-03-02 14:57:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:31 [warn] : Redis reconnect attempt #35, retrying in 3000ms
+2026-03-02 14:57:31 [warn] : Redis connection closed
+2026-03-02 14:57:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:34 [warn] : Redis reconnect attempt #36, retrying in 3000ms
+2026-03-02 14:57:34 [warn] : Redis connection closed
+2026-03-02 14:57:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:37 [warn] : Redis reconnect attempt #37, retrying in 3000ms
+2026-03-02 14:57:37 [warn] : Redis connection closed
+2026-03-02 14:57:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:40 [warn] : Redis reconnect attempt #38, retrying in 3000ms
+2026-03-02 14:57:40 [warn] : Redis connection closed
+2026-03-02 14:57:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:43 [warn] : Redis reconnect attempt #39, retrying in 3000ms
+2026-03-02 14:57:43 [warn] : Redis connection closed
+2026-03-02 14:57:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:46 [warn] : Redis reconnect attempt #40, retrying in 3000ms
+2026-03-02 14:57:46 [warn] : Redis connection closed
+2026-03-02 14:57:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:49 [warn] : Redis reconnect attempt #41, retrying in 3000ms
+2026-03-02 14:57:49 [warn] : Redis connection closed
+2026-03-02 14:57:52 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:52 [warn] : Redis reconnect attempt #42, retrying in 3000ms
+2026-03-02 14:57:52 [warn] : Redis connection closed
+2026-03-02 14:57:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:55 [warn] : Redis reconnect attempt #43, retrying in 3000ms
+2026-03-02 14:57:55 [warn] : Redis connection closed
+2026-03-02 14:57:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:57:58 [warn] : Redis reconnect attempt #44, retrying in 3000ms
+2026-03-02 14:57:58 [warn] : Redis connection closed
+2026-03-02 14:58:01 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:58:01 [warn] : Redis reconnect attempt #45, retrying in 3000ms
+2026-03-02 14:58:01 [warn] : Redis connection closed
+2026-03-02 14:58:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:58:04 [warn] : Redis reconnect attempt #46, retrying in 3000ms
+2026-03-02 14:58:04 [warn] : Redis connection closed
+2026-03-02 14:58:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:58:07 [warn] : Redis reconnect attempt #47, retrying in 3000ms
+2026-03-02 14:58:07 [warn] : Redis connection closed
+2026-03-02 14:58:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:58:10 [warn] : Redis reconnect attempt #48, retrying in 3000ms
+2026-03-02 14:58:10 [warn] : Redis connection closed
+2026-03-02 14:58:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:58:13 [warn] : Redis reconnect attempt #49, retrying in 3000ms
+2026-03-02 14:58:13 [warn] : Redis connection closed
+2026-03-02 14:58:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 14:58:16 [warn] : Redis reconnect attempt #50, retrying in 3000ms
+2026-03-02 14:58:16 [warn] : Redis connection closed
+2026-03-02 14:58:19 [info] : Redis connection established
+2026-03-02 14:58:19 [info] : Redis ready to use
+2026-03-02 15:10:32 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-02 15:10:32 [warn] : Redis connection closed
+2026-03-02 15:10:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:32 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-02 15:10:32 [warn] : Redis connection closed
+2026-03-02 15:10:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:33 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-02 15:10:33 [warn] : Redis connection closed
+2026-03-02 15:10:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:33 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-02 15:10:33 [warn] : Redis connection closed
+2026-03-02 15:10:33 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:33 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-02 15:10:33 [warn] : Redis connection closed
+2026-03-02 15:10:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:34 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-02 15:10:34 [warn] : Redis connection closed
+2026-03-02 15:10:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:34 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-02 15:10:34 [warn] : Redis connection closed
+2026-03-02 15:10:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:35 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-02 15:10:35 [warn] : Redis connection closed
+2026-03-02 15:10:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:36 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-02 15:10:36 [warn] : Redis connection closed
+2026-03-02 15:10:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:37 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-02 15:10:37 [warn] : Redis connection closed
+2026-03-02 15:10:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:38 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-02 15:10:38 [warn] : Redis connection closed
+2026-03-02 15:10:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:39 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-02 15:10:39 [warn] : Redis connection closed
+2026-03-02 15:10:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:40 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-02 15:10:40 [warn] : Redis connection closed
+2026-03-02 15:10:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:41 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-02 15:10:41 [warn] : Redis connection closed
+2026-03-02 15:10:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:43 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-02 15:10:43 [warn] : Redis connection closed
+2026-03-02 15:10:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:44 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-02 15:10:44 [warn] : Redis connection closed
+2026-03-02 15:10:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:46 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-02 15:10:46 [warn] : Redis connection closed
+2026-03-02 15:10:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:48 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-02 15:10:48 [warn] : Redis connection closed
+2026-03-02 15:10:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:49 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-02 15:10:49 [warn] : Redis connection closed
+2026-03-02 15:10:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:51 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-02 15:10:51 [warn] : Redis connection closed
+2026-03-02 15:10:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:53 [warn] : Redis reconnect attempt #21, retrying in 2100ms
+2026-03-02 15:10:53 [warn] : Redis connection closed
+2026-03-02 15:10:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:55 [warn] : Redis reconnect attempt #22, retrying in 2200ms
+2026-03-02 15:10:55 [warn] : Redis connection closed
+2026-03-02 15:10:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:10:58 [warn] : Redis reconnect attempt #23, retrying in 2300ms
+2026-03-02 15:10:58 [warn] : Redis connection closed
+2026-03-02 15:11:00 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:00 [warn] : Redis reconnect attempt #24, retrying in 2400ms
+2026-03-02 15:11:00 [warn] : Redis connection closed
+2026-03-02 15:11:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:02 [warn] : Redis reconnect attempt #25, retrying in 2500ms
+2026-03-02 15:11:02 [warn] : Redis connection closed
+2026-03-02 15:11:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:05 [warn] : Redis reconnect attempt #26, retrying in 2600ms
+2026-03-02 15:11:05 [warn] : Redis connection closed
+2026-03-02 15:11:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:08 [warn] : Redis reconnect attempt #27, retrying in 2700ms
+2026-03-02 15:11:08 [warn] : Redis connection closed
+2026-03-02 15:11:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:10 [warn] : Redis reconnect attempt #28, retrying in 2800ms
+2026-03-02 15:11:10 [warn] : Redis connection closed
+2026-03-02 15:11:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:13 [warn] : Redis reconnect attempt #29, retrying in 2900ms
+2026-03-02 15:11:13 [warn] : Redis connection closed
+2026-03-02 15:11:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:16 [warn] : Redis reconnect attempt #30, retrying in 3000ms
+2026-03-02 15:11:16 [warn] : Redis connection closed
+2026-03-02 15:11:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:19 [warn] : Redis reconnect attempt #31, retrying in 3000ms
+2026-03-02 15:11:19 [warn] : Redis connection closed
+2026-03-02 15:11:22 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:22 [warn] : Redis reconnect attempt #32, retrying in 3000ms
+2026-03-02 15:11:22 [warn] : Redis connection closed
+2026-03-02 15:11:25 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:25 [warn] : Redis reconnect attempt #33, retrying in 3000ms
+2026-03-02 15:11:25 [warn] : Redis connection closed
+2026-03-02 15:11:28 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:28 [warn] : Redis reconnect attempt #34, retrying in 3000ms
+2026-03-02 15:11:28 [warn] : Redis connection closed
+2026-03-02 15:11:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:31 [warn] : Redis reconnect attempt #35, retrying in 3000ms
+2026-03-02 15:11:31 [warn] : Redis connection closed
+2026-03-02 15:11:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:34 [warn] : Redis reconnect attempt #36, retrying in 3000ms
+2026-03-02 15:11:34 [warn] : Redis connection closed
+2026-03-02 15:11:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:37 [warn] : Redis reconnect attempt #37, retrying in 3000ms
+2026-03-02 15:11:37 [warn] : Redis connection closed
+2026-03-02 15:11:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:40 [warn] : Redis reconnect attempt #38, retrying in 3000ms
+2026-03-02 15:11:40 [warn] : Redis connection closed
+2026-03-02 15:11:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:43 [warn] : Redis reconnect attempt #39, retrying in 3000ms
+2026-03-02 15:11:43 [warn] : Redis connection closed
+2026-03-02 15:11:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:46 [warn] : Redis reconnect attempt #40, retrying in 3000ms
+2026-03-02 15:11:46 [warn] : Redis connection closed
+2026-03-02 15:11:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:49 [warn] : Redis reconnect attempt #41, retrying in 3000ms
+2026-03-02 15:11:49 [warn] : Redis connection closed
+2026-03-02 15:11:52 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:52 [warn] : Redis reconnect attempt #42, retrying in 3000ms
+2026-03-02 15:11:52 [warn] : Redis connection closed
+2026-03-02 15:11:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:55 [warn] : Redis reconnect attempt #43, retrying in 3000ms
+2026-03-02 15:11:55 [warn] : Redis connection closed
+2026-03-02 15:11:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:11:58 [warn] : Redis reconnect attempt #44, retrying in 3000ms
+2026-03-02 15:11:58 [warn] : Redis connection closed
+2026-03-02 15:12:01 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:01 [warn] : Redis reconnect attempt #45, retrying in 3000ms
+2026-03-02 15:12:01 [warn] : Redis connection closed
+2026-03-02 15:12:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:04 [warn] : Redis reconnect attempt #46, retrying in 3000ms
+2026-03-02 15:12:04 [warn] : Redis connection closed
+2026-03-02 15:12:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:07 [warn] : Redis reconnect attempt #47, retrying in 3000ms
+2026-03-02 15:12:07 [warn] : Redis connection closed
+2026-03-02 15:12:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:10 [warn] : Redis reconnect attempt #48, retrying in 3000ms
+2026-03-02 15:12:10 [warn] : Redis connection closed
+2026-03-02 15:12:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:13 [warn] : Redis reconnect attempt #49, retrying in 3000ms
+2026-03-02 15:12:13 [warn] : Redis connection closed
+2026-03-02 15:12:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:16 [warn] : Redis reconnect attempt #50, retrying in 3000ms
+2026-03-02 15:12:16 [warn] : Redis connection closed
+2026-03-02 15:12:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:19 [warn] : Redis reconnect attempt #51, retrying in 3000ms
+2026-03-02 15:12:19 [warn] : Redis connection closed
+2026-03-02 15:12:22 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:22 [warn] : Redis reconnect attempt #52, retrying in 3000ms
+2026-03-02 15:12:22 [warn] : Redis connection closed
+2026-03-02 15:12:25 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:25 [warn] : Redis reconnect attempt #53, retrying in 3000ms
+2026-03-02 15:12:25 [warn] : Redis connection closed
+2026-03-02 15:12:28 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:28 [warn] : Redis reconnect attempt #54, retrying in 3000ms
+2026-03-02 15:12:28 [warn] : Redis connection closed
+2026-03-02 15:12:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:31 [warn] : Redis reconnect attempt #55, retrying in 3000ms
+2026-03-02 15:12:31 [warn] : Redis connection closed
+2026-03-02 15:12:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:34 [warn] : Redis reconnect attempt #56, retrying in 3000ms
+2026-03-02 15:12:34 [warn] : Redis connection closed
+2026-03-02 15:12:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:37 [warn] : Redis reconnect attempt #57, retrying in 3000ms
+2026-03-02 15:12:37 [warn] : Redis connection closed
+2026-03-02 15:12:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:40 [warn] : Redis reconnect attempt #58, retrying in 3000ms
+2026-03-02 15:12:40 [warn] : Redis connection closed
+2026-03-02 15:12:43 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:43 [warn] : Redis reconnect attempt #59, retrying in 3000ms
+2026-03-02 15:12:43 [warn] : Redis connection closed
+2026-03-02 15:12:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:46 [warn] : Redis reconnect attempt #60, retrying in 3000ms
+2026-03-02 15:12:46 [warn] : Redis connection closed
+2026-03-02 15:12:49 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:49 [warn] : Redis reconnect attempt #61, retrying in 3000ms
+2026-03-02 15:12:49 [warn] : Redis connection closed
+2026-03-02 15:12:52 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:52 [warn] : Redis reconnect attempt #62, retrying in 3000ms
+2026-03-02 15:12:52 [warn] : Redis connection closed
+2026-03-02 15:12:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:55 [warn] : Redis reconnect attempt #63, retrying in 3000ms
+2026-03-02 15:12:55 [warn] : Redis connection closed
+2026-03-02 15:12:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:12:58 [warn] : Redis reconnect attempt #64, retrying in 3000ms
+2026-03-02 15:12:58 [warn] : Redis connection closed
+2026-03-02 15:13:01 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:01 [warn] : Redis reconnect attempt #65, retrying in 3000ms
+2026-03-02 15:13:01 [warn] : Redis connection closed
+2026-03-02 15:13:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:04 [warn] : Redis reconnect attempt #66, retrying in 3000ms
+2026-03-02 15:13:04 [warn] : Redis connection closed
+2026-03-02 15:13:07 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:07 [warn] : Redis reconnect attempt #67, retrying in 3000ms
+2026-03-02 15:13:07 [warn] : Redis connection closed
+2026-03-02 15:13:10 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:10 [warn] : Redis reconnect attempt #68, retrying in 3000ms
+2026-03-02 15:13:10 [warn] : Redis connection closed
+2026-03-02 15:13:13 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:13 [warn] : Redis reconnect attempt #69, retrying in 3000ms
+2026-03-02 15:13:13 [warn] : Redis connection closed
+2026-03-02 15:13:16 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:16 [warn] : Redis reconnect attempt #70, retrying in 3000ms
+2026-03-02 15:13:16 [warn] : Redis connection closed
+2026-03-02 15:13:19 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:19 [warn] : Redis reconnect attempt #71, retrying in 3000ms
+2026-03-02 15:13:19 [warn] : Redis connection closed
+2026-03-02 15:13:22 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:22 [warn] : Redis reconnect attempt #72, retrying in 3000ms
+2026-03-02 15:13:22 [warn] : Redis connection closed
+2026-03-02 15:13:25 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:25 [warn] : Redis reconnect attempt #73, retrying in 3000ms
+2026-03-02 15:13:25 [warn] : Redis connection closed
+2026-03-02 15:13:28 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:28 [warn] : Redis reconnect attempt #74, retrying in 3000ms
+2026-03-02 15:13:28 [warn] : Redis connection closed
+2026-03-02 15:13:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:31 [warn] : Redis reconnect attempt #75, retrying in 3000ms
+2026-03-02 15:13:31 [warn] : Redis connection closed
+2026-03-02 15:13:34 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:34 [warn] : Redis reconnect attempt #76, retrying in 3000ms
+2026-03-02 15:13:34 [warn] : Redis connection closed
+2026-03-02 15:13:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:37 [warn] : Redis reconnect attempt #77, retrying in 3000ms
+2026-03-02 15:13:37 [warn] : Redis connection closed
+2026-03-02 15:13:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 15:13:40 [warn] : Redis reconnect attempt #78, retrying in 3000ms
+2026-03-02 15:13:40 [warn] : Redis connection closed
+2026-03-02 15:13:43 [info] : Redis connection established
+2026-03-02 15:13:43 [info] : Redis ready to use

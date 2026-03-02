@@ -62,14 +62,8 @@ export class SuperAdmin {
     address?: Record<string, any>;
 
     @Column({ type: "json", nullable: true })
-    coordinates?: { lat: number; lng: number };
-
-    @Column({ nullable: true, select: false })
-    otp?: string; // select: false for security
-
-    @Column({ type: "timestamp", nullable: true })
-    otpExpireTime?: Date;
-
+    coordinates?: { lat: number; lng: number }; 
+    
     @Column({ name: "profile_image", nullable: true })
     profileImage?: string;
 

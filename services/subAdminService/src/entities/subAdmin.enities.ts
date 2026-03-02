@@ -65,14 +65,12 @@ export class SubAdmin {
     @Column({ type: "json", nullable: true })
     coordinates?: { lat: number; lng: number };
 
-    @Column({ nullable: true, select: false })
-    otp?: string; // select: false for security
+    
 
     @Column({ name: "profile_image", nullable: true })
     profileImage?: string;
 
-    @Column({ type: "timestamp", nullable: true })
-    otpExpireTime?: Date;
+   
 
     @OneToOne(() => SubAdminCredential, (credential) => credential.user, {
         cascade: true,

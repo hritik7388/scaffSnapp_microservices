@@ -8,6 +8,10 @@ const publicRoutes = new Set([
   '/',
   '/health',
   '/api/v1/superAdmin/login', 
+  '/api/v1/superAdmin/forgotPassword', 
+  '/api/v1/superAdmin/resetPassword', 
+  '/api/v1/superAdmin/refreshToken', 
+
 ].map(route => route.toLowerCase()));
 
 
