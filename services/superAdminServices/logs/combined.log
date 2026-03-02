@@ -1699,3 +1699,11 @@
 2026-03-02 15:47:40 [info] : HTTP server closed 1
 2026-03-02 15:47:40 [info] : Database connection closed 1
 2026-03-02 15:47:42 [info] : Redis connection established
+2026-03-02 16:21:50 [info] : Redis connection established
+2026-03-02 16:21:51 [info] : Redis ready to use
+2026-03-02 16:21:51 [info] : Starting infrastructure initialization...
+2026-03-02 16:21:51 [info] : Redis connected successfully
+2026-03-02 16:21:51 [info] : Kafka producer connected
+2026-03-02 16:21:51 [info] : Kafka connected successfully
+2026-03-02 16:21:51 [info] : All infrastructure initialized successfully ✅
+2026-03-02 16:21:51 [info] : superadmin-service is running on http://localhost:3001

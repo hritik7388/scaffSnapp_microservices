@@ -51,6 +51,8 @@ export class SuperAdminController {
     return res.status(200).json({
       statusCode:200,
       message:userData.message,
+        accessToken: userData.accessToken,
+      refreshToken: userData.refreshToken,
       
     })
   }
