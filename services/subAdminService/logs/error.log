@@ -222,3 +222,23 @@
     at addChunk (node:internal/streams/readable:559:12)
     at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
     at Socket.Readable.push (node:internal/streams/readable:390:5)
+2026-03-02 09:59:24 [error] : write EPIPE
+2026-03-02 09:59:24 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:24 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:24 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:25 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:26 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:26 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:27 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:28 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:29 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:30 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:31 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-02 09:59:33 [error] : KafkaJSNonRetriableError
+  Caused by: KafkaJSConnectionError: Connection error: connect ECONNREFUSED 127.0.0.1:29092
+    at Socket.onError (/home/hritikbhadauria/scaffSnapp_microservices/services/subAdminService/node_modules/kafkajs/src/network/connection.js:210:23)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
