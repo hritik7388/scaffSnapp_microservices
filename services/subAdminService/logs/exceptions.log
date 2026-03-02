@@ -11,3 +11,81 @@ src/schemas/subAdminSchema.ts(110,49): error TS2304: Cannot find name 'forgetPas
     at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1481:32)
     at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-01 10:25:46 [error] : Error: ⨯ Unable to compile TypeScript:
+src/entities/subAdmin.enities.ts(22,5): error TS1061: Enum member must have initializer.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\entities\subAdmin.enities.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-01 10:25:58 [error] : Error: ⨯ Unable to compile TypeScript:
+src/entities/subAdmin.enities.ts(23,5): error TS1061: Enum member must have initializer.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\entities\subAdmin.enities.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-01 10:26:15 [error] : Error: ⨯ Unable to compile TypeScript:
+src/entities/subAdmin.enities.ts(63,7): error TS1109: Expression expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\entities\subAdmin.enities.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-01 10:26:37 [error] : Error: ⨯ Unable to compile TypeScript:
+src/entities/subAdmin.enities.ts(60,5): error TS1005: ':' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\entities\subAdmin.enities.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-13915543060540514.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-01 10:43:30 [error] : Error: ⨯ Unable to compile TypeScript:
+src/service/subAdmin.service.ts(74,63): error TS2554: Expected 1 arguments, but got 2.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\service\subAdmin.service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8471017131243722.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8471017131243722.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8471017131243722.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-01 10:43:56 [error] : Error: ⨯ Unable to compile TypeScript:
+src/service/subAdmin.service.ts(288,37): error TS1005: ',' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\service\subAdmin.service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8471017131243722.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8471017131243722.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8471017131243722.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)

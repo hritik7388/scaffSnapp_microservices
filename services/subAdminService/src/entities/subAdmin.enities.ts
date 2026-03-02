@@ -17,9 +17,15 @@ export enum SubAdminStatus {
     SUSPENDED = "SUSPENDED",
     DELETED = "DELETED",
 }
+export enum SubAdminApproval {
+    APPROVED = "APPROVED",
+    REJECTED = "REJECTED",
+    PENDING = "PENDING"
+}
 
 export enum UserType {
     SUB_ADMIN = "SUB_ADMIN",
+    SUPER_ADMIN = "SUPER_ADMIN",
 }
 
 @Entity({ name: "sub_admins" })
@@ -48,6 +54,13 @@ export class SubAdmin {
         default: UserType.SUB_ADMIN,
     })
     userType: UserType;
+
+    @Column({
+        type: "enum",
+        enum: SubAdminApproval,
+        default: SubAdminApproval.PENDING
+    })
+    isApproved: SubAdminApproval
 
     @Column({
         type: "enum",

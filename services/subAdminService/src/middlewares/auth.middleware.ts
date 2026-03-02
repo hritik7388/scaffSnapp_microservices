@@ -40,8 +40,9 @@ export const verifyToken = async (
     if (!redisToken) return res.status(401).json({ message: 'Unauthorized' });
 
     // Attach user info
-    req.userId = decoded.id;
-    req.token = token;
+   req.userId = decoded.sub;
+req.userRole = decoded.role;
+req.token = token;
 
     next();
   } catch (err: unknown) {
@@ -50,4 +51,7 @@ export const verifyToken = async (
 
     return res.status(401).json({ message });
   }
+
+  
 };
+
