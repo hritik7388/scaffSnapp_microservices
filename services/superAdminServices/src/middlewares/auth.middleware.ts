@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { config } from '../config/config';
 import { redisClient } from '../config/redis';
+import { UserType } from '../entities/superAdmin.enities';
 
 // Use a Set for O(1) lookup
 const publicRoutes = new Set([
@@ -39,9 +40,9 @@ export const verifyToken = async (
     if (!redisToken) return res.status(401).json({ message: 'Unauthorized' });
 
     // Attach user info
-    req.userId = decoded.id;
-    req.token = token;
-
+    req.userId = decoded.sub;
+req.userRole = decoded.role;
+req.token = token;
     next();
   } catch (err: unknown) {
     let message = 'Unauthorized';
@@ -49,4 +50,18 @@ export const verifyToken = async (
 
     return res.status(401).json({ message });
   }
+};
+
+export const requireSuperAdmin = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  if (req.userRole !== UserType.SUPER_ADMIN) {
+    return res.status(403).json({
+      message: "Only SuperAdmin can perform this action"
+    });
+  }
+
+  next();
 };
