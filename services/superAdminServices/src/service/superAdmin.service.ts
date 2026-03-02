@@ -46,7 +46,7 @@ class SuperAdminService {
     this.validateUserStatus(credential.user);
     await this.verifyPassword(data.password, credential);
     await this.clearFailCounter(data.email, credential);
-    const tokens = this.generateTokens(credential.user.id,credential.user.userType);
+    const tokens = this.generateTokens(credential.user.id, credential.user.userType);
     await this.createDeviceSession(
       credential.user.id,
       tokens.refreshToken,
@@ -309,15 +309,15 @@ class SuperAdminService {
   }
 
 
-  private generateTokens(userId: number,role: UserType) {
+  private generateTokens(userId: number, role: UserType) {
     const accessToken = jwt.sign(
-      { sub: userId, role: role,type: "access" },
+      { sub: userId, role: role, type: "access" },
       config.JWT_ACCESS_SECRET as jwt.Secret,   // ✅ cast to Secret
       { expiresIn: process.env.JWT_EXPIRES_IN || "24h" } as SignOptions
     );
 
     const refreshToken = jwt.sign(
-      { sub: userId,role: role, type: "refresh" },
+      { sub: userId, role: role, type: "refresh" },
 
       config.JWT_REFRESH_SECRET as jwt.Secret,
       { expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || "7d" } as SignOptions
@@ -425,8 +425,9 @@ class SuperAdminService {
       throw createError("Invalid refresh token", 401);
     }
 
-    // 🔁 Token Rotation
-    const tokens = this.generateTokens(userId);
+    const userRole = payload.role as UserType;
+
+    const tokens = this.generateTokens(userId, userRole);
 
     session.refreshTokenHash = this.hashToken(tokens.refreshToken);
     session.expiresAt = new Date(Date.now() + REFRESH_TTL);

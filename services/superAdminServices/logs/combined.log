@@ -1642,3 +1642,60 @@
 2026-03-02 15:35:50 [info] : HTTP server closed 1
 2026-03-02 15:35:50 [info] : Database connection closed 1
 2026-03-02 15:35:55 [info] : Redis connection established
+2026-03-02 15:40:45 [info] : Redis connection established
+2026-03-02 15:40:58 [info] : Redis connection established
+2026-03-02 15:41:56 [info] : Redis connection established
+2026-03-02 15:42:29 [info] : Redis connection established
+2026-03-02 15:43:11 [info] : Redis connection established
+2026-03-02 15:43:30 [info] : Redis connection established
+2026-03-02 15:44:00 [info] : Redis connection established
+2026-03-02 15:46:39 [info] : Redis connection established
+2026-03-02 15:47:00 [info] : Redis connection established
+2026-03-02 15:47:00 [info] : Redis ready to use
+2026-03-02 15:47:00 [info] : Starting infrastructure initialization...
+2026-03-02 15:47:00 [info] : Redis connected successfully
+2026-03-02 15:47:01 [info] : Kafka producer connected
+2026-03-02 15:47:01 [info] : Kafka connected successfully
+2026-03-02 15:47:01 [info] : All infrastructure initialized successfully ✅
+2026-03-02 15:47:01 [info] : superadmin-service is running on http://localhost:3001
+2026-03-02 15:47:01 [info] : Received SIGTERM. Starting graceful shutdown...
+2026-03-02 15:47:01 [info] : HTTP server closed 1
+2026-03-02 15:47:01 [info] : Database connection closed 1
+2026-03-02 15:47:04 [info] : Redis connection established
+2026-03-02 15:47:11 [info] : Redis connection established
+2026-03-02 15:47:11 [info] : Redis ready to use
+2026-03-02 15:47:11 [info] : Starting infrastructure initialization...
+2026-03-02 15:47:11 [info] : Redis connected successfully
+2026-03-02 15:47:11 [info] : Kafka producer connected
+2026-03-02 15:47:11 [info] : Kafka connected successfully
+2026-03-02 15:47:11 [info] : All infrastructure initialized successfully ✅
+2026-03-02 15:47:11 [info] : superadmin-service is running on http://localhost:3001
+2026-03-02 15:47:12 [info] : Received SIGTERM. Starting graceful shutdown...
+2026-03-02 15:47:12 [info] : HTTP server closed 1
+2026-03-02 15:47:12 [info] : Database connection closed 1
+2026-03-02 15:47:12 [info] : Redis connection closed 1
+2026-03-02 15:47:14 [info] : Redis connection established
+2026-03-02 15:47:17 [info] : Redis connection established
+2026-03-02 15:47:17 [info] : Redis ready to use
+2026-03-02 15:47:17 [info] : Starting infrastructure initialization...
+2026-03-02 15:47:17 [info] : Redis connected successfully
+2026-03-02 15:47:17 [info] : Kafka producer connected
+2026-03-02 15:47:17 [info] : Kafka connected successfully
+2026-03-02 15:47:17 [info] : All infrastructure initialized successfully ✅
+2026-03-02 15:47:18 [info] : superadmin-service is running on http://localhost:3001
+2026-03-02 15:47:27 [info] : Received SIGTERM. Starting graceful shutdown...
+2026-03-02 15:47:27 [info] : HTTP server closed 1
+2026-03-02 15:47:27 [info] : Database connection closed 1
+2026-03-02 15:47:27 [info] : Redis connection closed 1
+2026-03-02 15:47:30 [info] : Redis connection established
+2026-03-02 15:47:30 [info] : Redis ready to use
+2026-03-02 15:47:30 [info] : Starting infrastructure initialization...
+2026-03-02 15:47:30 [info] : Redis connected successfully
+2026-03-02 15:47:30 [info] : Kafka producer connected
+2026-03-02 15:47:30 [info] : Kafka connected successfully
+2026-03-02 15:47:30 [info] : All infrastructure initialized successfully ✅
+2026-03-02 15:47:30 [info] : superadmin-service is running on http://localhost:3001
+2026-03-02 15:47:40 [info] : Received SIGTERM. Starting graceful shutdown...
+2026-03-02 15:47:40 [info] : HTTP server closed 1
+2026-03-02 15:47:40 [info] : Database connection closed 1
+2026-03-02 15:47:42 [info] : Redis connection established
