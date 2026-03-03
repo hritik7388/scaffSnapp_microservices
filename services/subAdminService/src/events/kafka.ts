@@ -1,3 +1,4 @@
+// src/events/kafka.ts
 import { Kafka, logLevel } from 'kafkajs';
 import logger from '../config/logger';
 import { config } from '../config/config';
@@ -15,6 +16,10 @@ const kafka = new Kafka({
 
   logLevel: logLevel.NOTHING,
 });
+
+export const createConsumer = (groupId: string) => {
+  return kafka.consumer({ groupId });
+};
 
 export const producer = kafka.producer({
   allowAutoTopicCreation: false,
