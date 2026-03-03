@@ -1,0 +1,12 @@
+name: ScaffSnapp_Microservices CI/CD - Learning Mode
+
+# Trigger workflow on push or PR to main branch
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest

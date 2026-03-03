@@ -21,7 +21,7 @@ export const AppDataSource = new DataSource({
     migrations: ["dist/migrations/*.js"],
 
     extra: {
-        connectionLimit: Number(process.env.DB_CONNECTION_LIMIT) || 20,
+        connectionLimit: Number(process.env.DB_CONNECTION_LIMIT) || 400,
         waitForConnections: true,
         queueLimit: 0,
         connectTimeout: Number(process.env.DB_CONNECT_TIMEOUT) || 10000,

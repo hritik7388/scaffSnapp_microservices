@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import SuperAdminService from '../service/superAdmin.service';
-import { superAdminSchema } from '../schemas/superAdminSchema';
+import { forgetPasswordSchema, refreshTokenSchema, resetPasswordSchema, superAdminSchema } from '../schemas/superAdminSchema';
 
 
 export class SuperAdminController {
@@ -24,6 +24,37 @@ export class SuperAdminController {
 
     });
 
+  }
+
+  async forgotPassword(req: Request, res: Response): Promise<any> {
+    const parseResult = forgetPasswordSchema.parse(req.body);
+    const userData = await this.superAdminAuthService.forgotPassword(parseResult)
+    return res.status(200).json({
+        statusCode: 200,
+        message: userData.message,
+        resetToken: userData.resetToken,
+      })
+  }
+
+  async resetPassword(req: Request, res: Response): Promise<any> {
+    const parseResult=resetPasswordSchema.parse(req.body);
+    const userData=await this.superAdminAuthService.resetPassword(parseResult);
+    return res.status(200).json({
+      statusCode:200,
+      message:userData.message,
+
+    })
+  }
+    async refreshToken(req: Request, res: Response): Promise<any> {
+    const parseResult=refreshTokenSchema.parse(req.body);
+    const userData=await this.superAdminAuthService.refreshToken(parseResult);
+    return res.status(200).json({
+      statusCode:200,
+      message:userData.message,
+        accessToken: userData.accessToken,
+      refreshToken: userData.refreshToken,
+      
+    })
   }
 
 }

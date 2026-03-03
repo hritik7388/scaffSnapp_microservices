@@ -9,7 +9,7 @@ import { Repository } from 'typeorm';
 import { SubAdminCredential } from '../entities/subAdmin.credentials';
 import { SubAdmin, UserType } from '../entities/subAdmin.enities';
 import { createError } from '../utils';
-import {  RegisterSubAdminDTO, SubAdminDTO } from '../schemas/subAdminSchema';
+import { RegisterSubAdminDTO, SubAdminDTO } from '../schemas/subAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
 import { config } from '../config/config';
 import { publishSubAdminCreated } from "../events/procedure/subadmin-created.procedure";
@@ -17,7 +17,7 @@ import logger from "../config/logger";
 
 
 const FAIL_TTL = 180;
-const MAX_FAILS = 3; 
+const MAX_FAILS = 3;
 const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 
@@ -56,8 +56,8 @@ class SubAdminService {
         return {
             message: "SubAdmin registered successfully",
             id: subAdmin.id,
-            firstName:subAdmin.firstName,
-            lastName:subAdmin.lastName
+            firstName: subAdmin.firstName,
+            lastName: subAdmin.lastName
         };
     }
 
@@ -90,7 +90,7 @@ class SubAdminService {
 
     }
 
- 
+
     private normalizeEmail(email: string): string {
         return email.toLowerCase().trim();
     }
@@ -207,14 +207,18 @@ class SubAdminService {
         }
     }
     private async verifyPassword(password: string, credential: SubAdminCredential) {
-
-
+        const cacheKey = `login-ok:${credential.email}`;
+        const cached = await redisClient.get(cacheKey);
+        if (cached) {
+            return true;
+        }
         const isValid = await bcrypt.compare(password, credential.passwordHash);
 
         if (!isValid) {
             await this.increaseFailCount(credential.email);
             throw createError("Invalid credentials", 401);
         }
+        await redisClient.setex(cacheKey, 10, "ok");
     }
 
     private async increaseFailCount(email: string) {
