@@ -2504,3 +2504,4 @@
 2026-03-04 20:05:12 [info] : Redis connected successfully
 2026-03-04 20:05:12 [info] : All infrastructure initialized successfully ✅
 2026-03-04 20:05:12 [info] : subadmin-service is running on http://localhost:3002
+2026-03-04 20:56:15 [info] : Redis connection established

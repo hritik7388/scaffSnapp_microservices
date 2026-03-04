@@ -498,3 +498,21 @@ src/utils/shutdown.ts(39,19): error TS2304: Cannot find name 'disconnectKafka'.
     at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1481:32)
     at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 20:56:15 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(1,1): error TS1185: Merge conflict marker encountered.
+src/events/kafka.ts(5,1): error TS1185: Merge conflict marker encountered.
+src/events/kafka.ts(10,1): error TS1185: Merge conflict marker encountered.
+src/events/kafka.ts(24,1): error TS1185: Merge conflict marker encountered.
+src/events/kafka.ts(28,1): error TS1185: Merge conflict marker encountered.
+src/events/kafka.ts(32,1): error TS1185: Merge conflict marker encountered.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-6262710995078334.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-6262710995078334.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-6262710995078334.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
