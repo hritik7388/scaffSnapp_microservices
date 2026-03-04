@@ -8,10 +8,10 @@ import { UserType } from '../entities/superAdmin.enities';
 const publicRoutes = new Set([
   '/',
   '/health',
-  '/api/v1/superAdmin/login', 
-  '/api/v1/superAdmin/forgotPassword', 
-  '/api/v1/superAdmin/resetPassword', 
-  '/api/v1/superAdmin/refreshToken', 
+  '/api/v1/superAdmin/login',
+  '/api/v1/superAdmin/forgotPassword',
+  '/api/v1/superAdmin/resetPassword',
+  '/api/v1/superAdmin/refreshToken',
 
 ].map(route => route.toLowerCase()));
 
@@ -45,8 +45,8 @@ export const verifyToken = async (
 
     // Attach user info
     req.userId = decoded.sub;
-req.userRole = decoded.role;
-req.token = token;
+    req.userRole = decoded.role;
+    req.token = token;
     next();
   } catch (err: unknown) {
     let message = 'Unauthorized';

@@ -1,4 +1,4 @@
-import { Consumer, EachMessagePayload } from "kafkajs";
+import { Consumer } from "kafkajs";
 import { createConsumer } from "../kafka";
 import logger from "../../config/logger";
 import SubAdminServiceClass from "../../service/subAdmin.service";
