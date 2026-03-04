@@ -1,8 +1,7 @@
 import { Server } from 'node:http';
 import { AppDataSource } from '../data-source';
 import logger from '../config/logger';
-import { redisClient } from '../config/redis';
-import { disconnectKafka } from '../events/kafka';
+import { redisClient } from '../config/redis'; 
 
 let isShuttingDown = false;
 
@@ -37,8 +36,7 @@ export const setupGracefulShutdown = (server: Server) => {
                 logger.info('Redis connection closed 1');
             }
 
-            await disconnectKafka();
-            logger.info('Kafka disconnected 1');
+           
 
             clearTimeout(forceTimeout);
 

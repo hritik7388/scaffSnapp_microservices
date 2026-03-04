@@ -12,6 +12,8 @@ import { createError } from '../utils';
 import { ForgetPasswordDTO, RefreshTokenDTO, ResetPasswordDTO, SuperAdminDTO } from '../schemas/superAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
 import { config } from '../config/config';
+import { producer } from "../events/kafka";
+import logger from "../config/logger";
 
 
 const FAIL_TTL = 180;
@@ -22,6 +24,9 @@ const REFRESH_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 const FP_TOKEN_TTL = 180; // 3 minutes
 const FP_RATE_TTL = 120; // 2 minutes
 const FP_MAX_REQUESTS = 3;
+export const TOPICS = {
+  SUBADMIN_REGISTERED: "subadmin.registered",
+};
 
 
 class SuperAdminService {
@@ -96,6 +101,37 @@ class SuperAdminService {
     };
   }
 
+  async createSubAdmin(payload: any, superAdminId: number) {
+    const eventPayload = {
+      eventType: "SUBADMIN_REGISTERED",
+      firstName: payload.firstName,
+      lastName: payload.lastName,
+      email: payload.email,
+      phoneNumber: payload.phoneNumber,
+      countryCode: payload.countryCode,
+      profileImage: payload.profileImage,
+      address: payload.address,
+      coordinates: payload.coordinates,
+      createdById: superAdminId,
+      createdByRole: "SUPER_ADMIN",
+      timestamp: new Date(),
+    };
+
+    await producer.send({
+      topic: TOPICS.SUBADMIN_REGISTERED,
+      messages: [
+        {
+          key: payload.email,
+          value: JSON.stringify(eventPayload),
+        },
+      ],
+    });
+
+    logger.info(
+      `SubAdmin creation event published by SuperAdmin ID: ${superAdminId}`
+    );
+  }
+
   async refreshToken(data: RefreshTokenDTO) {
     const tokens = await this.refresh(
       data.refreshToken,
@@ -107,6 +143,8 @@ class SuperAdminService {
       refreshToken: tokens.refreshToken,
     };
   }
+
+
 
   private async updatePasswordAndRevokeSessions(
     credential: SuperAdminCredential,

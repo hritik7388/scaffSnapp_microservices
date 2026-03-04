@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { SubAdminApproval } from "../entities/subAdmin.enities";
 
 
 export const registerSubAdminSchema = z.object({
@@ -70,6 +71,7 @@ export const registerSubAdminSchema = z.object({
         .max(180),
     })
     .optional(),
+    isApproved:SubAdminApproval
 });
 
 export const subAdminSchema = z.object({
