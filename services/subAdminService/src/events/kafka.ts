@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 import { Kafka, logLevel, Consumer } from "kafkajs";
 import logger from "../config/logger";
 import { config } from "../config/config";
-=======
-// src/events/kafka.ts
-import { Kafka, logLevel } from 'kafkajs';
-import logger from '../config/logger';
-import { config } from '../config/config';
->>>>>>> ed543bdde29a9f19caabb86638fdc7d4c8d8e0e3
 
 let isProducerConnected = false;
 
@@ -21,15 +14,9 @@ const kafka = new Kafka({
   logLevel: logLevel.NOTHING,
 });
 
-<<<<<<< HEAD
 //
 // ================= PRODUCER =================
 //
-=======
-export const createConsumer = (groupId: string) => {
-  return kafka.consumer({ groupId });
-};
->>>>>>> ed543bdde29a9f19caabb86638fdc7d4c8d8e0e3
 
 export const producer = kafka.producer({
   allowAutoTopicCreation: false,
