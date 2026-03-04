@@ -89,3 +89,412 @@ src/service/subAdmin.service.ts(288,37): error TS1005: ',' expected.
     at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1481:32)
     at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 18:46:33 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(5,10): error TS2305: Module '"../events/kafka"' has no exported member 'connectKafka'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:53:41 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:53:45 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(5,9): error TS1192: Module '"C:/Users/Hriti/OneDrive/Desktop/beta/scaffSnapp_microservices/services/subAdminService/src/events/kafka"' has no default export.
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:53:51 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:54:30 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:54:40 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:54:42 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(19,9): error TS2339: Property 'createConsumer' does not exist on type 'Kafka'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:54:52 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:55:44 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:56:00 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:56:08 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(35,7): error TS2304: Cannot find name 'isConnected'.
+src/events/kafka.ts(39,5): error TS2304: Cannot find name 'isConnected'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:56:15 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:56:23 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(35,7): error TS2304: Cannot find name 'isConnected'.
+src/events/kafka.ts(39,5): error TS2304: Cannot find name 'isConnected'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:56:44 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(7,6): error TS1123: Variable declaration list cannot be empty.
+src/events/kafka.ts(37,7): error TS2304: Cannot find name 'isConnected'.
+src/events/kafka.ts(41,5): error TS2304: Cannot find name 'isConnected'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:57:05 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(7,19): error TS2304: Cannot find name 'fa'.
+src/events/kafka.ts(41,5): error TS2588: Cannot assign to 'isConnected' because it is a constant.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:57:09 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(41,5): error TS2588: Cannot assign to 'isConnected' because it is a constant.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:57:29 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(41,5): error TS2588: Cannot assign to 'isConnected' because it is a constant.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:57:33 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(35,7): error TS2304: Cannot find name 'isConnected'.
+src/events/kafka.ts(39,5): error TS2304: Cannot find name 'isConnected'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:57:44 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(35,3): error TS2304: Cannot find name 'isConnected'.
+src/events/kafka.ts(36,7): error TS2304: Cannot find name 'isConnected'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:57:48 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(35,3): error TS2304: Cannot find name 'isConnected'.
+src/events/kafka.ts(36,7): error TS2304: Cannot find name 'isConnected'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-8958805793767696.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:58:21 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(22,15): error TS2304: Cannot find name 'connectKafka'.
+src/init/index.ts(5,16): error TS1005: '=' expected.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:58:32 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(5,9): error TS2613: Module '"C:/Users/Hriti/OneDrive/Desktop/beta/scaffSnapp_microservices/services/subAdminService/src/events/kafka"' has no default export. Did you mean to use 'import { connectKafka } from "C:/Users/Hriti/OneDrive/Desktop/beta/scaffSnapp_microservices/services/subAdminService/src/events/kafka"' instead?
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:58:53 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(5,9): error TS2613: Module '"C:/Users/Hriti/OneDrive/Desktop/beta/scaffSnapp_microservices/services/subAdminService/src/events/kafka"' has no default export. Did you mean to use 'import { connectKafka } from "C:/Users/Hriti/OneDrive/Desktop/beta/scaffSnapp_microservices/services/subAdminService/src/events/kafka"' instead?
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:59:00 [error] : Error: ⨯ Unable to compile TypeScript:
+src/utils/shutdown.ts(5,10): error TS2724: '"../events/kafka"' has no exported member named 'disconnectKafka'. Did you mean 'connectKafka'?
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\utils\shutdown.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:59:11 [error] : Error: ⨯ Unable to compile TypeScript:
+src/init/index.ts(5,9): error TS2613: Module '"C:/Users/Hriti/OneDrive/Desktop/beta/scaffSnapp_microservices/services/subAdminService/src/events/kafka"' has no default export. Did you mean to use 'import { connectKafka } from "C:/Users/Hriti/OneDrive/Desktop/beta/scaffSnapp_microservices/services/subAdminService/src/events/kafka"' instead?
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\init\index.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:59:44 [error] : Error: ⨯ Unable to compile TypeScript:
+src/utils/shutdown.ts(5,10): error TS2724: '"../events/kafka"' has no exported member named 'disconnectKafka'. Did you mean 'connectKafka'?
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\utils\shutdown.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:59:53 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(41,5): error TS2588: Cannot assign to 'isConnected' because it is a constant.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 19:59:59 [error] : Error: ⨯ Unable to compile TypeScript:
+src/events/kafka.ts(37,7): error TS2304: Cannot find name 'isConnected'.
+src/events/kafka.ts(41,5): error TS2304: Cannot find name 'isConnected'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\events\kafka.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 20:00:03 [error] : Error: ⨯ Unable to compile TypeScript:
+src/utils/shutdown.ts(5,10): error TS2724: '"../events/kafka"' has no exported member named 'disconnectKafka'. Did you mean 'connectKafka'?
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\utils\shutdown.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+2026-03-04 20:01:10 [error] : Error: ⨯ Unable to compile TypeScript:
+src/utils/shutdown.ts(39,19): error TS2304: Cannot find name 'disconnectKafka'.
+
+    at Object.<anonymous> (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\src\utils\shutdown.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+    at Module._compile (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:69:33)
+    at node:internal/modules/cjs/loader:1893:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:114:20)
+    at require.extensions.<computed> (C:\Users\Hriti\AppData\Local\Temp\ts-node-dev-hook-35028811621192846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\Hriti\OneDrive\Desktop\beta\scaffSnapp_microservices\services\subAdminService\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
