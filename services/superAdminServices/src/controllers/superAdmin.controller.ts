@@ -59,11 +59,11 @@ export class SuperAdminController {
   }
 
   async createSubAdmin(req: Request, res: Response): Promise<any> { 
+    const id=Number(req.userId)
     const parseResult=createSubAdminSchema.parse(req.body);
-    const userData=await this.superAdminAuthService.createSubAdmin(parseResult);
+    const userData=await this.superAdminAuthService.createSubAdmin(id,parseResult);
     return res.status(200).json({
-      statusCode:200,
-      message:userData.message 
+      statusCode:200, 
       
     })
     

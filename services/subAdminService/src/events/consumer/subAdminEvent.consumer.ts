@@ -6,9 +6,7 @@ import { SubAdmin, SubAdminApproval, UserType } from "../../entities/subAdmin.en
 import crypto from "crypto";
 import { AppDataSource } from "../../data-source";
 import { SubAdminCredential } from "../../entities/subAdmin.credentials";
-import bcrypt from "bcryptjs";
-
-const subAdminService = new SubAdminServiceClass();
+import bcrypt from "bcryptjs"; 
 
 export const TOPICS = {
     SUBADMIN_REGISTERED: "subadmin.registered",
@@ -26,7 +24,7 @@ export const startTransactionEventsConsumer = async (): Promise<Consumer> => {
 
     await consumer.run({
         autoCommit: true,
-        partitionsConsumedConcurrently: 3,
+        partitionsConsumedConcurrently: 1,
 
         eachMessage: async ({ topic, partition, message }) => {
             const value = message.value?.toString();

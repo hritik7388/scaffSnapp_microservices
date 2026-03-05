@@ -173,3 +173,22 @@ src/service/superAdmin.service.ts(429,25): error TS2554: Expected 2 arguments, b
     at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1266:32)
     at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-03-05 11:44:50 [error] : Error: ⨯ Unable to compile TypeScript:
+src/routes/superAdmin.routes.ts(3,10): error TS2395: Individual declarations in merged declaration 'verifyToken' must be all exported or all local.
+src/routes/superAdmin.routes.ts(3,10): error TS2440: Import declaration conflicts with local declaration of 'verifyToken'.
+src/routes/superAdmin.routes.ts(12,36): error TS2448: Block-scoped variable 'verifyToken' used before its declaration.
+src/routes/superAdmin.routes.ts(12,36): error TS2454: Variable 'verifyToken' is used before being assigned.
+src/routes/superAdmin.routes.ts(28,14): error TS2395: Individual declarations in merged declaration 'verifyToken' must be all exported or all local.
+src/routes/superAdmin.routes.ts(12,49): error TS1135: Argument expression expected.
+src/routes/superAdmin.routes.ts(76,65): error TS1005: ';' expected.
+
+    at Object.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/src/routes/superAdmin.routes.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-47866036549003854.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-47866036549003854.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-47866036549003854.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)

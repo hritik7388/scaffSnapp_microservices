@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { SuperAdminController } from '../controllers/superAdmin.controller';
-import { verifyToken } from "../middlewares/auth.middleware";
+import { requireSuperAdmin, verifyToken } from "../middlewares/auth.middleware";
 
 
 const superAdminRouter = Router();
@@ -9,6 +9,6 @@ superAdminRouter.post('/login', superAdminController.login.bind(superAdminContro
 superAdminRouter.post('/forgotPassword', superAdminController.forgotPassword.bind(superAdminController));
 superAdminRouter.post('/resetPassword', superAdminController.resetPassword.bind(superAdminController));
 superAdminRouter.post('/refreshToken', superAdminController.refreshToken.bind(superAdminController));
-superAdminRouter.post("/subadmin", verifyToken, createSubAdminController.bind(superAdminController));
+superAdminRouter.post("/subadmin", verifyToken, requireSuperAdmin, superAdminController.createSubAdmin.bind(superAdminController));
 
 export default superAdminRouter;
