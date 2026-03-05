@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import SuperAdminService from '../service/superAdmin.service';
-import { forgetPasswordSchema, refreshTokenSchema, resetPasswordSchema, superAdminSchema } from '../schemas/superAdminSchema';
+import { createSubAdminSchema, forgetPasswordSchema, refreshTokenSchema, resetPasswordSchema, superAdminSchema } from '../schemas/superAdminSchema';
 
 
 export class SuperAdminController {
@@ -55,6 +55,18 @@ export class SuperAdminController {
       refreshToken: userData.refreshToken,
       
     })
+    
+  }
+
+  async createSubAdmin(req: Request, res: Response): Promise<any> { 
+    const id=Number(req.userId)
+    const parseResult=createSubAdminSchema.parse(req.body);
+    const userData=await this.superAdminAuthService.createSubAdmin(id,parseResult);
+    return res.status(200).json({
+      statusCode:200, 
+      
+    })
+    
   }
 
 }
