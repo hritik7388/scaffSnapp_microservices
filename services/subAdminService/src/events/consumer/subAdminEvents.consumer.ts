@@ -1,80 +1,86 @@
 import { Consumer } from "kafkajs";
 import { createConsumer } from "../kafka";
 import logger from "../../config/logger";
-import SubAdminService  from "../../service/subAdmin.service";  
+import SubAdminService from "../../service/subAdmin.service";
 import { SubAdminApproval } from "../../entities/subAdmin.enities";
 import { RegisterSubAdminDTO } from "../../schemas/subAdminSchema";
 export const SUBADMIN_TOPICS = {
-  SUBADMIN_EVENTS: "subadmin-events",
+    SUBADMIN_EVENTS: "subadmin-events",
 };
 
 export const SUBADMIN_EVENT_TYPES = {
-  SUBADMIN_CREATED: "SUBADMIN_CREATED",
-  SUBADMIN_UPDATED: "SUBADMIN_UPDATED",
-  SUBADMIN_DELETED: "SUBADMIN_DELETED",
+    SUBADMIN_CREATED: "SUBADMIN_CREATED",
+    SUBADMIN_UPDATED: "SUBADMIN_UPDATED",
+    SUBADMIN_DELETED: "SUBADMIN_DELETED",
 };
 
 
 export const startSubAdminConsumer = async (): Promise<Consumer> => {
-  const consumer = createConsumer("subadmin-events-cg");
+    const subAdminService = new SubAdminService();
+    const consumer = createConsumer("subadmin-events-cg");
 
-  await consumer.connect();
+    await consumer.connect();
 
-  await consumer.subscribe({
-    topic: SUBADMIN_TOPICS.SUBADMIN_EVENTS,
-    fromBeginning: false,
-  });
-
-  // Consumer me hi handle function define kar do
-  const handleSubAdminCreated = async (eventData: RegisterSubAdminDTO) => {
-    return SubAdminService.register({
-      ...eventData,
-      isApproved: SubAdminApproval.APPROVED,
+    await consumer.subscribe({
+        topic: SUBADMIN_TOPICS.SUBADMIN_EVENTS,
+        fromBeginning: false,
     });
-  };
 
-  await consumer.run({
-    eachMessage: async ({ topic, partition, message }) => {
-      const value = message.value?.toString();
-
-      if (!value) {
-        logger.warn(`[${topic}.${partition}] Empty message received`);
-        return;
-      }
-
-      try {
-        const eventData = JSON.parse(value);
-
-        switch (eventData.eventType) {
-          case SUBADMIN_EVENT_TYPES.SUBADMIN_CREATED:
-            await handleSubAdminCreated(eventData);
-            break;
-
-          case SUBADMIN_EVENT_TYPES.SUBADMIN_UPDATED:
-            // agar chahe to yaha hi handle function define kar sakte ho
-            break;
-
-          case SUBADMIN_EVENT_TYPES.SUBADMIN_DELETED:
-            // agar chahe to yaha hi handle function define kar sakte ho
-            break;
-
-          default:
-            logger.warn(`Unhandled SubAdmin event type: ${eventData.eventType}`);
+    // Consumer me hi handle function define kar do
+    const handleSubAdminCreated = async (eventData: RegisterSubAdminDTO,) => {
+        try {
+            // Here you can call your service method to process subadmin creation
+            await subAdminService.register(eventData,eventData:isApproved
+                 
+            );
+            logger.info(`SubAdmin created via Kafka: ${eventData.email}`);
+        } catch (error) {
+            logger.error(`Error processing SUBADMIN_CREATED for ${eventData.email}`, error);
         }
+    };
 
-        logger.info(
-          `[${topic}.${partition}] Processed event: ${eventData.eventType}`
-        );
-      } catch (error) {
-        logger.error(
-          `[${topic}.${partition}] Error processing SubAdmin event`,
-          error
-        );
-      }
-    },
-  });
+    await consumer.run({
+        eachMessage: async ({ topic, partition, message }) => {
+            const value = message.value?.toString();
 
-  logger.info("SubAdmin Kafka consumer started successfully");
+            if (!value) {
+                logger.warn(`[${topic}.${partition}] Empty message received`);
+                return;
+            }
 
-  return consumer;
+            try {
+                const eventData = JSON.parse(value);
+
+                switch (eventData.eventType) {
+                    case SUBADMIN_EVENT_TYPES.SUBADMIN_CREATED:
+                        await handleSubAdminCreated(eventData);
+                        break;
+
+                    case SUBADMIN_EVENT_TYPES.SUBADMIN_UPDATED:
+                        // agar chahe to yaha hi handle function define kar sakte ho
+                        break;
+
+                    case SUBADMIN_EVENT_TYPES.SUBADMIN_DELETED:
+                        // agar chahe to yaha hi handle function define kar sakte ho
+                        break;
+
+                    default:
+                        logger.warn(`Unhandled SubAdmin event type: ${eventData.eventType}`);
+                }
+
+                logger.info(
+                    `[${topic}.${partition}] Processed event: ${eventData.eventType}`
+                );
+            } catch (error) {
+                logger.error(
+                    `[${topic}.${partition}] Error processing SubAdmin event`,
+                    error
+                );
+            }
+        },
+    });
+
+    logger.info("SubAdmin Kafka consumer started successfully");
+
+    return consumer;
 };

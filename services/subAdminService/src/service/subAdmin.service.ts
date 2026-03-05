@@ -7,7 +7,7 @@ import { AppDataSource } from '../data-source';
 import { redisClient } from '../config/redis'
 import { Repository } from 'typeorm';
 import { SubAdminCredential } from '../entities/subAdmin.credentials';
-import { SubAdmin, UserType } from '../entities/subAdmin.enities';
+import { SubAdmin, SubAdminApproval, UserType } from '../entities/subAdmin.enities';
 import { createError } from '../utils';
 import { RegisterSubAdminDTO, SubAdminDTO } from '../schemas/subAdminSchema';
 import { DeviceSession } from '../entities/device-session.entity';
@@ -115,6 +115,7 @@ class SubAdminService {
             lastName: data.lastName,
             phoneNumber: data.phoneNumber,
             countryCode: data.countryCode,
+            isApproved:SubAdminApproval.APPROVED,
 
             address: data.address,
             coordinates: data.coordinates,
