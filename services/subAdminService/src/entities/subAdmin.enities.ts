@@ -8,6 +8,7 @@ import {
     DeleteDateColumn,
     Index,
     JoinColumn,
+    BeforeInsert,
 } from "typeorm";
 import { SubAdminCredential } from "./subAdmin.credentials";
 
@@ -72,18 +73,27 @@ export class SubAdmin {
     @Column({ default: false })
     isVerified: boolean;
 
+    @BeforeInsert()
+    setDefaultSuperAdmin() {
+        if (!this.id && this.userType === UserType.SUPER_ADMIN) {
+            this.status = SubAdminStatus.ACTIVE;
+            this.isApproved = SubAdminApproval.APPROVED;
+            this.isVerified = true;
+        }
+    }
+
     @Column({ type: "json", nullable: true })
     address?: Record<string, any>;
 
     @Column({ type: "json", nullable: true })
     coordinates?: { lat: number; lng: number };
 
-    
+
 
     @Column({ name: "profile_image", nullable: true })
     profileImage?: string;
 
-   
+
 
     @OneToOne(() => SubAdminCredential, (credential) => credential.user, {
         cascade: true,

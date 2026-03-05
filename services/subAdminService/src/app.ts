@@ -15,6 +15,7 @@ import { indexRouter } from './routes/index.routes';
 import subadminRouter from './routes/subAdmin.routes';
 import { init } from './init'
 import { setupGracefulShutdown } from './utils/shutdown';
+import { startConsumers } from './events/consumer';
 
 const app = express();
 
@@ -43,6 +44,7 @@ AppDataSource.initialize()
         });
 
         setupGracefulShutdown(server);
+        startConsumers()
     })
     .catch((err) => {
         logger.error('error during Data Source initialization', err);

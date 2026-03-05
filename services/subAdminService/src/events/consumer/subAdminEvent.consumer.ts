@@ -6,7 +6,7 @@ import { SubAdmin, SubAdminApproval, UserType } from "../../entities/subAdmin.en
 import crypto from "crypto";
 import { AppDataSource } from "../../data-source";
 import { SubAdminCredential } from "../../entities/subAdmin.credentials";
-import bcrypt from "bcryptjs"; 
+import bcrypt from "bcryptjs";
 
 export const TOPICS = {
     SUBADMIN_REGISTERED: "subadmin.registered",
@@ -19,7 +19,7 @@ export const startTransactionEventsConsumer = async (): Promise<Consumer> => {
 
     await consumer.subscribe({
         topic: TOPICS.SUBADMIN_REGISTERED,
-        fromBeginning: false,
+        fromBeginning: true,
     });
 
     await consumer.run({
@@ -35,7 +35,7 @@ export const startTransactionEventsConsumer = async (): Promise<Consumer> => {
 
                 switch (eventData.eventType) {
 
-                    case "SUBADMIN_CREATED":
+                    case "SUBADMIN_REGISTERED":
                         await handleSubAdminCreate(eventData);
                         break;
 
@@ -88,19 +88,11 @@ export const handleSubAdminCreate = async (eventData: any) => {
             return;
         }
 
-        // ✅ Fetch Creator (Security Check)
-        const creator = await subAdminRepository.findOne({
-            where: { id: eventData.createdById },
-        });
 
-        if (!creator) {
-            logger.warn("Creator not found. Skipping SubAdmin creation.");
-            return;
-        }
 
         // ✅ Approval Logic
         const approvalStatus =
-            creator.userType === UserType.SUPER_ADMIN
+            eventData.createdByRole === "SUPER_ADMIN"
                 ? SubAdminApproval.APPROVED
                 : SubAdminApproval.PENDING;
 
@@ -126,7 +118,7 @@ export const handleSubAdminCreate = async (eventData: any) => {
             coordinates: eventData.coordinates,
             userType: UserType.SUB_ADMIN,
             isApproved: approvalStatus,
-            isVerified: false,
+            isVerified: true,
             credential,
         });
 
