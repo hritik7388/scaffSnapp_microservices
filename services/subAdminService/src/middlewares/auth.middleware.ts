@@ -46,6 +46,7 @@ req.token = token;
 
     next();
   } catch (err: unknown) {
+       console.log(`Exception while doing something: ${err}`);
     return res.status(401).json({ message: 'Unauthorized' });
   }
   
