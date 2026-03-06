@@ -45,7 +45,7 @@ req.userRole = decoded.role;
 req.token = token;
 
     next();
-  } catch (err: unknown) {
+  } catch (err: any) {
        console.log(`Exception while doing something: ${err}`);
     return res.status(401).json({ message: 'Unauthorized' });
   }
