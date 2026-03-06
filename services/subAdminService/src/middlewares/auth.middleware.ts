@@ -45,27 +45,10 @@ req.userRole = decoded.role;
 req.token = token;
 
     next();
-  } catch (error: unknown) {
-
-  console.error("JWT Verification Error:", error);
-
-  if (error instanceof jwt.TokenExpiredError) {
-    return res.status(401).json({
-      message: "Token expired, please login again"
-    });
-  }
-
-  if (error instanceof jwt.JsonWebTokenError) {
-    return res.status(401).json({
-      message: "Invalid token"
-    });
-  }
-
-  return res.status(500).json({
-    message: "Internal server error"
-  });
+  } catch (error) {
+  console.error("Auth middleware error:", error);
+  next(error);
 }
-
   
 };
 
