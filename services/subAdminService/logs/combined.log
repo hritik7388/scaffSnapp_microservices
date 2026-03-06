@@ -3060,3 +3060,69 @@
 2026-03-05 17:03:20 [info] : Starting Kafka consumers for subadmin-service
 2026-03-05 17:03:20 [info] : subadmin-service is running on http://localhost:3002
 2026-03-05 17:03:31 [info] : All Kafka consumers started successfully for subadmin-service
+2026-03-06 16:38:55 [error] : Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-06 16:38:55 [warn] : Redis connection closed
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-06 16:38:55 [warn] : Redis connection closed
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-06 16:38:55 [warn] : Redis connection closed
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-06 16:38:55 [warn] : Redis connection closed
+2026-03-06 16:38:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:56 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-06 16:38:56 [warn] : Redis connection closed
+2026-03-06 16:38:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:56 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-06 16:38:56 [warn] : Redis connection closed
+2026-03-06 16:38:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:57 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-06 16:38:57 [warn] : Redis connection closed
+2026-03-06 16:38:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:58 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-06 16:38:58 [warn] : Redis connection closed
+2026-03-06 16:38:59 [info] : Redis connection established
+2026-03-06 16:38:59 [info] : Redis ready to use
+2026-03-06 16:39:54 [info] : Redis connection established
+2026-03-06 16:39:54 [info] : Redis ready to use
+2026-03-06 16:39:54 [info] : Starting infrastructure initialization...
+2026-03-06 16:39:54 [info] : Redis connected successfully
+2026-03-06 16:39:54 [info] : All infrastructure initialized successfully ✅
+2026-03-06 16:39:54 [info] : Starting Kafka consumers for subadmin-service
+2026-03-06 16:39:54 [info] : subadmin-service is running on http://localhost:3002
+2026-03-06 16:41:06 [error] : KafkaJSNonRetriableError
+  Caused by: KafkaJSConnectionError: Connection error: connect ECONNREFUSED 127.0.0.1:29092
+    at Socket.onError (/home/hritikbhadauria/scaffSnapp_microservices/services/subAdminService/node_modules/kafkajs/src/network/connection.js:210:23)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2026-03-06 16:43:20 [info] : Redis connection established
+2026-03-06 16:43:20 [info] : Redis ready to use
+2026-03-06 16:43:21 [info] : Starting infrastructure initialization...
+2026-03-06 16:43:21 [info] : Redis connected successfully
+2026-03-06 16:43:21 [info] : All infrastructure initialized successfully ✅
+2026-03-06 16:43:21 [info] : Starting Kafka consumers for subadmin-service
+2026-03-06 16:43:21 [info] : subadmin-service is running on http://localhost:3002
+2026-03-06 16:44:26 [error] : KafkaJSNonRetriableError
+  Caused by: KafkaJSConnectionError: Connection error: connect ECONNREFUSED 127.0.0.1:29092
+    at Socket.onError (/home/hritikbhadauria/scaffSnapp_microservices/services/subAdminService/node_modules/kafkajs/src/network/connection.js:210:23)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2026-03-06 16:50:49 [info] : Redis connection established
+2026-03-06 16:50:49 [info] : Redis ready to use
+2026-03-06 16:50:49 [info] : Starting infrastructure initialization...
+2026-03-06 16:50:49 [info] : Redis connected successfully
+2026-03-06 16:50:49 [info] : All infrastructure initialized successfully ✅
+2026-03-06 16:50:49 [info] : Starting Kafka consumers for subadmin-service
+2026-03-06 16:50:49 [info] : subadmin-service is running on http://localhost:3002
+2026-03-06 16:50:53 [info] : All Kafka consumers started successfully for subadmin-service

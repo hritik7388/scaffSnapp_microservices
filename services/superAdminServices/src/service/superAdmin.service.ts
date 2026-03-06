@@ -47,7 +47,7 @@ class SuperAdminService {
     await this.verifyPassword(data.password, credential);
     await this.clearFailCounter(data.email, credential);
     const tokens = this.generateTokens(credential.user.id, credential.user.userType);
-  await redisClient.setex(
+    await redisClient.setex(
       `auth:${credential.user.id}:${tokens.accessToken}`, // key
       60 * 60 * 24,                           // 24h in seconds
       tokens.accessToken                       // value
@@ -106,7 +106,7 @@ class SuperAdminService {
     };
   }
 
-  async createSubAdmin( superAdminId: number,payload: any) {
+  async createSubAdmin(superAdminId: number, payload: any) {
     const eventPayload = {
       eventType: "SUBADMIN_REGISTERED",
       firstName: payload.firstName,
