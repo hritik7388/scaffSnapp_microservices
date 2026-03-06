@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const requiredEnv = (key: string): string => {
+const superAdminRequiredEnv = (key: string): string => {
     const value = process.env[key];
     if (!value) {
         throw new Error(`❌ Missing required environment variable: ${key}`);
@@ -10,7 +10,7 @@ const requiredEnv = (key: string): string => {
     return value;
 };
 
-interface Config {
+interface SuperAdminConfig {
     NODE_ENV: string;
     SERVICE_NAME: string;
     PORT: number;
@@ -24,22 +24,22 @@ interface Config {
     ALLOWED_ORIGINS: string;
 }
 
-export const config: Config = {
+export const config: SuperAdminConfig = {
     NODE_ENV: process.env.NODE_ENV || "development",
 
     SERVICE_NAME: process.env.SERVICE_NAME || require("../../package.json").name,
 
     PORT: Number(process.env.PORT) || 3001,
 
-    DATABASE_URL: requiredEnv("DATABASE_URL"),
+    DATABASE_URL: superAdminRequiredEnv("DATABASE_URL"),
 
-    REDIS_URL: requiredEnv("REDIS_URL"),
+    REDIS_URL: superAdminRequiredEnv("REDIS_URL"),
 
-    KAFKA_BROKER: requiredEnv("KAFKA_BROKER"),
+    KAFKA_BROKER: superAdminRequiredEnv("KAFKA_BROKER"),
 
-    JWT_ACCESS_SECRET: requiredEnv("JWT_ACCESS_SECRET"),
+    JWT_ACCESS_SECRET: superAdminRequiredEnv("JWT_ACCESS_SECRET"),
 
-    JWT_REFRESH_SECRET: requiredEnv("JWT_REFRESH_SECRET"),
+    JWT_REFRESH_SECRET: superAdminRequiredEnv("JWT_REFRESH_SECRET"),
 
     JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "24h",
 

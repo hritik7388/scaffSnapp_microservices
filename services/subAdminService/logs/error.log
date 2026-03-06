@@ -851,3 +851,29 @@
 2026-03-05 17:01:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
 2026-03-05 17:01:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
 2026-03-05 17:02:01 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [error] : Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:38:58 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-06 16:41:06 [error] : KafkaJSNonRetriableError
+  Caused by: KafkaJSConnectionError: Connection error: connect ECONNREFUSED 127.0.0.1:29092
+    at Socket.onError (/home/hritikbhadauria/scaffSnapp_microservices/services/subAdminService/node_modules/kafkajs/src/network/connection.js:210:23)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2026-03-06 16:44:26 [error] : KafkaJSNonRetriableError
+  Caused by: KafkaJSConnectionError: Connection error: connect ECONNREFUSED 127.0.0.1:29092
+    at Socket.onError (/home/hritikbhadauria/scaffSnapp_microservices/services/subAdminService/node_modules/kafkajs/src/network/connection.js:210:23)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
