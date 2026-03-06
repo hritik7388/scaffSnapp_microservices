@@ -45,10 +45,16 @@ req.userRole = decoded.role;
 req.token = token;
 
     next();
-  } catch (error) {
-  console.error("Auth middleware error:", error);
-  next(error);
-}
+  } catch (err: unknown) {
+    return res.status(401).json({ message: 'Unauthorized' });
+  }
   
 };
+
+export const requireSuperAdmin = (req: Request, res: Response, next: NextFunction) => {
+  if (req.userRole !== UserType.SUPER_ADMIN)
+    
+    { return res.status(403).json({ message: 'Only SuperAdmin can perform this action' }); } next();
+
+}
 
