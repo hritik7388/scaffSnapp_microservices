@@ -1,6 +1,6 @@
 import { Consumer } from "kafkajs";
 import { createConsumer } from "../kafka";
-import logger from "../../config/logger"; 
+import logger from "../../config/logger";
 import { SubAdmin, SubAdminApproval, UserType } from "../../entities/subAdmin.enities";
 import crypto from "crypto";
 import { AppDataSource } from "../../data-source";

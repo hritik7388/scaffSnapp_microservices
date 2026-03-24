@@ -70,8 +70,7 @@ export const registerSubAdminSchema = z.object({
         .min(-180, "Longitude must be between -180 and 180")
         .max(180),
     })
-    .optional(),
-    isApproved:SubAdminApproval
+    .optional(), 
 });
 
 export const subAdminSchema = z.object({

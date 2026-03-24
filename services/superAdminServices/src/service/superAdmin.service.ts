@@ -60,7 +60,7 @@ class SuperAdminService {
       data.deviceName,
       data.deviceToken
     );
-
+    await this.auditLogin(credential.id, ip, true)
 
     return {
       message: "Login successful",
@@ -358,6 +358,20 @@ class SuperAdminService {
       isRevoked: false,
     });
     return await this.deviceRepository.save(newSession);
+  }
+
+  private async auditLogin(
+    userId: number,
+    ip: string,
+    success: boolean
+  ) {
+
+    await this.credentialRepository.save({
+      id: userId,
+      ipAddress: ip,
+      success,
+      loginAt: new Date()
+    })
   }
 
   private async refresh(refreshToken: string, deviceToken: string) {
