@@ -1,5 +1,4 @@
-import { z } from "zod";
-import { SubAdminApproval } from "../entities/subAdmin.enities";
+import { z } from "zod"; 
 
 
 export const registerSubAdminSchema = z.object({
