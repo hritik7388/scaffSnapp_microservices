@@ -23,43 +23,30 @@ export const verifyToken = async (
   if (publicRoutes.has(req.path.toLowerCase())) return next();
 
   try {
-    const authHeader = req.headers.authorization;
-
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return res.status(403).json({ message: 'Authorization header missing or invalid' });
+    const authHeader = req.headers['authorization'];
+    if (!authHeader) {
+      return res.status(401).json({ message: 'Authorization header missing' });
     }
 
-    const token = authHeader.split(' ')[1];
+    const token = authHeader.split(' ')[1]; // Bearer <token>
+    if (!token) {
+      return res.status(401).json({ message: 'Token missing' });
+    }
 
     // Verify JWT
-    const decoded: any = jwt.verify(token, config.JWT_ACCESS_SECRET);
+    const decoded = jwt.verify(token, config.JWT_SECRET) as { userId: string, userType: UserType };
 
-    // Redis check (must exist)
-    const redisKey = `auth:${decoded.sub}:${token}`;
-    const redisToken = await redisClient.get(redisKey);
-    if (!redisToken) {
-      return res.status(401).json({ message: 'Session expired or invalid token' });
+    // Optional: Check Redis for blacklisted token
+    const isBlacklisted = await redisClient.get(`bl_${decoded.userId}`);
+    if (isBlacklisted) {
+      return res.status(401).json({ message: 'Token is revoked' });
     }
 
-    // Attach user info
-    req.userId = decoded.sub;
-    req.userRole = decoded.role;
-    req.token = token;
+    // Attach user info to request
+    req.user = decoded;
 
     next();
-  } catch (err: unknown) {
-    return res.status(401).json({ message: 'Unauthorized' });
+  } catch (error) {
+    return res.status(401).json({ message: 'Invalid or expired token' });
   }
-};
-
-// SuperAdmin-only routes
-export const requireSuperAdmin = (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  if (req.userRole !== UserType.SUPER_ADMIN) {
-    return res.status(403).json({ message: 'Only SuperAdmin can perform this action' });
-  }
-  next();
 };
