@@ -12,26 +12,28 @@ import { SuperAdmin } from "./superAdmin.enities";
 
 @Entity({ name: "super_admin_credentials" })
 @Index(["accountLockedUntil"])
+@Index(["email"])
 export class SuperAdminCredential {
+
   @PrimaryGeneratedColumn("increment")
   id: number;
 
-  @Column({ length: 255, unique: true })  
+  @Column({ length: 255, unique: true })
   email: string;
 
   @Column({
     name: "password_hash",
     length: 255,
-    select: false, 
+    select: false,
   })
   passwordHash: string;
 
   @Column({
     name: "must_change_password",
-    default: true,  
+    default: true,
   })
   mustChangePassword: boolean;
- 
+
   @Column({
     name: "failed_login_attempts",
     default: 0,
@@ -50,16 +52,45 @@ export class SuperAdminCredential {
     type: "timestamp",
     nullable: true,
   })
-
   passwordChangedAt?: Date;
 
- 
+  @Column({
+    name: "last_login_at",
+    type: "timestamp",
+    nullable: true,
+  })
+  lastLoginAt?: Date;
+
+  @Column({
+    name: "two_factor_enabled",
+    default: false,
+  })
+  twoFactorEnabled: boolean;
+
+  @Column({
+    name: "two_factor_secret",
+    nullable: true,
+  })
+  twoFactorSecret?: string;
+
+  @Column({
+    name: "password_reset_token",
+    nullable: true,
+  })
+  passwordResetToken?: string;
+
+  @Column({
+    name: "password_reset_expires",
+    type: "timestamp",
+    nullable: true,
+  })
+  passwordResetExpires?: Date;
+
   @OneToOne(() => SuperAdmin, (superAdmin) => superAdmin.credential, {
     onDelete: "CASCADE",
   })
   user: SuperAdmin;
 
- 
   @CreateDateColumn({ name: "created_at" })
   createdAt: Date;
 

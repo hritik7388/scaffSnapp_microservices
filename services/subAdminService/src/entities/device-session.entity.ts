@@ -1,4 +1,3 @@
-// src/modules/auth/entities/device-session.entity.ts
 
 import {
     Entity,
@@ -7,44 +6,61 @@ import {
     ManyToOne,
     CreateDateColumn,
     Index,
-} from 'typeorm';
-import { SubAdmin } from './subAdmin.enities';
+    JoinColumn
+} from "typeorm";
 
-@Entity({ name: 'device_sessions' })
-@Index(['userId'])
-@Index(['refreshTokenHash'])
-@Index(['isRevoked'])
+import { SubAdmin } from "./subAdmin.enities";
+
+@Entity({ name: "device_sessions" })
+@Index(["userId"])
+@Index(["refreshTokenHash"])
+@Index(["isRevoked"])
+@Index(["userId", "deviceToken"])
 export class DeviceSession {
-    @PrimaryGeneratedColumn('increment')
+
+    @PrimaryGeneratedColumn("increment")
     id: number;
 
-    @Column({ name: 'user_id' })
+    @Column({ name: "user_id" })
     userId: number;
 
     @Column({ nullable: true })
-    refreshTokenHash: string;
+    refreshTokenHash?: string;
 
-    @Column({ name: 'device_name', nullable: true })
+    @Column({ name: "device_name", nullable: true })
     deviceName?: string;
 
-    @Column({ name: 'device_type', nullable: true })
-    deviceType?: string; // ios | android | web
+    @Column({ name: "device_type", nullable: true })
+    deviceType?: string;
 
-    @Column({ name: 'device_token', nullable: true })
-    deviceToken?: string; // FCM token
+    @Column({ name: "device_token", nullable: true })
+    deviceToken?: string;
 
-    @Column({ name: 'ip_address', nullable: true })
+    @Column({ name: "ip_address", nullable: true })
     ipAddress?: string;
 
-    @Column({ name: 'expires_at', type: 'timestamp' })
+    @Column({ name: "user_agent", nullable: true })
+    userAgent?: string;
+
+    @Column({ name: "expires_at", type: "timestamp" })
     expiresAt: Date;
 
-    @Column({ name: 'is_revoked', default: false })
+    @Column({ name: "last_used_at", type: "timestamp", nullable: true })
+    lastUsedAt?: Date;
+
+    @Column({ default: false })
+    success: boolean;
+
+    @CreateDateColumn({ name: "login_at" })
+    loginAt: Date;
+
+    @Column({ name: "is_revoked", default: false })
     isRevoked: boolean;
 
-    @ManyToOne(() => SubAdmin, { onDelete: 'CASCADE' })
+    @ManyToOne(() => SubAdmin, { onDelete: "CASCADE" })
+    @JoinColumn({ name: "user_id" })
     user: SubAdmin;
 
-    @CreateDateColumn({ name: 'created_at' })
+    @CreateDateColumn({ name: "created_at" })
     createdAt: Date;
-}
+} 

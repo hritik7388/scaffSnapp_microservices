@@ -1,3 +1,4 @@
+
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -12,26 +13,28 @@ import { SubAdmin } from "./subAdmin.enities";
 
 @Entity({ name: "sub_admin_credentials" })
 @Index(["accountLockedUntil"])
+@Index(["email"])
 export class SubAdminCredential {
+
   @PrimaryGeneratedColumn("increment")
   id: number;
 
-  @Column({ length: 255, unique: true }) // UNIQUE handled here
+  @Column({ length: 255, unique: true })
   email: string;
 
   @Column({
     name: "password_hash",
     length: 255,
-    select: false, // 🔐 password never returned by default
+    select: false,
   })
   passwordHash: string;
 
   @Column({
     name: "must_change_password",
-    default: true, // 🔥 by default true for new accounts
+    default: true,
   })
   mustChangePassword: boolean;
-  // 🔐 Login security fields
+
   @Column({
     name: "failed_login_attempts",
     default: 0,
@@ -50,16 +53,45 @@ export class SubAdminCredential {
     type: "timestamp",
     nullable: true,
   })
-
   passwordChangedAt?: Date;
 
-  // 🔗 Relation
+  @Column({
+    name: "last_login_at",
+    type: "timestamp",
+    nullable: true,
+  })
+  lastLoginAt?: Date;
+
+  @Column({
+    name: "two_factor_enabled",
+    default: false,
+  })
+  twoFactorEnabled: boolean;
+
+  @Column({
+    name: "two_factor_secret",
+    nullable: true,
+  })
+  twoFactorSecret?: string;
+
+  @Column({
+    name: "password_reset_token",
+    nullable: true,
+  })
+  passwordResetToken?: string;
+
+  @Column({
+    name: "password_reset_expires",
+    type: "timestamp",
+    nullable: true,
+  })
+  passwordResetExpires?: Date;
+
   @OneToOne(() => SubAdmin, (subAdmin) => subAdmin.credential, {
     onDelete: "CASCADE",
   })
   user: SubAdmin;
 
-  // 📅 Timestamps
   @CreateDateColumn({ name: "created_at" })
   createdAt: Date;
 
@@ -69,3 +101,4 @@ export class SubAdminCredential {
   @DeleteDateColumn({ name: "deleted_at" })
   deletedAt?: Date;
 }
+

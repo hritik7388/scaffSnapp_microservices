@@ -21,11 +21,21 @@ export enum UserType {
     SUPER_ADMIN = "SUPER ADMIN",
 }
 
+type Address = {
+    street?: string;
+    city?: string;
+    state?: string;
+    country?: string;
+    postalCode?: string;
+};
+
 @Entity({ name: "super_admins" })
 @Index(["phoneNumber"], { unique: true })
 @Index(["status"])
 @Index(["createdAt"])
+@Index(["deletedAt"])
 export class SuperAdmin {
+
     @PrimaryGeneratedColumn("increment")
     id: number;
 
@@ -34,6 +44,9 @@ export class SuperAdmin {
 
     @Column({ name: "last_name", length: 100 })
     lastName: string;
+
+    @Column({ length: 50, unique: true, nullable: true })
+    username?: string;
 
     @Column({ name: "phone_number", length: 20, nullable: true })
     phoneNumber?: string;
@@ -59,13 +72,19 @@ export class SuperAdmin {
     isVerified: boolean;
 
     @Column({ type: "json", nullable: true })
-    address?: Record<string, any>;
+    address?: Address;
 
     @Column({ type: "json", nullable: true })
     coordinates?: { lat: number; lng: number };
 
     @Column({ name: "profile_image", nullable: true })
     profileImage?: string;
+
+    @Column({ name: "last_active_at", type: "timestamp", nullable: true })
+    lastActiveAt?: Date;
+
+    @Column({ name: "created_by", nullable: true })
+    createdBy?: number;
 
     @OneToOne(() => SuperAdminCredential, (credential) => credential.user, {
         cascade: true,

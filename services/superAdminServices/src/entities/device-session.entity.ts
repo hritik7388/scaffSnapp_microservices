@@ -15,10 +15,15 @@ import { SuperAdmin } from "../entities/superAdmin.enities";
 @Index(["refreshTokenHash"])
 @Index(["isRevoked"])
 @Index(["userId", "deviceToken"])
+@Index(["userId", "isRevoked"])
+@Index(["lastUsedAt"])
 export class DeviceSession {
 
   @PrimaryGeneratedColumn("increment")
   id: number;
+
+  @Column({ name: "session_id", unique: true, nullable: true })
+  sessionId?: string;
 
   @Column({ name: "user_id" })
   userId: number;
@@ -41,17 +46,32 @@ export class DeviceSession {
   @Column({ name: "user_agent", nullable: true })
   userAgent?: string;
 
+  @Column({ name: "country", nullable: true })
+  country?: string;
+
+  @Column({ name: "city", nullable: true })
+  city?: string;
+
+  @Column({ name: "login_method", default: "PASSWORD" })
+  loginMethod: string;
+
   @Column({ name: "expires_at", type: "timestamp" })
   expiresAt: Date;
 
   @Column({ name: "last_used_at", type: "timestamp", nullable: true })
   lastUsedAt?: Date;
 
+  @Column({ name: "logout_at", type: "timestamp", nullable: true })
+  logoutAt?: Date;
+
   @Column({ default: false })
   success: boolean;
 
   @CreateDateColumn({ name: "login_at" })
   loginAt: Date;
+
+  @Column({ name: "is_active", default: true })
+  isActive: boolean;
 
   @Column({ name: "is_revoked", default: false })
   isRevoked: boolean;
