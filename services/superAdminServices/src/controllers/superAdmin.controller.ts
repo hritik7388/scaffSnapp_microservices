@@ -64,6 +64,8 @@ export class SuperAdminController {
     const userData=await this.superAdminAuthService.createSubAdmin(id,parseResult);
     return res.status(200).json({
       statusCode:200, 
+      message:userData.message,
+
       
     })
     
