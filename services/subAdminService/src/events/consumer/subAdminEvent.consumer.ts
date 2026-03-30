@@ -2,7 +2,7 @@ import { Consumer } from "kafkajs";
 import { createConsumer } from "../kafka";
 import logger from "../../config/logger";
 import { SubAdmin, SubAdminApproval, UserType } from "../../entities/subAdmin.enities";
-import crypto from "node:crypto";
+import crypto from  "node:crypto";
 import { AppDataSource } from "../../data-source";
 import { SubAdminCredential } from "../../entities/subAdmin.credentials";
 import bcrypt from "bcryptjs";
