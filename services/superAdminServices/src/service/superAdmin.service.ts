@@ -135,6 +135,9 @@ class SuperAdminService {
     logger.info(
       `SubAdmin creation event published by SuperAdmin ID: ${superAdminId}`
     );
+    return{
+      message:"SubAdmin creation initiated. Pending approval if created by another SuperAdmin."
+    }
   }
 
   async refreshToken(data: RefreshTokenDTO) {
