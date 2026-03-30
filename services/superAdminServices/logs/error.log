@@ -1492,3 +1492,4 @@
     at Socket.emit (node:domain:489:12)
     at addChunk (node:internal/streams/readable:561:12)
     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-03-30 17:35:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m

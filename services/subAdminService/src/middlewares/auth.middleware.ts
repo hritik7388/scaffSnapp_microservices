@@ -18,7 +18,6 @@ export const verifyToken = async (
   res: Response,
   next: NextFunction
 ) => {
-  // Skip public routes
   if (publicRoutes.has(req.path.toLowerCase())) {
     return next();
   }
@@ -31,16 +30,10 @@ export const verifyToken = async (
 
     const token = authHeader.split(' ')[1];
     if (!token) return res.status(403).json({ message: 'Token missing' });
-
-    // Verify JWT
     const decoded: any = jwt.verify(token, config.JWT_ACCESS_SECRET);
-
-    // Check Redis token
     const redisKey = `auth:${decoded.id}:${token}`;
     const redisToken = await redisClient.get(redisKey);
     if (!redisToken) return res.status(401).json({ message: 'Unauthorized' });
-
-    // Attach user info
     req.userId = decoded.sub;
     req.userRole = decoded.role;
     req.token = token;
@@ -54,7 +47,7 @@ export const verifyToken = async (
 
 };
 
-export const requireSuperAdmin = (req: Request, res: Response, next: NextFunction) => {
-  if (req.userRole !== UserType.SUPER_ADMIN) { return res.status(403).json({ message: 'Only SuperAdmin can perform this action' }); } next();
+export const requireSubAdmin = (req: Request, res: Response, next: NextFunction) => {
+  if (req.userRole !== UserType.SUB_ADMIN) { return res.status(403).json({ message: 'Only SubAdmin can perform this action' }); } next();
 
 }

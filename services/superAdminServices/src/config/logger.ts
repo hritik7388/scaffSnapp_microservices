@@ -1,7 +1,5 @@
 import winston from 'winston';
 import { config } from './config';
-// You might want to install winston-daily-rotate-file for production
-// import DailyRotateFile from 'winston-daily-rotate-file'; 
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -15,17 +13,16 @@ const devFormat = winston.format.combine(
 const prodFormat = winston.format.json();
 
 const logger = winston.createLogger({
-    level: config.LOG_LEVEL || (isProduction ? 'info' : 'debug'), // Use 'debug' in development
+    level: config.LOG_LEVEL || (isProduction ? 'info' : 'debug'),
     format: winston.format.combine(
         winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
         winston.format.errors({ stack: true }),
-        winston.format.splat(), // Handles string interpolation
+        winston.format.splat(),
         isProduction ? prodFormat : devFormat
     ),
     defaultMeta: { service: config.SERVICE_NAME },
     transports: [
         new winston.transports.Console(),
-        // Consider DailyRotateFile for prod to prevent huge log files
         new winston.transports.File({
             filename: 'logs/error.log',
             level: 'error',
@@ -44,7 +41,6 @@ const logger = winston.createLogger({
 
 export const stream = {
     write: (message: string) => {
-        // Use logger.info() correctly by passing the message string
         logger.info(message.trim());
     },
 };

@@ -5054,3 +5054,15 @@
 2026-03-25 12:14:36 [[32minfo[39m] : [32mReceived SIGINT. Starting graceful shutdown...[39m
 2026-03-25 12:14:36 [[32minfo[39m] : [32mHTTP server closed 1[39m
 2026-03-25 12:14:36 [[32minfo[39m] : [32mDatabase connection closed 1[39m
+2026-03-30 17:35:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-30 17:48:33 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-30 17:48:34 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-30 17:50:44 [[32minfo[39m] : [32mReceived SIGINT. Starting graceful shutdown...[39m
+2026-03-30 17:50:44 [[32minfo[39m] : [32mHTTP server closed 1[39m
+2026-03-30 17:50:44 [[32minfo[39m] : [32mDatabase connection closed 1[39m
