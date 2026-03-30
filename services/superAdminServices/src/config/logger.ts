@@ -3,21 +3,23 @@ import { config } from './config';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const logFormat = winston.format.combine(
-    winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-    winston.format.errors({ stack: true }),
-    winston.format.splat(),
-    isProduction
-        ? winston.format.json()
-        : winston.format.colorize({ all: true }) &&
-        winston.format.printf(({ level, message, timestamp, stack }) => {
-            return `${timestamp} [${level}] : ${stack || message}`;
-        })
+const devFormat = winston.format.combine(
+    winston.format.colorize({ all: true }),
+    winston.format.printf(({ level, message, timestamp, stack }) => {
+        return `${timestamp} [${level}] : ${stack || message}`;
+    })
 );
 
+const prodFormat = winston.format.json();
+
 const logger = winston.createLogger({
-    level: config.LOG_LEVEL || 'info',
-    format: logFormat,
+    level: config.LOG_LEVEL || (isProduction ? 'info' : 'debug'),
+    format: winston.format.combine(
+        winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        winston.format.errors({ stack: true }),
+        winston.format.splat(),
+        isProduction ? prodFormat : devFormat
+    ),
     defaultMeta: { service: config.SERVICE_NAME },
     transports: [
         new winston.transports.Console(),

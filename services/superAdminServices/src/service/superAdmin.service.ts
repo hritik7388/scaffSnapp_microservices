@@ -60,7 +60,7 @@ class SuperAdminService {
       data.deviceName,
       data.deviceToken
     );
-
+    await this.auditLogin(credential.id, ip, true)
 
     return {
       message: "Login successful",
@@ -188,10 +188,12 @@ class SuperAdminService {
   }
 
   private async checkBlock(email: string) {
-    const ttl = await redisClient.ttl(`block:${email}`); // time left in seconds
-    if (ttl > 0) {
+    const blockKey = `block:${email}`;
+    const remainingSeconds = await redisClient.ttl(blockKey);
+    if (remainingSeconds > 0) {
+      const remainingMinutes = Math.ceil(remainingSeconds / 60);
       throw createError(
-        `Account blocked. Try again in ${Math.ceil(ttl / 60)} minutes.`,
+        `Account is temporarily blocked. Please try again after ${remainingMinutes} minute(s).`,
         429
       );
     }
@@ -208,12 +210,16 @@ class SuperAdminService {
       await this.increaseFailCount(email);
       throw new Error("Invalid credentials");
     }
-    if (credential.accountLockedUntil && credential.accountLockedUntil > new Date()) {
+    const now = new Date();
+    const { accountLockedUntil } = credential;
+
+    if (accountLockedUntil && accountLockedUntil > now) {
       throw createError(
-        `Account locked until ${credential.accountLockedUntil.toISOString()}`,
+        `Account locked until ${accountLockedUntil.toISOString()}`,
         429
       );
     }
+
     return credential;
   }
 
@@ -231,30 +237,32 @@ class SuperAdminService {
 
   private async verifyPassword(password: string, credential: SuperAdminCredential) {
     const cacheKey = `login-ok:${credential.email}`;
-    const cached = await redisClient.get(cacheKey);
-    if (cached) {
+    const cachedResult = await redisClient.get(cacheKey);
+    if (cachedResult) {
       return true;
     }
-    const isValid = await bcrypt.compare(password, credential.passwordHash);
-
-    if (!isValid) {
+    const isValidPassword = await bcrypt.compare(password, credential.passwordHash);
+    if (!isValidPassword) {
       await this.increaseFailCount(credential.email);
       throw createError("Invalid credentials", 401);
     }
     await redisClient.setex(cacheKey, 10, "ok");
+
+    return true;
   }
 
   private async increaseFailCount(email: string) {
-    const credential = await this.credentialRepository.findOne({
-      where: { email },
-      relations: ["user"]
-    });
     const redisFailKey = `fail:${email}`;
     const redisBlockKey = `block:${email}`;
+
     const attempts = await redisClient.incr(redisFailKey);
     if (attempts === 1) {
       await redisClient.expire(redisFailKey, FAIL_TTL);
     }
+    const credential = await this.credentialRepository.findOne({
+      where: { email },
+      relations: ["user"],
+    });
     if (!credential) {
       if (attempts >= MAX_FAILS) {
         await redisClient.setex(redisBlockKey, FAIL_TTL, "1");
@@ -263,24 +271,19 @@ class SuperAdminService {
           429
         );
       }
+
       throw createError(
         `Invalid credentials. ${MAX_FAILS - attempts} attempts remaining.`,
         401
       );
     }
-
-    // Update DB counter
     credential.failedLoginAttempts = attempts;
-
     if (credential.failedLoginAttempts >= MAX_FAILS) {
       const lockUntil = new Date(Date.now() + FAIL_TTL * 1000);
       credential.accountLockedUntil = lockUntil;
-
       await redisClient.setex(redisBlockKey, FAIL_TTL, "1");
     }
-
     await this.credentialRepository.save(credential);
-
     if (credential.failedLoginAttempts >= MAX_FAILS) {
       throw createError(
         `Account blocked due to multiple failed attempts. Try again at ${credential.accountLockedUntil?.toISOString()}`,
@@ -295,26 +298,44 @@ class SuperAdminService {
   }
 
   private async clearFailCounter(email: string, credential: SuperAdminCredential) {
-    await redisClient.del(`fail:${email}`);
-    await redisClient.del(`block:${email}`);
+    const failKey = `fail:${email}`;
+    const blockKey = `block:${email}`;
+    await Promise.all([
+      redisClient.del(failKey),
+      redisClient.del(blockKey)
+    ]);
     if (credential) {
       credential.failedLoginAttempts = 0;
       credential.accountLockedUntil = null;
+
       await this.credentialRepository.save(credential);
     }
   }
 
   private generateTokens(userId: number, role: UserType) {
+    const accessPayload = {
+      sub: userId,
+      role: role,
+      type: "access",
+    };
+    const refreshPayload = {
+      sub: userId,
+      role: role,
+      type: "refresh",
+    };
+    const accessExpiresIn = process.env.JWT_EXPIRES_IN || "24h";
+    const refreshExpiresIn = process.env.JWT_REFRESH_EXPIRES_IN || "7d";
     const accessToken = jwt.sign(
-      { sub: userId, role: role, type: "access" },
-      config.JWT_ACCESS_SECRET as jwt.Secret,   // ✅ cast to Secret
-      { expiresIn: process.env.JWT_EXPIRES_IN || "24h" } as SignOptions
+      accessPayload,
+      config.JWT_ACCESS_SECRET as jwt.Secret,
+      { expiresIn: accessExpiresIn } as SignOptions
     );
     const refreshToken = jwt.sign(
-      { sub: userId, role: role, type: "refresh" },
+      refreshPayload,
       config.JWT_REFRESH_SECRET as jwt.Secret,
-      { expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || "7d" } as SignOptions
+      { expiresIn: refreshExpiresIn } as SignOptions
     );
+
     return { accessToken, refreshToken };
   }
 
@@ -334,10 +355,10 @@ class SuperAdminService {
       throw createError("Device token is required", 400);
     }
     const refreshTokenHash = this.hashToken(refreshToken);
-    let session = await this.deviceRepository.findOne({
-      where: { userId, deviceToken }
-    });
     const expiresAt = new Date(Date.now() + REFRESH_TTL);
+    let session = await this.deviceRepository.findOne({
+      where: { userId, deviceToken },
+    });
     if (session) {
       session.refreshTokenHash = refreshTokenHash;
       session.ipAddress = ip;
@@ -345,19 +366,35 @@ class SuperAdminService {
       session.deviceName = deviceName;
       session.expiresAt = expiresAt;
       session.isRevoked = false;
-      return await this.deviceRepository.save(session);
+
+      return this.deviceRepository.save(session);
     }
     const newSession = this.deviceRepository.create({
       userId,
       refreshTokenHash,
       ipAddress: ip,
       deviceType,
-      deviceToken,
       deviceName,
+      deviceToken,
       expiresAt,
       isRevoked: false,
     });
-    return await this.deviceRepository.save(newSession);
+
+    return this.deviceRepository.save(newSession);
+  }
+
+  private async auditLogin(
+    userId: number,
+    ip: string,
+    success: boolean
+  ) {
+
+    await this.credentialRepository.save({
+      id: userId,
+      ipAddress: ip,
+      success,
+      loginAt: new Date()
+    })
   }
 
   private async refresh(refreshToken: string, deviceToken: string) {
@@ -367,24 +404,28 @@ class SuperAdminService {
     let payload: any;
     try {
       payload = jwt.verify(refreshToken, config.JWT_REFRESH_SECRET, {
-        algorithms: ["HS256"], // 🔐 Restrict algorithm
-      }) as { sub: string; type: string };
+        algorithms: ["HS256"],
+      }) as { sub: string; type: string; role?: UserType };
     } catch {
       throw createError("Invalid or expired refresh token", 401);
     }
     if (!payload?.sub || payload.type !== "refresh") {
       throw createError("Invalid token payload", 401);
     }
+
     const userId = payload.sub;
     const session = await this.deviceRepository.findOne({
       where: { userId, deviceToken },
     });
+
     if (!session) {
       throw createError("Session not found", 401);
     }
+
     if (session.isRevoked) {
       throw createError("Session revoked. Please login again.", 401);
     }
+
     if (!session.expiresAt || session.expiresAt < new Date()) {
       throw createError("Session expired. Please login again.", 401);
     }
@@ -392,19 +433,20 @@ class SuperAdminService {
     if (
       !session.refreshTokenHash ||
       !crypto.timingSafeEqual(
-        Buffer.from(incomingHash),
-        Buffer.from(session.refreshTokenHash)
+        Buffer.from(incomingHash, "utf8"),
+        Buffer.from(session.refreshTokenHash, "utf8")
       )
     ) {
       throw createError("Invalid refresh token", 401);
     }
-
-    const userRole = payload.role as UserType;
+    const userRole = payload.role ?? UserType.SUPER_ADMIN;
     const tokens = this.generateTokens(userId, userRole);
     session.refreshTokenHash = this.hashToken(tokens.refreshToken);
     session.expiresAt = new Date(Date.now() + REFRESH_TTL);
     session.isRevoked = false;
+
     await this.deviceRepository.save(session);
+
     return tokens;
   }
 }

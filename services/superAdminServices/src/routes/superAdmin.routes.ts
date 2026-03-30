@@ -1,11 +1,12 @@
 import { Router } from 'express';
 import { SuperAdminController } from '../controllers/superAdmin.controller';
 import { requireSuperAdmin, verifyToken } from "../middlewares/auth.middleware";
+import { loginRateLimiter } from '../middlewares/ip-lateLimmter';
 
 
 const superAdminRouter = Router();
 const superAdminController = new SuperAdminController();
-superAdminRouter.post('/login', superAdminController.login.bind(superAdminController));
+superAdminRouter.post('/login', loginRateLimiter, superAdminController.login.bind(superAdminController));
 superAdminRouter.post('/forgotPassword', superAdminController.forgotPassword.bind(superAdminController));
 superAdminRouter.post('/resetPassword', superAdminController.resetPassword.bind(superAdminController));
 superAdminRouter.post('/refreshToken', superAdminController.refreshToken.bind(superAdminController));

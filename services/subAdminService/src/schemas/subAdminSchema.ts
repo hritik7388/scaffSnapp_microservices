@@ -71,7 +71,6 @@ export const registerSubAdminSchema = z.object({
         .max(180),
     })
     .optional(),
-    isApproved:SubAdminApproval
 });
 
 export const subAdminSchema = z.object({
@@ -104,7 +103,7 @@ export const subAdminSchema = z.object({
     .optional()
 });
 
- 
+
 
 export type RegisterSubAdminDTO = z.infer<typeof registerSubAdminSchema>;
 

@@ -192,3 +192,24 @@ src/routes/superAdmin.routes.ts(76,65): error TS1005: ';' expected.
     at Object.nodeDevHook [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1266:32)
     at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+2026-03-30 17:35:35 [[31merror[39m] : TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/superAdmin.routes.ts[0m:[93m4[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../middlewares/ip-lateLimmter"' has no exported member named 'ipRateLimiter'. Did you mean 'loginRateLimiter'?
+
+[7m4[0m import { ipRateLimiter } from '../middlewares/ip-lateLimmter';
+[7m [0m [91m         ~~~~~~~~~~~~~[0m
+
+  [96msrc/middlewares/ip-lateLimmter.ts[0m:[93m10[0m:[93m14[0m
+    [7m10[0m export const loginRateLimiter = async (
+    [7m  [0m [96m             ~~~~~~~~~~~~~~~~[0m
+    'loginRateLimiter' is declared here.
+
+    at createTSError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Object.require.extensions.<computed> [as .ts] (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)

@@ -1,3 +1,4 @@
+
 import {
     Entity,
     PrimaryGeneratedColumn,
@@ -8,32 +9,32 @@ import {
     DeleteDateColumn,
     Index,
     JoinColumn,
-    BeforeInsert,
 } from "typeorm";
 import { SubAdminCredential } from "./subAdmin.credentials";
 
 export enum SubAdminStatus {
     ACTIVE = "ACTIVE",
     BLOCKED = "BLOCKED",
-    SUSPENDED = "SUSPENDED",
     DELETED = "DELETED",
 }
+
 export enum SubAdminApproval {
     APPROVED = "APPROVED",
     REJECTED = "REJECTED",
-    PENDING = "PENDING"
+    PENDING = "PENDING",
 }
 
 export enum UserType {
     SUB_ADMIN = "SUB_ADMIN",
-    SUPER_ADMIN = "SUPER_ADMIN",
 }
 
 @Entity({ name: "sub_admins" })
 @Index(["phoneNumber"], { unique: true })
 @Index(["status"])
 @Index(["createdAt"])
+@Index(["deletedAt"])
 export class SubAdmin {
+
     @PrimaryGeneratedColumn("increment")
     id: number;
 
@@ -42,6 +43,9 @@ export class SubAdmin {
 
     @Column({ name: "last_name", length: 100 })
     lastName: string;
+
+    @Column({ length: 50, unique: true, nullable: true })
+    username?: string;
 
     @Column({ name: "phone_number", length: 20, nullable: true })
     phoneNumber?: string;
@@ -59,9 +63,9 @@ export class SubAdmin {
     @Column({
         type: "enum",
         enum: SubAdminApproval,
-        default: SubAdminApproval.PENDING
+        default: SubAdminApproval.PENDING,
     })
-    isApproved: SubAdminApproval
+    isApproved: SubAdminApproval;
 
     @Column({
         type: "enum",
@@ -73,27 +77,20 @@ export class SubAdmin {
     @Column({ default: false })
     isVerified: boolean;
 
-    @BeforeInsert()
-    setDefaultSuperAdmin() {
-        if (!this.id && this.userType === UserType.SUPER_ADMIN) {
-            this.status = SubAdminStatus.ACTIVE;
-            this.isApproved = SubAdminApproval.APPROVED;
-            this.isVerified = true;
-        }
-    }
-
     @Column({ type: "json", nullable: true })
     address?: Record<string, any>;
 
     @Column({ type: "json", nullable: true })
     coordinates?: { lat: number; lng: number };
 
-
-
     @Column({ name: "profile_image", nullable: true })
     profileImage?: string;
 
+    @Column({ name: "last_active_at", type: "timestamp", nullable: true })
+    lastActiveAt?: Date;
 
+    @Column({ name: "created_by", nullable: true })
+    createdBy?: number;
 
     @OneToOne(() => SubAdminCredential, (credential) => credential.user, {
         cascade: true,
@@ -111,3 +108,4 @@ export class SubAdmin {
     @DeleteDateColumn({ name: "deleted_at" })
     deletedAt?: Date;
 }
+

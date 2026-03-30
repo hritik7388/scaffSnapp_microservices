@@ -3485,3 +3485,1584 @@
 2026-03-05 17:03:26 [info] : Kafka connected successfully
 2026-03-05 17:03:26 [info] : All infrastructure initialized successfully ✅
 2026-03-05 17:03:26 [info] : superadmin-service is running on http://localhost:3001
+2026-03-09 17:32:58 [info] : Redis connection established
+2026-03-09 17:32:58 [info] : Redis ready to use
+2026-03-09 17:32:59 [info] : Starting infrastructure initialization...
+2026-03-09 17:32:59 [info] : Redis connected successfully
+2026-03-09 17:32:59 [info] : Kafka producer connected
+2026-03-09 17:32:59 [info] : Kafka connected successfully
+2026-03-09 17:32:59 [info] : All infrastructure initialized successfully ✅
+2026-03-09 17:32:59 [info] : superadmin-service is running on http://localhost:3001
+2026-03-09 17:52:36 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-09 17:52:36 [warn] : Redis connection closed
+2026-03-09 17:52:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:36 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-09 17:52:36 [warn] : Redis connection closed
+2026-03-09 17:52:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:36 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-09 17:52:36 [warn] : Redis connection closed
+2026-03-09 17:52:36 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:36 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-09 17:52:36 [warn] : Redis connection closed
+2026-03-09 17:52:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:37 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-09 17:52:37 [warn] : Redis connection closed
+2026-03-09 17:52:37 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:37 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-09 17:52:37 [warn] : Redis connection closed
+2026-03-09 17:52:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:38 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-09 17:52:38 [warn] : Redis connection closed
+2026-03-09 17:52:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:39 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-09 17:52:39 [warn] : Redis connection closed
+2026-03-09 17:52:39 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:39 [warn] : Redis reconnect attempt #9, retrying in 900ms
+2026-03-09 17:52:39 [warn] : Redis connection closed
+2026-03-09 17:52:40 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:40 [warn] : Redis reconnect attempt #10, retrying in 1000ms
+2026-03-09 17:52:40 [warn] : Redis connection closed
+2026-03-09 17:52:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:41 [warn] : Redis reconnect attempt #11, retrying in 1100ms
+2026-03-09 17:52:41 [warn] : Redis connection closed
+2026-03-09 17:52:42 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:42 [warn] : Redis reconnect attempt #12, retrying in 1200ms
+2026-03-09 17:52:42 [warn] : Redis connection closed
+2026-03-09 17:52:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:44 [warn] : Redis reconnect attempt #13, retrying in 1300ms
+2026-03-09 17:52:44 [warn] : Redis connection closed
+2026-03-09 17:52:45 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:45 [warn] : Redis reconnect attempt #14, retrying in 1400ms
+2026-03-09 17:52:45 [warn] : Redis connection closed
+2026-03-09 17:52:46 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:46 [warn] : Redis reconnect attempt #15, retrying in 1500ms
+2026-03-09 17:52:46 [warn] : Redis connection closed
+2026-03-09 17:52:48 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:48 [warn] : Redis reconnect attempt #16, retrying in 1600ms
+2026-03-09 17:52:48 [warn] : Redis connection closed
+2026-03-09 17:52:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:50 [warn] : Redis reconnect attempt #17, retrying in 1700ms
+2026-03-09 17:52:50 [warn] : Redis connection closed
+2026-03-09 17:52:51 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:51 [warn] : Redis reconnect attempt #18, retrying in 1800ms
+2026-03-09 17:52:51 [warn] : Redis connection closed
+2026-03-09 17:52:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:53 [warn] : Redis reconnect attempt #19, retrying in 1900ms
+2026-03-09 17:52:53 [warn] : Redis connection closed
+2026-03-09 17:52:55 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:55 [warn] : Redis reconnect attempt #20, retrying in 2000ms
+2026-03-09 17:52:55 [warn] : Redis connection closed
+2026-03-09 17:52:57 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:57 [warn] : Redis reconnect attempt #21, retrying in 2100ms
+2026-03-09 17:52:57 [warn] : Redis connection closed
+2026-03-09 17:52:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:52:59 [warn] : Redis reconnect attempt #22, retrying in 2200ms
+2026-03-09 17:52:59 [warn] : Redis connection closed
+2026-03-09 17:53:01 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:01 [warn] : Redis reconnect attempt #23, retrying in 2300ms
+2026-03-09 17:53:01 [warn] : Redis connection closed
+2026-03-09 17:53:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:04 [warn] : Redis reconnect attempt #24, retrying in 2400ms
+2026-03-09 17:53:04 [warn] : Redis connection closed
+2026-03-09 17:53:06 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:06 [warn] : Redis reconnect attempt #25, retrying in 2500ms
+2026-03-09 17:53:06 [warn] : Redis connection closed
+2026-03-09 17:53:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:08 [warn] : Redis reconnect attempt #26, retrying in 2600ms
+2026-03-09 17:53:08 [warn] : Redis connection closed
+2026-03-09 17:53:11 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:11 [warn] : Redis reconnect attempt #27, retrying in 2700ms
+2026-03-09 17:53:11 [warn] : Redis connection closed
+2026-03-09 17:53:14 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:14 [warn] : Redis reconnect attempt #28, retrying in 2800ms
+2026-03-09 17:53:14 [warn] : Redis connection closed
+2026-03-09 17:53:17 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:17 [warn] : Redis reconnect attempt #29, retrying in 2900ms
+2026-03-09 17:53:17 [warn] : Redis connection closed
+2026-03-09 17:53:20 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:20 [warn] : Redis reconnect attempt #30, retrying in 3000ms
+2026-03-09 17:53:20 [warn] : Redis connection closed
+2026-03-09 17:53:23 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:23 [warn] : Redis reconnect attempt #31, retrying in 3000ms
+2026-03-09 17:53:23 [warn] : Redis connection closed
+2026-03-09 17:53:26 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:26 [warn] : Redis reconnect attempt #32, retrying in 3000ms
+2026-03-09 17:53:26 [warn] : Redis connection closed
+2026-03-09 17:53:29 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:29 [warn] : Redis reconnect attempt #33, retrying in 3000ms
+2026-03-09 17:53:29 [warn] : Redis connection closed
+2026-03-09 17:53:32 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:32 [warn] : Redis reconnect attempt #34, retrying in 3000ms
+2026-03-09 17:53:32 [warn] : Redis connection closed
+2026-03-09 17:53:35 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:35 [warn] : Redis reconnect attempt #35, retrying in 3000ms
+2026-03-09 17:53:35 [warn] : Redis connection closed
+2026-03-09 17:53:38 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:38 [warn] : Redis reconnect attempt #36, retrying in 3000ms
+2026-03-09 17:53:38 [warn] : Redis connection closed
+2026-03-09 17:53:41 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:41 [warn] : Redis reconnect attempt #37, retrying in 3000ms
+2026-03-09 17:53:41 [warn] : Redis connection closed
+2026-03-09 17:53:44 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:44 [warn] : Redis reconnect attempt #38, retrying in 3000ms
+2026-03-09 17:53:44 [warn] : Redis connection closed
+2026-03-09 17:53:47 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:47 [warn] : Redis reconnect attempt #39, retrying in 3000ms
+2026-03-09 17:53:47 [warn] : Redis connection closed
+2026-03-09 17:53:50 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:50 [warn] : Redis reconnect attempt #40, retrying in 3000ms
+2026-03-09 17:53:50 [warn] : Redis connection closed
+2026-03-09 17:53:53 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:53 [warn] : Redis reconnect attempt #41, retrying in 3000ms
+2026-03-09 17:53:53 [warn] : Redis connection closed
+2026-03-09 17:53:56 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:56 [warn] : Redis reconnect attempt #42, retrying in 3000ms
+2026-03-09 17:53:56 [warn] : Redis connection closed
+2026-03-09 17:53:59 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:53:59 [warn] : Redis reconnect attempt #43, retrying in 3000ms
+2026-03-09 17:53:59 [warn] : Redis connection closed
+2026-03-09 17:54:02 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:02 [warn] : Redis reconnect attempt #44, retrying in 3000ms
+2026-03-09 17:54:02 [warn] : Redis connection closed
+2026-03-09 17:54:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:05 [warn] : Redis reconnect attempt #45, retrying in 3000ms
+2026-03-09 17:54:05 [warn] : Redis connection closed
+2026-03-09 17:54:08 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:08 [warn] : Redis reconnect attempt #46, retrying in 3000ms
+2026-03-09 17:54:08 [warn] : Redis connection closed
+2026-03-09 17:54:11 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:11 [warn] : Redis reconnect attempt #47, retrying in 3000ms
+2026-03-09 17:54:11 [warn] : Redis connection closed
+2026-03-09 17:54:14 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:14 [warn] : Redis reconnect attempt #48, retrying in 3000ms
+2026-03-09 17:54:14 [warn] : Redis connection closed
+2026-03-09 17:54:17 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:17 [warn] : Redis reconnect attempt #49, retrying in 3000ms
+2026-03-09 17:54:17 [warn] : Redis connection closed
+2026-03-09 17:54:20 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:20 [warn] : Redis reconnect attempt #50, retrying in 3000ms
+2026-03-09 17:54:20 [warn] : Redis connection closed
+2026-03-09 17:54:23 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 17:54:23 [warn] : Redis reconnect attempt #51, retrying in 3000ms
+2026-03-09 17:54:23 [warn] : Redis connection closed
+2026-03-09 17:54:26 [info] : Redis connection established
+2026-03-09 17:54:26 [error] : write ECONNRESET
+2026-03-09 17:54:26 [warn] : Redis reconnect attempt #52, retrying in 3000ms
+2026-03-09 17:54:26 [warn] : Redis connection closed
+2026-03-09 17:54:26 [error] : Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+2026-03-09 17:54:29 [info] : Redis connection established
+2026-03-09 17:54:29 [info] : Redis ready to use
+2026-03-09 19:01:03 [warn] : Redis reconnect attempt #1, retrying in 100ms
+2026-03-09 19:01:03 [warn] : Redis connection closed
+2026-03-09 19:01:03 [info] : Redis connection established
+2026-03-09 19:01:03 [error] : write EPIPE
+2026-03-09 19:01:03 [warn] : Redis reconnect attempt #2, retrying in 200ms
+2026-03-09 19:01:03 [warn] : Redis connection closed
+2026-03-09 19:01:03 [info] : Redis connection established
+2026-03-09 19:01:03 [error] : write ECONNRESET
+2026-03-09 19:01:03 [warn] : Redis reconnect attempt #3, retrying in 300ms
+2026-03-09 19:01:03 [warn] : Redis connection closed
+2026-03-09 19:01:04 [info] : Redis connection established
+2026-03-09 19:01:04 [error] : write ECONNRESET
+2026-03-09 19:01:04 [warn] : Redis reconnect attempt #4, retrying in 400ms
+2026-03-09 19:01:04 [warn] : Redis connection closed
+2026-03-09 19:01:04 [error] : Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+2026-03-09 19:01:04 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 19:01:04 [warn] : Redis reconnect attempt #5, retrying in 500ms
+2026-03-09 19:01:04 [warn] : Redis connection closed
+2026-03-09 19:01:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 19:01:05 [warn] : Redis reconnect attempt #6, retrying in 600ms
+2026-03-09 19:01:05 [warn] : Redis connection closed
+2026-03-09 19:01:05 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 19:01:05 [warn] : Redis reconnect attempt #7, retrying in 700ms
+2026-03-09 19:01:05 [warn] : Redis connection closed
+2026-03-09 19:01:06 [error] : connect ECONNREFUSED 127.0.0.1:6380
+2026-03-09 19:01:06 [warn] : Redis reconnect attempt #8, retrying in 800ms
+2026-03-09 19:01:06 [warn] : Redis connection closed
+2026-03-11 15:46:38 [[31merror[39m] : Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+2026-03-11 15:46:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:38 [[33mwarn[39m] : [33mRedis reconnect attempt #1, retrying in 100ms[39m
+2026-03-11 15:46:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:38 [[33mwarn[39m] : [33mRedis reconnect attempt #2, retrying in 200ms[39m
+2026-03-11 15:46:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:39 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:39 [[33mwarn[39m] : [33mRedis reconnect attempt #3, retrying in 300ms[39m
+2026-03-11 15:46:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:39 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:39 [[33mwarn[39m] : [33mRedis reconnect attempt #4, retrying in 400ms[39m
+2026-03-11 15:46:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:39 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:39 [[33mwarn[39m] : [33mRedis reconnect attempt #5, retrying in 500ms[39m
+2026-03-11 15:46:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:40 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:40 [[33mwarn[39m] : [33mRedis reconnect attempt #6, retrying in 600ms[39m
+2026-03-11 15:46:40 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:40 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:40 [[33mwarn[39m] : [33mRedis reconnect attempt #7, retrying in 700ms[39m
+2026-03-11 15:46:40 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:41 [[33mwarn[39m] : [33mRedis reconnect attempt #8, retrying in 800ms[39m
+2026-03-11 15:46:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:42 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:42 [[33mwarn[39m] : [33mRedis reconnect attempt #9, retrying in 900ms[39m
+2026-03-11 15:46:42 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:43 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:43 [[33mwarn[39m] : [33mRedis reconnect attempt #10, retrying in 1000ms[39m
+2026-03-11 15:46:43 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:44 [[33mwarn[39m] : [33mRedis reconnect attempt #11, retrying in 1100ms[39m
+2026-03-11 15:46:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:45 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:45 [[33mwarn[39m] : [33mRedis reconnect attempt #12, retrying in 1200ms[39m
+2026-03-11 15:46:45 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:46 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:46 [[33mwarn[39m] : [33mRedis reconnect attempt #13, retrying in 1300ms[39m
+2026-03-11 15:46:46 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:47 [[33mwarn[39m] : [33mRedis reconnect attempt #14, retrying in 1400ms[39m
+2026-03-11 15:46:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:49 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:49 [[33mwarn[39m] : [33mRedis reconnect attempt #15, retrying in 1500ms[39m
+2026-03-11 15:46:49 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:50 [[33mwarn[39m] : [33mRedis reconnect attempt #16, retrying in 1600ms[39m
+2026-03-11 15:46:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:52 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:52 [[33mwarn[39m] : [33mRedis reconnect attempt #17, retrying in 1700ms[39m
+2026-03-11 15:46:52 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:54 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:54 [[33mwarn[39m] : [33mRedis reconnect attempt #18, retrying in 1800ms[39m
+2026-03-11 15:46:54 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:55 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:55 [[33mwarn[39m] : [33mRedis reconnect attempt #19, retrying in 1900ms[39m
+2026-03-11 15:46:55 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:57 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:57 [[33mwarn[39m] : [33mRedis reconnect attempt #20, retrying in 2000ms[39m
+2026-03-11 15:46:57 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:46:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:46:59 [[33mwarn[39m] : [33mRedis reconnect attempt #21, retrying in 2100ms[39m
+2026-03-11 15:46:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:01 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:01 [[33mwarn[39m] : [33mRedis reconnect attempt #22, retrying in 2200ms[39m
+2026-03-11 15:47:01 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:04 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:04 [[33mwarn[39m] : [33mRedis reconnect attempt #23, retrying in 2300ms[39m
+2026-03-11 15:47:04 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:06 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:06 [[33mwarn[39m] : [33mRedis reconnect attempt #24, retrying in 2400ms[39m
+2026-03-11 15:47:06 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:08 [[33mwarn[39m] : [33mRedis reconnect attempt #25, retrying in 2500ms[39m
+2026-03-11 15:47:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:11 [[33mwarn[39m] : [33mRedis reconnect attempt #26, retrying in 2600ms[39m
+2026-03-11 15:47:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:13 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:13 [[33mwarn[39m] : [33mRedis reconnect attempt #27, retrying in 2700ms[39m
+2026-03-11 15:47:13 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:16 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:16 [[33mwarn[39m] : [33mRedis reconnect attempt #28, retrying in 2800ms[39m
+2026-03-11 15:47:16 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:19 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:19 [[33mwarn[39m] : [33mRedis reconnect attempt #29, retrying in 2900ms[39m
+2026-03-11 15:47:19 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:22 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:22 [[33mwarn[39m] : [33mRedis reconnect attempt #30, retrying in 3000ms[39m
+2026-03-11 15:47:22 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:25 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:25 [[33mwarn[39m] : [33mRedis reconnect attempt #31, retrying in 3000ms[39m
+2026-03-11 15:47:25 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:28 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:28 [[33mwarn[39m] : [33mRedis reconnect attempt #32, retrying in 3000ms[39m
+2026-03-11 15:47:28 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:31 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:31 [[33mwarn[39m] : [33mRedis reconnect attempt #33, retrying in 3000ms[39m
+2026-03-11 15:47:31 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:34 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:34 [[33mwarn[39m] : [33mRedis reconnect attempt #34, retrying in 3000ms[39m
+2026-03-11 15:47:34 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:37 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:37 [[33mwarn[39m] : [33mRedis reconnect attempt #35, retrying in 3000ms[39m
+2026-03-11 15:47:37 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:40 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:40 [[33mwarn[39m] : [33mRedis reconnect attempt #36, retrying in 3000ms[39m
+2026-03-11 15:47:40 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:43 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:43 [[33mwarn[39m] : [33mRedis reconnect attempt #37, retrying in 3000ms[39m
+2026-03-11 15:47:43 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:46 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:46 [[33mwarn[39m] : [33mRedis reconnect attempt #38, retrying in 3000ms[39m
+2026-03-11 15:47:46 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:49 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:49 [[33mwarn[39m] : [33mRedis reconnect attempt #39, retrying in 3000ms[39m
+2026-03-11 15:47:49 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:52 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:52 [[33mwarn[39m] : [33mRedis reconnect attempt #40, retrying in 3000ms[39m
+2026-03-11 15:47:52 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:55 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:55 [[33mwarn[39m] : [33mRedis reconnect attempt #41, retrying in 3000ms[39m
+2026-03-11 15:47:55 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:47:58 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:47:58 [[33mwarn[39m] : [33mRedis reconnect attempt #42, retrying in 3000ms[39m
+2026-03-11 15:47:58 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:01 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:01 [[33mwarn[39m] : [33mRedis reconnect attempt #43, retrying in 3000ms[39m
+2026-03-11 15:48:01 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:04 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:04 [[33mwarn[39m] : [33mRedis reconnect attempt #44, retrying in 3000ms[39m
+2026-03-11 15:48:04 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:07 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:07 [[33mwarn[39m] : [33mRedis reconnect attempt #45, retrying in 3000ms[39m
+2026-03-11 15:48:07 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:10 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:10 [[33mwarn[39m] : [33mRedis reconnect attempt #46, retrying in 3000ms[39m
+2026-03-11 15:48:10 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:13 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:13 [[33mwarn[39m] : [33mRedis reconnect attempt #47, retrying in 3000ms[39m
+2026-03-11 15:48:13 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:16 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:16 [[33mwarn[39m] : [33mRedis reconnect attempt #48, retrying in 3000ms[39m
+2026-03-11 15:48:16 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:19 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:19 [[33mwarn[39m] : [33mRedis reconnect attempt #49, retrying in 3000ms[39m
+2026-03-11 15:48:19 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:22 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:22 [[33mwarn[39m] : [33mRedis reconnect attempt #50, retrying in 3000ms[39m
+2026-03-11 15:48:22 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:25 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:25 [[33mwarn[39m] : [33mRedis reconnect attempt #51, retrying in 3000ms[39m
+2026-03-11 15:48:25 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:28 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:28 [[33mwarn[39m] : [33mRedis reconnect attempt #52, retrying in 3000ms[39m
+2026-03-11 15:48:28 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:31 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:31 [[33mwarn[39m] : [33mRedis reconnect attempt #53, retrying in 3000ms[39m
+2026-03-11 15:48:31 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:34 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:34 [[33mwarn[39m] : [33mRedis reconnect attempt #54, retrying in 3000ms[39m
+2026-03-11 15:48:34 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:37 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:37 [[33mwarn[39m] : [33mRedis reconnect attempt #55, retrying in 3000ms[39m
+2026-03-11 15:48:37 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:40 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:40 [[33mwarn[39m] : [33mRedis reconnect attempt #56, retrying in 3000ms[39m
+2026-03-11 15:48:40 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:43 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:43 [[33mwarn[39m] : [33mRedis reconnect attempt #57, retrying in 3000ms[39m
+2026-03-11 15:48:43 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:46 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:46 [[33mwarn[39m] : [33mRedis reconnect attempt #58, retrying in 3000ms[39m
+2026-03-11 15:48:46 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:49 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:49 [[33mwarn[39m] : [33mRedis reconnect attempt #59, retrying in 3000ms[39m
+2026-03-11 15:48:49 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:52 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:52 [[33mwarn[39m] : [33mRedis reconnect attempt #60, retrying in 3000ms[39m
+2026-03-11 15:48:52 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:55 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:55 [[33mwarn[39m] : [33mRedis reconnect attempt #61, retrying in 3000ms[39m
+2026-03-11 15:48:55 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:48:58 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:48:58 [[33mwarn[39m] : [33mRedis reconnect attempt #62, retrying in 3000ms[39m
+2026-03-11 15:48:58 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:01 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:01 [[33mwarn[39m] : [33mRedis reconnect attempt #63, retrying in 3000ms[39m
+2026-03-11 15:49:01 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:04 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:04 [[33mwarn[39m] : [33mRedis reconnect attempt #64, retrying in 3000ms[39m
+2026-03-11 15:49:04 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:07 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:07 [[33mwarn[39m] : [33mRedis reconnect attempt #65, retrying in 3000ms[39m
+2026-03-11 15:49:07 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:10 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:10 [[33mwarn[39m] : [33mRedis reconnect attempt #66, retrying in 3000ms[39m
+2026-03-11 15:49:10 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:13 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:13 [[33mwarn[39m] : [33mRedis reconnect attempt #67, retrying in 3000ms[39m
+2026-03-11 15:49:13 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:16 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:16 [[33mwarn[39m] : [33mRedis reconnect attempt #68, retrying in 3000ms[39m
+2026-03-11 15:49:16 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:19 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:19 [[33mwarn[39m] : [33mRedis reconnect attempt #69, retrying in 3000ms[39m
+2026-03-11 15:49:19 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:22 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:22 [[33mwarn[39m] : [33mRedis reconnect attempt #70, retrying in 3000ms[39m
+2026-03-11 15:49:22 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:25 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:25 [[33mwarn[39m] : [33mRedis reconnect attempt #71, retrying in 3000ms[39m
+2026-03-11 15:49:25 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:28 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:28 [[33mwarn[39m] : [33mRedis reconnect attempt #72, retrying in 3000ms[39m
+2026-03-11 15:49:28 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:31 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:31 [[33mwarn[39m] : [33mRedis reconnect attempt #73, retrying in 3000ms[39m
+2026-03-11 15:49:31 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:34 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:34 [[33mwarn[39m] : [33mRedis reconnect attempt #74, retrying in 3000ms[39m
+2026-03-11 15:49:34 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:37 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:37 [[33mwarn[39m] : [33mRedis reconnect attempt #75, retrying in 3000ms[39m
+2026-03-11 15:49:37 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:40 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:40 [[33mwarn[39m] : [33mRedis reconnect attempt #76, retrying in 3000ms[39m
+2026-03-11 15:49:40 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:43 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:43 [[33mwarn[39m] : [33mRedis reconnect attempt #77, retrying in 3000ms[39m
+2026-03-11 15:49:43 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:46 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:46 [[33mwarn[39m] : [33mRedis reconnect attempt #78, retrying in 3000ms[39m
+2026-03-11 15:49:46 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:49 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:49 [[33mwarn[39m] : [33mRedis reconnect attempt #79, retrying in 3000ms[39m
+2026-03-11 15:49:49 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:52 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:52 [[33mwarn[39m] : [33mRedis reconnect attempt #80, retrying in 3000ms[39m
+2026-03-11 15:49:52 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:55 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:55 [[33mwarn[39m] : [33mRedis reconnect attempt #81, retrying in 3000ms[39m
+2026-03-11 15:49:55 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:49:58 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:49:58 [[33mwarn[39m] : [33mRedis reconnect attempt #82, retrying in 3000ms[39m
+2026-03-11 15:49:58 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:01 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:01 [[33mwarn[39m] : [33mRedis reconnect attempt #83, retrying in 3000ms[39m
+2026-03-11 15:50:01 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:04 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:04 [[33mwarn[39m] : [33mRedis reconnect attempt #84, retrying in 3000ms[39m
+2026-03-11 15:50:04 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:07 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:07 [[33mwarn[39m] : [33mRedis reconnect attempt #85, retrying in 3000ms[39m
+2026-03-11 15:50:07 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:10 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:10 [[33mwarn[39m] : [33mRedis reconnect attempt #86, retrying in 3000ms[39m
+2026-03-11 15:50:10 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:13 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:13 [[33mwarn[39m] : [33mRedis reconnect attempt #87, retrying in 3000ms[39m
+2026-03-11 15:50:13 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:16 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:16 [[33mwarn[39m] : [33mRedis reconnect attempt #88, retrying in 3000ms[39m
+2026-03-11 15:50:16 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:19 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:19 [[33mwarn[39m] : [33mRedis reconnect attempt #89, retrying in 3000ms[39m
+2026-03-11 15:50:19 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:22 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:22 [[33mwarn[39m] : [33mRedis reconnect attempt #90, retrying in 3000ms[39m
+2026-03-11 15:50:22 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:25 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:25 [[33mwarn[39m] : [33mRedis reconnect attempt #91, retrying in 3000ms[39m
+2026-03-11 15:50:25 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:28 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:28 [[33mwarn[39m] : [33mRedis reconnect attempt #92, retrying in 3000ms[39m
+2026-03-11 15:50:28 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:31 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:31 [[33mwarn[39m] : [33mRedis reconnect attempt #93, retrying in 3000ms[39m
+2026-03-11 15:50:31 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:34 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:34 [[33mwarn[39m] : [33mRedis reconnect attempt #94, retrying in 3000ms[39m
+2026-03-11 15:50:34 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:37 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:37 [[33mwarn[39m] : [33mRedis reconnect attempt #95, retrying in 3000ms[39m
+2026-03-11 15:50:37 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:40 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:40 [[33mwarn[39m] : [33mRedis reconnect attempt #96, retrying in 3000ms[39m
+2026-03-11 15:50:40 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:43 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:43 [[33mwarn[39m] : [33mRedis reconnect attempt #97, retrying in 3000ms[39m
+2026-03-11 15:50:43 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:46 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:46 [[33mwarn[39m] : [33mRedis reconnect attempt #98, retrying in 3000ms[39m
+2026-03-11 15:50:46 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:49 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:49 [[33mwarn[39m] : [33mRedis reconnect attempt #99, retrying in 3000ms[39m
+2026-03-11 15:50:49 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:52 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:52 [[33mwarn[39m] : [33mRedis reconnect attempt #100, retrying in 3000ms[39m
+2026-03-11 15:50:52 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:55 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:55 [[33mwarn[39m] : [33mRedis reconnect attempt #101, retrying in 3000ms[39m
+2026-03-11 15:50:55 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:50:58 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:50:58 [[33mwarn[39m] : [33mRedis reconnect attempt #102, retrying in 3000ms[39m
+2026-03-11 15:50:58 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:01 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:01 [[33mwarn[39m] : [33mRedis reconnect attempt #103, retrying in 3000ms[39m
+2026-03-11 15:51:01 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:04 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:04 [[33mwarn[39m] : [33mRedis reconnect attempt #104, retrying in 3000ms[39m
+2026-03-11 15:51:04 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:07 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:07 [[33mwarn[39m] : [33mRedis reconnect attempt #105, retrying in 3000ms[39m
+2026-03-11 15:51:07 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:10 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:10 [[33mwarn[39m] : [33mRedis reconnect attempt #106, retrying in 3000ms[39m
+2026-03-11 15:51:10 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:13 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:13 [[33mwarn[39m] : [33mRedis reconnect attempt #107, retrying in 3000ms[39m
+2026-03-11 15:51:13 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:16 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:16 [[33mwarn[39m] : [33mRedis reconnect attempt #108, retrying in 3000ms[39m
+2026-03-11 15:51:16 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:19 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:19 [[33mwarn[39m] : [33mRedis reconnect attempt #109, retrying in 3000ms[39m
+2026-03-11 15:51:19 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:22 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:22 [[33mwarn[39m] : [33mRedis reconnect attempt #110, retrying in 3000ms[39m
+2026-03-11 15:51:22 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:25 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:25 [[33mwarn[39m] : [33mRedis reconnect attempt #111, retrying in 3000ms[39m
+2026-03-11 15:51:25 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:28 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:28 [[33mwarn[39m] : [33mRedis reconnect attempt #112, retrying in 3000ms[39m
+2026-03-11 15:51:28 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:31 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:31 [[33mwarn[39m] : [33mRedis reconnect attempt #113, retrying in 3000ms[39m
+2026-03-11 15:51:31 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:34 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:34 [[33mwarn[39m] : [33mRedis reconnect attempt #114, retrying in 3000ms[39m
+2026-03-11 15:51:34 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:37 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:37 [[33mwarn[39m] : [33mRedis reconnect attempt #115, retrying in 3000ms[39m
+2026-03-11 15:51:37 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:40 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:40 [[33mwarn[39m] : [33mRedis reconnect attempt #116, retrying in 3000ms[39m
+2026-03-11 15:51:40 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:43 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:43 [[33mwarn[39m] : [33mRedis reconnect attempt #117, retrying in 3000ms[39m
+2026-03-11 15:51:43 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:46 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:46 [[33mwarn[39m] : [33mRedis reconnect attempt #118, retrying in 3000ms[39m
+2026-03-11 15:51:46 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:49 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:49 [[33mwarn[39m] : [33mRedis reconnect attempt #119, retrying in 3000ms[39m
+2026-03-11 15:51:49 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:52 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:52 [[33mwarn[39m] : [33mRedis reconnect attempt #120, retrying in 3000ms[39m
+2026-03-11 15:51:52 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:55 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:55 [[33mwarn[39m] : [33mRedis reconnect attempt #121, retrying in 3000ms[39m
+2026-03-11 15:51:55 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:51:58 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:51:58 [[33mwarn[39m] : [33mRedis reconnect attempt #122, retrying in 3000ms[39m
+2026-03-11 15:51:58 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:01 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:01 [[33mwarn[39m] : [33mRedis reconnect attempt #123, retrying in 3000ms[39m
+2026-03-11 15:52:01 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:04 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:04 [[33mwarn[39m] : [33mRedis reconnect attempt #124, retrying in 3000ms[39m
+2026-03-11 15:52:04 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:07 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:07 [[33mwarn[39m] : [33mRedis reconnect attempt #125, retrying in 3000ms[39m
+2026-03-11 15:52:07 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:10 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:10 [[33mwarn[39m] : [33mRedis reconnect attempt #126, retrying in 3000ms[39m
+2026-03-11 15:52:10 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:13 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:13 [[33mwarn[39m] : [33mRedis reconnect attempt #127, retrying in 3000ms[39m
+2026-03-11 15:52:13 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:16 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:16 [[33mwarn[39m] : [33mRedis reconnect attempt #128, retrying in 3000ms[39m
+2026-03-11 15:52:16 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:19 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:19 [[33mwarn[39m] : [33mRedis reconnect attempt #129, retrying in 3000ms[39m
+2026-03-11 15:52:19 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:22 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:22 [[33mwarn[39m] : [33mRedis reconnect attempt #130, retrying in 3000ms[39m
+2026-03-11 15:52:22 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:25 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:25 [[33mwarn[39m] : [33mRedis reconnect attempt #131, retrying in 3000ms[39m
+2026-03-11 15:52:25 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:28 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:28 [[33mwarn[39m] : [33mRedis reconnect attempt #132, retrying in 3000ms[39m
+2026-03-11 15:52:28 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:32 [[33mwarn[39m] : [33mRedis reconnect attempt #133, retrying in 3000ms[39m
+2026-03-11 15:52:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:35 [[33mwarn[39m] : [33mRedis reconnect attempt #134, retrying in 3000ms[39m
+2026-03-11 15:52:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:38 [[33mwarn[39m] : [33mRedis reconnect attempt #135, retrying in 3000ms[39m
+2026-03-11 15:52:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:41 [[33mwarn[39m] : [33mRedis reconnect attempt #136, retrying in 3000ms[39m
+2026-03-11 15:52:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:44 [[33mwarn[39m] : [33mRedis reconnect attempt #137, retrying in 3000ms[39m
+2026-03-11 15:52:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:47 [[33mwarn[39m] : [33mRedis reconnect attempt #138, retrying in 3000ms[39m
+2026-03-11 15:52:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:50 [[33mwarn[39m] : [33mRedis reconnect attempt #139, retrying in 3000ms[39m
+2026-03-11 15:52:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:53 [[33mwarn[39m] : [33mRedis reconnect attempt #140, retrying in 3000ms[39m
+2026-03-11 15:52:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:56 [[33mwarn[39m] : [33mRedis reconnect attempt #141, retrying in 3000ms[39m
+2026-03-11 15:52:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:52:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:52:59 [[33mwarn[39m] : [33mRedis reconnect attempt #142, retrying in 3000ms[39m
+2026-03-11 15:52:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:02 [[33mwarn[39m] : [33mRedis reconnect attempt #143, retrying in 3000ms[39m
+2026-03-11 15:53:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:05 [[33mwarn[39m] : [33mRedis reconnect attempt #144, retrying in 3000ms[39m
+2026-03-11 15:53:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:08 [[33mwarn[39m] : [33mRedis reconnect attempt #145, retrying in 3000ms[39m
+2026-03-11 15:53:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:11 [[33mwarn[39m] : [33mRedis reconnect attempt #146, retrying in 3000ms[39m
+2026-03-11 15:53:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:14 [[33mwarn[39m] : [33mRedis reconnect attempt #147, retrying in 3000ms[39m
+2026-03-11 15:53:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:17 [[33mwarn[39m] : [33mRedis reconnect attempt #148, retrying in 3000ms[39m
+2026-03-11 15:53:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:20 [[33mwarn[39m] : [33mRedis reconnect attempt #149, retrying in 3000ms[39m
+2026-03-11 15:53:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:23 [[33mwarn[39m] : [33mRedis reconnect attempt #150, retrying in 3000ms[39m
+2026-03-11 15:53:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:26 [[33mwarn[39m] : [33mRedis reconnect attempt #151, retrying in 3000ms[39m
+2026-03-11 15:53:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:29 [[33mwarn[39m] : [33mRedis reconnect attempt #152, retrying in 3000ms[39m
+2026-03-11 15:53:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:32 [[33mwarn[39m] : [33mRedis reconnect attempt #153, retrying in 3000ms[39m
+2026-03-11 15:53:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:35 [[33mwarn[39m] : [33mRedis reconnect attempt #154, retrying in 3000ms[39m
+2026-03-11 15:53:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:38 [[33mwarn[39m] : [33mRedis reconnect attempt #155, retrying in 3000ms[39m
+2026-03-11 15:53:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:41 [[33mwarn[39m] : [33mRedis reconnect attempt #156, retrying in 3000ms[39m
+2026-03-11 15:53:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:44 [[33mwarn[39m] : [33mRedis reconnect attempt #157, retrying in 3000ms[39m
+2026-03-11 15:53:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:47 [[33mwarn[39m] : [33mRedis reconnect attempt #158, retrying in 3000ms[39m
+2026-03-11 15:53:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:50 [[33mwarn[39m] : [33mRedis reconnect attempt #159, retrying in 3000ms[39m
+2026-03-11 15:53:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:53 [[33mwarn[39m] : [33mRedis reconnect attempt #160, retrying in 3000ms[39m
+2026-03-11 15:53:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:56 [[33mwarn[39m] : [33mRedis reconnect attempt #161, retrying in 3000ms[39m
+2026-03-11 15:53:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:53:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:53:59 [[33mwarn[39m] : [33mRedis reconnect attempt #162, retrying in 3000ms[39m
+2026-03-11 15:53:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:02 [[33mwarn[39m] : [33mRedis reconnect attempt #163, retrying in 3000ms[39m
+2026-03-11 15:54:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:05 [[33mwarn[39m] : [33mRedis reconnect attempt #164, retrying in 3000ms[39m
+2026-03-11 15:54:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:08 [[33mwarn[39m] : [33mRedis reconnect attempt #165, retrying in 3000ms[39m
+2026-03-11 15:54:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:11 [[33mwarn[39m] : [33mRedis reconnect attempt #166, retrying in 3000ms[39m
+2026-03-11 15:54:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:14 [[33mwarn[39m] : [33mRedis reconnect attempt #167, retrying in 3000ms[39m
+2026-03-11 15:54:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:17 [[33mwarn[39m] : [33mRedis reconnect attempt #168, retrying in 3000ms[39m
+2026-03-11 15:54:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:20 [[33mwarn[39m] : [33mRedis reconnect attempt #169, retrying in 3000ms[39m
+2026-03-11 15:54:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:23 [[33mwarn[39m] : [33mRedis reconnect attempt #170, retrying in 3000ms[39m
+2026-03-11 15:54:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:26 [[33mwarn[39m] : [33mRedis reconnect attempt #171, retrying in 3000ms[39m
+2026-03-11 15:54:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:29 [[33mwarn[39m] : [33mRedis reconnect attempt #172, retrying in 3000ms[39m
+2026-03-11 15:54:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:32 [[33mwarn[39m] : [33mRedis reconnect attempt #173, retrying in 3000ms[39m
+2026-03-11 15:54:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:35 [[33mwarn[39m] : [33mRedis reconnect attempt #174, retrying in 3000ms[39m
+2026-03-11 15:54:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:38 [[33mwarn[39m] : [33mRedis reconnect attempt #175, retrying in 3000ms[39m
+2026-03-11 15:54:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:41 [[33mwarn[39m] : [33mRedis reconnect attempt #176, retrying in 3000ms[39m
+2026-03-11 15:54:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:44 [[33mwarn[39m] : [33mRedis reconnect attempt #177, retrying in 3000ms[39m
+2026-03-11 15:54:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:47 [[33mwarn[39m] : [33mRedis reconnect attempt #178, retrying in 3000ms[39m
+2026-03-11 15:54:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:50 [[33mwarn[39m] : [33mRedis reconnect attempt #179, retrying in 3000ms[39m
+2026-03-11 15:54:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:53 [[33mwarn[39m] : [33mRedis reconnect attempt #180, retrying in 3000ms[39m
+2026-03-11 15:54:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:56 [[33mwarn[39m] : [33mRedis reconnect attempt #181, retrying in 3000ms[39m
+2026-03-11 15:54:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:54:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:54:59 [[33mwarn[39m] : [33mRedis reconnect attempt #182, retrying in 3000ms[39m
+2026-03-11 15:54:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:02 [[33mwarn[39m] : [33mRedis reconnect attempt #183, retrying in 3000ms[39m
+2026-03-11 15:55:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:05 [[33mwarn[39m] : [33mRedis reconnect attempt #184, retrying in 3000ms[39m
+2026-03-11 15:55:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:08 [[33mwarn[39m] : [33mRedis reconnect attempt #185, retrying in 3000ms[39m
+2026-03-11 15:55:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:11 [[33mwarn[39m] : [33mRedis reconnect attempt #186, retrying in 3000ms[39m
+2026-03-11 15:55:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:14 [[33mwarn[39m] : [33mRedis reconnect attempt #187, retrying in 3000ms[39m
+2026-03-11 15:55:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:17 [[33mwarn[39m] : [33mRedis reconnect attempt #188, retrying in 3000ms[39m
+2026-03-11 15:55:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:20 [[33mwarn[39m] : [33mRedis reconnect attempt #189, retrying in 3000ms[39m
+2026-03-11 15:55:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:23 [[33mwarn[39m] : [33mRedis reconnect attempt #190, retrying in 3000ms[39m
+2026-03-11 15:55:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:26 [[33mwarn[39m] : [33mRedis reconnect attempt #191, retrying in 3000ms[39m
+2026-03-11 15:55:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:29 [[33mwarn[39m] : [33mRedis reconnect attempt #192, retrying in 3000ms[39m
+2026-03-11 15:55:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:32 [[33mwarn[39m] : [33mRedis reconnect attempt #193, retrying in 3000ms[39m
+2026-03-11 15:55:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:35 [[33mwarn[39m] : [33mRedis reconnect attempt #194, retrying in 3000ms[39m
+2026-03-11 15:55:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:38 [[33mwarn[39m] : [33mRedis reconnect attempt #195, retrying in 3000ms[39m
+2026-03-11 15:55:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:41 [[33mwarn[39m] : [33mRedis reconnect attempt #196, retrying in 3000ms[39m
+2026-03-11 15:55:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:44 [[33mwarn[39m] : [33mRedis reconnect attempt #197, retrying in 3000ms[39m
+2026-03-11 15:55:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:47 [[33mwarn[39m] : [33mRedis reconnect attempt #198, retrying in 3000ms[39m
+2026-03-11 15:55:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:50 [[33mwarn[39m] : [33mRedis reconnect attempt #199, retrying in 3000ms[39m
+2026-03-11 15:55:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:53 [[33mwarn[39m] : [33mRedis reconnect attempt #200, retrying in 3000ms[39m
+2026-03-11 15:55:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:56 [[33mwarn[39m] : [33mRedis reconnect attempt #201, retrying in 3000ms[39m
+2026-03-11 15:55:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:55:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:55:59 [[33mwarn[39m] : [33mRedis reconnect attempt #202, retrying in 3000ms[39m
+2026-03-11 15:55:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:02 [[33mwarn[39m] : [33mRedis reconnect attempt #203, retrying in 3000ms[39m
+2026-03-11 15:56:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:05 [[33mwarn[39m] : [33mRedis reconnect attempt #204, retrying in 3000ms[39m
+2026-03-11 15:56:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:08 [[33mwarn[39m] : [33mRedis reconnect attempt #205, retrying in 3000ms[39m
+2026-03-11 15:56:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:11 [[33mwarn[39m] : [33mRedis reconnect attempt #206, retrying in 3000ms[39m
+2026-03-11 15:56:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:14 [[33mwarn[39m] : [33mRedis reconnect attempt #207, retrying in 3000ms[39m
+2026-03-11 15:56:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:17 [[33mwarn[39m] : [33mRedis reconnect attempt #208, retrying in 3000ms[39m
+2026-03-11 15:56:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:20 [[33mwarn[39m] : [33mRedis reconnect attempt #209, retrying in 3000ms[39m
+2026-03-11 15:56:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:23 [[33mwarn[39m] : [33mRedis reconnect attempt #210, retrying in 3000ms[39m
+2026-03-11 15:56:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:26 [[33mwarn[39m] : [33mRedis reconnect attempt #211, retrying in 3000ms[39m
+2026-03-11 15:56:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:29 [[33mwarn[39m] : [33mRedis reconnect attempt #212, retrying in 3000ms[39m
+2026-03-11 15:56:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:32 [[33mwarn[39m] : [33mRedis reconnect attempt #213, retrying in 3000ms[39m
+2026-03-11 15:56:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:35 [[33mwarn[39m] : [33mRedis reconnect attempt #214, retrying in 3000ms[39m
+2026-03-11 15:56:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:38 [[33mwarn[39m] : [33mRedis reconnect attempt #215, retrying in 3000ms[39m
+2026-03-11 15:56:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:41 [[33mwarn[39m] : [33mRedis reconnect attempt #216, retrying in 3000ms[39m
+2026-03-11 15:56:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:44 [[33mwarn[39m] : [33mRedis reconnect attempt #217, retrying in 3000ms[39m
+2026-03-11 15:56:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:47 [[33mwarn[39m] : [33mRedis reconnect attempt #218, retrying in 3000ms[39m
+2026-03-11 15:56:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:50 [[33mwarn[39m] : [33mRedis reconnect attempt #219, retrying in 3000ms[39m
+2026-03-11 15:56:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:53 [[33mwarn[39m] : [33mRedis reconnect attempt #220, retrying in 3000ms[39m
+2026-03-11 15:56:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:56 [[33mwarn[39m] : [33mRedis reconnect attempt #221, retrying in 3000ms[39m
+2026-03-11 15:56:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:56:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:56:59 [[33mwarn[39m] : [33mRedis reconnect attempt #222, retrying in 3000ms[39m
+2026-03-11 15:56:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:02 [[33mwarn[39m] : [33mRedis reconnect attempt #223, retrying in 3000ms[39m
+2026-03-11 15:57:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:05 [[33mwarn[39m] : [33mRedis reconnect attempt #224, retrying in 3000ms[39m
+2026-03-11 15:57:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:08 [[33mwarn[39m] : [33mRedis reconnect attempt #225, retrying in 3000ms[39m
+2026-03-11 15:57:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:11 [[33mwarn[39m] : [33mRedis reconnect attempt #226, retrying in 3000ms[39m
+2026-03-11 15:57:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:14 [[33mwarn[39m] : [33mRedis reconnect attempt #227, retrying in 3000ms[39m
+2026-03-11 15:57:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:17 [[33mwarn[39m] : [33mRedis reconnect attempt #228, retrying in 3000ms[39m
+2026-03-11 15:57:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:20 [[33mwarn[39m] : [33mRedis reconnect attempt #229, retrying in 3000ms[39m
+2026-03-11 15:57:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:23 [[33mwarn[39m] : [33mRedis reconnect attempt #230, retrying in 3000ms[39m
+2026-03-11 15:57:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:26 [[33mwarn[39m] : [33mRedis reconnect attempt #231, retrying in 3000ms[39m
+2026-03-11 15:57:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:29 [[33mwarn[39m] : [33mRedis reconnect attempt #232, retrying in 3000ms[39m
+2026-03-11 15:57:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:32 [[33mwarn[39m] : [33mRedis reconnect attempt #233, retrying in 3000ms[39m
+2026-03-11 15:57:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:35 [[33mwarn[39m] : [33mRedis reconnect attempt #234, retrying in 3000ms[39m
+2026-03-11 15:57:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:38 [[33mwarn[39m] : [33mRedis reconnect attempt #235, retrying in 3000ms[39m
+2026-03-11 15:57:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:41 [[33mwarn[39m] : [33mRedis reconnect attempt #236, retrying in 3000ms[39m
+2026-03-11 15:57:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:44 [[33mwarn[39m] : [33mRedis reconnect attempt #237, retrying in 3000ms[39m
+2026-03-11 15:57:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:47 [[33mwarn[39m] : [33mRedis reconnect attempt #238, retrying in 3000ms[39m
+2026-03-11 15:57:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:50 [[33mwarn[39m] : [33mRedis reconnect attempt #239, retrying in 3000ms[39m
+2026-03-11 15:57:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:53 [[33mwarn[39m] : [33mRedis reconnect attempt #240, retrying in 3000ms[39m
+2026-03-11 15:57:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:56 [[33mwarn[39m] : [33mRedis reconnect attempt #241, retrying in 3000ms[39m
+2026-03-11 15:57:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:57:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:57:59 [[33mwarn[39m] : [33mRedis reconnect attempt #242, retrying in 3000ms[39m
+2026-03-11 15:57:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:02 [[33mwarn[39m] : [33mRedis reconnect attempt #243, retrying in 3000ms[39m
+2026-03-11 15:58:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:05 [[33mwarn[39m] : [33mRedis reconnect attempt #244, retrying in 3000ms[39m
+2026-03-11 15:58:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:08 [[33mwarn[39m] : [33mRedis reconnect attempt #245, retrying in 3000ms[39m
+2026-03-11 15:58:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:11 [[33mwarn[39m] : [33mRedis reconnect attempt #246, retrying in 3000ms[39m
+2026-03-11 15:58:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:14 [[33mwarn[39m] : [33mRedis reconnect attempt #247, retrying in 3000ms[39m
+2026-03-11 15:58:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:17 [[33mwarn[39m] : [33mRedis reconnect attempt #248, retrying in 3000ms[39m
+2026-03-11 15:58:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:20 [[33mwarn[39m] : [33mRedis reconnect attempt #249, retrying in 3000ms[39m
+2026-03-11 15:58:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:23 [[33mwarn[39m] : [33mRedis reconnect attempt #250, retrying in 3000ms[39m
+2026-03-11 15:58:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:26 [[33mwarn[39m] : [33mRedis reconnect attempt #251, retrying in 3000ms[39m
+2026-03-11 15:58:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:29 [[33mwarn[39m] : [33mRedis reconnect attempt #252, retrying in 3000ms[39m
+2026-03-11 15:58:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:32 [[33mwarn[39m] : [33mRedis reconnect attempt #253, retrying in 3000ms[39m
+2026-03-11 15:58:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:35 [[33mwarn[39m] : [33mRedis reconnect attempt #254, retrying in 3000ms[39m
+2026-03-11 15:58:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:38 [[33mwarn[39m] : [33mRedis reconnect attempt #255, retrying in 3000ms[39m
+2026-03-11 15:58:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:41 [[33mwarn[39m] : [33mRedis reconnect attempt #256, retrying in 3000ms[39m
+2026-03-11 15:58:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:44 [[33mwarn[39m] : [33mRedis reconnect attempt #257, retrying in 3000ms[39m
+2026-03-11 15:58:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:47 [[33mwarn[39m] : [33mRedis reconnect attempt #258, retrying in 3000ms[39m
+2026-03-11 15:58:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:50 [[33mwarn[39m] : [33mRedis reconnect attempt #259, retrying in 3000ms[39m
+2026-03-11 15:58:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:53 [[33mwarn[39m] : [33mRedis reconnect attempt #260, retrying in 3000ms[39m
+2026-03-11 15:58:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:56 [[33mwarn[39m] : [33mRedis reconnect attempt #261, retrying in 3000ms[39m
+2026-03-11 15:58:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:58:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:58:59 [[33mwarn[39m] : [33mRedis reconnect attempt #262, retrying in 3000ms[39m
+2026-03-11 15:58:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:02 [[33mwarn[39m] : [33mRedis reconnect attempt #263, retrying in 3000ms[39m
+2026-03-11 15:59:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:05 [[33mwarn[39m] : [33mRedis reconnect attempt #264, retrying in 3000ms[39m
+2026-03-11 15:59:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:08 [[33mwarn[39m] : [33mRedis reconnect attempt #265, retrying in 3000ms[39m
+2026-03-11 15:59:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:11 [[33mwarn[39m] : [33mRedis reconnect attempt #266, retrying in 3000ms[39m
+2026-03-11 15:59:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:14 [[33mwarn[39m] : [33mRedis reconnect attempt #267, retrying in 3000ms[39m
+2026-03-11 15:59:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:17 [[33mwarn[39m] : [33mRedis reconnect attempt #268, retrying in 3000ms[39m
+2026-03-11 15:59:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:20 [[33mwarn[39m] : [33mRedis reconnect attempt #269, retrying in 3000ms[39m
+2026-03-11 15:59:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:23 [[33mwarn[39m] : [33mRedis reconnect attempt #270, retrying in 3000ms[39m
+2026-03-11 15:59:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:26 [[33mwarn[39m] : [33mRedis reconnect attempt #271, retrying in 3000ms[39m
+2026-03-11 15:59:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:29 [[33mwarn[39m] : [33mRedis reconnect attempt #272, retrying in 3000ms[39m
+2026-03-11 15:59:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:32 [[33mwarn[39m] : [33mRedis reconnect attempt #273, retrying in 3000ms[39m
+2026-03-11 15:59:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:35 [[33mwarn[39m] : [33mRedis reconnect attempt #274, retrying in 3000ms[39m
+2026-03-11 15:59:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:38 [[33mwarn[39m] : [33mRedis reconnect attempt #275, retrying in 3000ms[39m
+2026-03-11 15:59:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:41 [[33mwarn[39m] : [33mRedis reconnect attempt #276, retrying in 3000ms[39m
+2026-03-11 15:59:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:44 [[33mwarn[39m] : [33mRedis reconnect attempt #277, retrying in 3000ms[39m
+2026-03-11 15:59:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:47 [[33mwarn[39m] : [33mRedis reconnect attempt #278, retrying in 3000ms[39m
+2026-03-11 15:59:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:50 [[33mwarn[39m] : [33mRedis reconnect attempt #279, retrying in 3000ms[39m
+2026-03-11 15:59:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:53 [[33mwarn[39m] : [33mRedis reconnect attempt #280, retrying in 3000ms[39m
+2026-03-11 15:59:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:56 [[33mwarn[39m] : [33mRedis reconnect attempt #281, retrying in 3000ms[39m
+2026-03-11 15:59:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 15:59:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 15:59:59 [[33mwarn[39m] : [33mRedis reconnect attempt #282, retrying in 3000ms[39m
+2026-03-11 15:59:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:02 [[33mwarn[39m] : [33mRedis reconnect attempt #283, retrying in 3000ms[39m
+2026-03-11 16:00:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:05 [[33mwarn[39m] : [33mRedis reconnect attempt #284, retrying in 3000ms[39m
+2026-03-11 16:00:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:08 [[33mwarn[39m] : [33mRedis reconnect attempt #285, retrying in 3000ms[39m
+2026-03-11 16:00:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:11 [[33mwarn[39m] : [33mRedis reconnect attempt #286, retrying in 3000ms[39m
+2026-03-11 16:00:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:14 [[33mwarn[39m] : [33mRedis reconnect attempt #287, retrying in 3000ms[39m
+2026-03-11 16:00:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:17 [[33mwarn[39m] : [33mRedis reconnect attempt #288, retrying in 3000ms[39m
+2026-03-11 16:00:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:20 [[33mwarn[39m] : [33mRedis reconnect attempt #289, retrying in 3000ms[39m
+2026-03-11 16:00:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:23 [[33mwarn[39m] : [33mRedis reconnect attempt #290, retrying in 3000ms[39m
+2026-03-11 16:00:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:26 [[33mwarn[39m] : [33mRedis reconnect attempt #291, retrying in 3000ms[39m
+2026-03-11 16:00:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:29 [[33mwarn[39m] : [33mRedis reconnect attempt #292, retrying in 3000ms[39m
+2026-03-11 16:00:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:32 [[33mwarn[39m] : [33mRedis reconnect attempt #293, retrying in 3000ms[39m
+2026-03-11 16:00:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:35 [[33mwarn[39m] : [33mRedis reconnect attempt #294, retrying in 3000ms[39m
+2026-03-11 16:00:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:38 [[33mwarn[39m] : [33mRedis reconnect attempt #295, retrying in 3000ms[39m
+2026-03-11 16:00:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:41 [[33mwarn[39m] : [33mRedis reconnect attempt #296, retrying in 3000ms[39m
+2026-03-11 16:00:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:44 [[33mwarn[39m] : [33mRedis reconnect attempt #297, retrying in 3000ms[39m
+2026-03-11 16:00:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:47 [[33mwarn[39m] : [33mRedis reconnect attempt #298, retrying in 3000ms[39m
+2026-03-11 16:00:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:50 [[33mwarn[39m] : [33mRedis reconnect attempt #299, retrying in 3000ms[39m
+2026-03-11 16:00:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:53 [[33mwarn[39m] : [33mRedis reconnect attempt #300, retrying in 3000ms[39m
+2026-03-11 16:00:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:56 [[33mwarn[39m] : [33mRedis reconnect attempt #301, retrying in 3000ms[39m
+2026-03-11 16:00:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:00:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:00:59 [[33mwarn[39m] : [33mRedis reconnect attempt #302, retrying in 3000ms[39m
+2026-03-11 16:00:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:02 [[33mwarn[39m] : [33mRedis reconnect attempt #303, retrying in 3000ms[39m
+2026-03-11 16:01:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:05 [[33mwarn[39m] : [33mRedis reconnect attempt #304, retrying in 3000ms[39m
+2026-03-11 16:01:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:08 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:08 [[33mwarn[39m] : [33mRedis reconnect attempt #305, retrying in 3000ms[39m
+2026-03-11 16:01:08 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:11 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:11 [[33mwarn[39m] : [33mRedis reconnect attempt #306, retrying in 3000ms[39m
+2026-03-11 16:01:11 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:14 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:14 [[33mwarn[39m] : [33mRedis reconnect attempt #307, retrying in 3000ms[39m
+2026-03-11 16:01:14 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:17 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:17 [[33mwarn[39m] : [33mRedis reconnect attempt #308, retrying in 3000ms[39m
+2026-03-11 16:01:17 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:20 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:20 [[33mwarn[39m] : [33mRedis reconnect attempt #309, retrying in 3000ms[39m
+2026-03-11 16:01:20 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:23 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:23 [[33mwarn[39m] : [33mRedis reconnect attempt #310, retrying in 3000ms[39m
+2026-03-11 16:01:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:26 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:26 [[33mwarn[39m] : [33mRedis reconnect attempt #311, retrying in 3000ms[39m
+2026-03-11 16:01:26 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:29 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:29 [[33mwarn[39m] : [33mRedis reconnect attempt #312, retrying in 3000ms[39m
+2026-03-11 16:01:29 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:32 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:32 [[33mwarn[39m] : [33mRedis reconnect attempt #313, retrying in 3000ms[39m
+2026-03-11 16:01:32 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:35 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:35 [[33mwarn[39m] : [33mRedis reconnect attempt #314, retrying in 3000ms[39m
+2026-03-11 16:01:35 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:38 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:38 [[33mwarn[39m] : [33mRedis reconnect attempt #315, retrying in 3000ms[39m
+2026-03-11 16:01:38 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:41 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:41 [[33mwarn[39m] : [33mRedis reconnect attempt #316, retrying in 3000ms[39m
+2026-03-11 16:01:41 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:44 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:44 [[33mwarn[39m] : [33mRedis reconnect attempt #317, retrying in 3000ms[39m
+2026-03-11 16:01:44 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:47 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:47 [[33mwarn[39m] : [33mRedis reconnect attempt #318, retrying in 3000ms[39m
+2026-03-11 16:01:47 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:50 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:50 [[33mwarn[39m] : [33mRedis reconnect attempt #319, retrying in 3000ms[39m
+2026-03-11 16:01:50 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:53 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:53 [[33mwarn[39m] : [33mRedis reconnect attempt #320, retrying in 3000ms[39m
+2026-03-11 16:01:53 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:56 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:56 [[33mwarn[39m] : [33mRedis reconnect attempt #321, retrying in 3000ms[39m
+2026-03-11 16:01:56 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:01:59 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:01:59 [[33mwarn[39m] : [33mRedis reconnect attempt #322, retrying in 3000ms[39m
+2026-03-11 16:01:59 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:02 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:02 [[33mwarn[39m] : [33mRedis reconnect attempt #323, retrying in 3000ms[39m
+2026-03-11 16:02:02 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:05 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:05 [[33mwarn[39m] : [33mRedis reconnect attempt #324, retrying in 3000ms[39m
+2026-03-11 16:02:05 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:09 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:09 [[33mwarn[39m] : [33mRedis reconnect attempt #325, retrying in 3000ms[39m
+2026-03-11 16:02:09 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:12 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:12 [[33mwarn[39m] : [33mRedis reconnect attempt #326, retrying in 3000ms[39m
+2026-03-11 16:02:12 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:15 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:15 [[33mwarn[39m] : [33mRedis reconnect attempt #327, retrying in 3000ms[39m
+2026-03-11 16:02:15 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:18 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:18 [[33mwarn[39m] : [33mRedis reconnect attempt #328, retrying in 3000ms[39m
+2026-03-11 16:02:18 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:21 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:21 [[33mwarn[39m] : [33mRedis reconnect attempt #329, retrying in 3000ms[39m
+2026-03-11 16:02:21 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:24 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:24 [[33mwarn[39m] : [33mRedis reconnect attempt #330, retrying in 3000ms[39m
+2026-03-11 16:02:24 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:27 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:27 [[33mwarn[39m] : [33mRedis reconnect attempt #331, retrying in 3000ms[39m
+2026-03-11 16:02:27 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:30 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:30 [[33mwarn[39m] : [33mRedis reconnect attempt #332, retrying in 3000ms[39m
+2026-03-11 16:02:30 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:33 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:33 [[33mwarn[39m] : [33mRedis reconnect attempt #333, retrying in 3000ms[39m
+2026-03-11 16:02:33 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:36 [[33mwarn[39m] : [33mRedis reconnect attempt #334, retrying in 3000ms[39m
+2026-03-11 16:02:36 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:39 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:39 [[33mwarn[39m] : [33mRedis reconnect attempt #335, retrying in 3000ms[39m
+2026-03-11 16:02:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:42 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:42 [[33mwarn[39m] : [33mRedis reconnect attempt #336, retrying in 3000ms[39m
+2026-03-11 16:02:42 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:45 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:45 [[33mwarn[39m] : [33mRedis reconnect attempt #337, retrying in 3000ms[39m
+2026-03-11 16:02:45 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:48 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:48 [[33mwarn[39m] : [33mRedis reconnect attempt #338, retrying in 3000ms[39m
+2026-03-11 16:02:48 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:51 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:51 [[33mwarn[39m] : [33mRedis reconnect attempt #339, retrying in 3000ms[39m
+2026-03-11 16:02:51 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:54 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:54 [[33mwarn[39m] : [33mRedis reconnect attempt #340, retrying in 3000ms[39m
+2026-03-11 16:02:54 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:02:57 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:02:57 [[33mwarn[39m] : [33mRedis reconnect attempt #341, retrying in 3000ms[39m
+2026-03-11 16:02:57 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:00 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:00 [[33mwarn[39m] : [33mRedis reconnect attempt #342, retrying in 3000ms[39m
+2026-03-11 16:03:00 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:03 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:03 [[33mwarn[39m] : [33mRedis reconnect attempt #343, retrying in 3000ms[39m
+2026-03-11 16:03:03 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:06 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:06 [[33mwarn[39m] : [33mRedis reconnect attempt #344, retrying in 3000ms[39m
+2026-03-11 16:03:06 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:09 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:09 [[33mwarn[39m] : [33mRedis reconnect attempt #345, retrying in 3000ms[39m
+2026-03-11 16:03:09 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:12 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:12 [[33mwarn[39m] : [33mRedis reconnect attempt #346, retrying in 3000ms[39m
+2026-03-11 16:03:12 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:15 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:15 [[33mwarn[39m] : [33mRedis reconnect attempt #347, retrying in 3000ms[39m
+2026-03-11 16:03:15 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:18 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:18 [[33mwarn[39m] : [33mRedis reconnect attempt #348, retrying in 3000ms[39m
+2026-03-11 16:03:18 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:21 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:21 [[33mwarn[39m] : [33mRedis reconnect attempt #349, retrying in 3000ms[39m
+2026-03-11 16:03:21 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:24 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:24 [[33mwarn[39m] : [33mRedis reconnect attempt #350, retrying in 3000ms[39m
+2026-03-11 16:03:24 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:27 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:27 [[33mwarn[39m] : [33mRedis reconnect attempt #351, retrying in 3000ms[39m
+2026-03-11 16:03:27 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:30 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:30 [[33mwarn[39m] : [33mRedis reconnect attempt #352, retrying in 3000ms[39m
+2026-03-11 16:03:30 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:33 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:33 [[33mwarn[39m] : [33mRedis reconnect attempt #353, retrying in 3000ms[39m
+2026-03-11 16:03:33 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:36 [[33mwarn[39m] : [33mRedis reconnect attempt #354, retrying in 3000ms[39m
+2026-03-11 16:03:36 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:39 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:39 [[33mwarn[39m] : [33mRedis reconnect attempt #355, retrying in 3000ms[39m
+2026-03-11 16:03:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:42 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:42 [[33mwarn[39m] : [33mRedis reconnect attempt #356, retrying in 3000ms[39m
+2026-03-11 16:03:42 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:45 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:45 [[33mwarn[39m] : [33mRedis reconnect attempt #357, retrying in 3000ms[39m
+2026-03-11 16:03:45 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:48 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:48 [[33mwarn[39m] : [33mRedis reconnect attempt #358, retrying in 3000ms[39m
+2026-03-11 16:03:48 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:51 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:51 [[33mwarn[39m] : [33mRedis reconnect attempt #359, retrying in 3000ms[39m
+2026-03-11 16:03:51 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:54 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:54 [[33mwarn[39m] : [33mRedis reconnect attempt #360, retrying in 3000ms[39m
+2026-03-11 16:03:54 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:03:57 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:03:57 [[33mwarn[39m] : [33mRedis reconnect attempt #361, retrying in 3000ms[39m
+2026-03-11 16:03:57 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:00 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:00 [[33mwarn[39m] : [33mRedis reconnect attempt #362, retrying in 3000ms[39m
+2026-03-11 16:04:00 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:03 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:03 [[33mwarn[39m] : [33mRedis reconnect attempt #363, retrying in 3000ms[39m
+2026-03-11 16:04:03 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:06 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:06 [[33mwarn[39m] : [33mRedis reconnect attempt #364, retrying in 3000ms[39m
+2026-03-11 16:04:06 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:09 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:09 [[33mwarn[39m] : [33mRedis reconnect attempt #365, retrying in 3000ms[39m
+2026-03-11 16:04:09 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:12 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:12 [[33mwarn[39m] : [33mRedis reconnect attempt #366, retrying in 3000ms[39m
+2026-03-11 16:04:12 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:15 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:15 [[33mwarn[39m] : [33mRedis reconnect attempt #367, retrying in 3000ms[39m
+2026-03-11 16:04:15 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:18 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:18 [[33mwarn[39m] : [33mRedis reconnect attempt #368, retrying in 3000ms[39m
+2026-03-11 16:04:18 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:21 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:21 [[33mwarn[39m] : [33mRedis reconnect attempt #369, retrying in 3000ms[39m
+2026-03-11 16:04:21 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:24 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:24 [[33mwarn[39m] : [33mRedis reconnect attempt #370, retrying in 3000ms[39m
+2026-03-11 16:04:24 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:27 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:27 [[33mwarn[39m] : [33mRedis reconnect attempt #371, retrying in 3000ms[39m
+2026-03-11 16:04:27 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:30 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:30 [[33mwarn[39m] : [33mRedis reconnect attempt #372, retrying in 3000ms[39m
+2026-03-11 16:04:30 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:33 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:33 [[33mwarn[39m] : [33mRedis reconnect attempt #373, retrying in 3000ms[39m
+2026-03-11 16:04:33 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:36 [[33mwarn[39m] : [33mRedis reconnect attempt #374, retrying in 3000ms[39m
+2026-03-11 16:04:36 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:39 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:39 [[33mwarn[39m] : [33mRedis reconnect attempt #375, retrying in 3000ms[39m
+2026-03-11 16:04:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:42 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:42 [[33mwarn[39m] : [33mRedis reconnect attempt #376, retrying in 3000ms[39m
+2026-03-11 16:04:42 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:45 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:45 [[33mwarn[39m] : [33mRedis reconnect attempt #377, retrying in 3000ms[39m
+2026-03-11 16:04:45 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:48 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:48 [[33mwarn[39m] : [33mRedis reconnect attempt #378, retrying in 3000ms[39m
+2026-03-11 16:04:48 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:51 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:51 [[33mwarn[39m] : [33mRedis reconnect attempt #379, retrying in 3000ms[39m
+2026-03-11 16:04:51 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:54 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:54 [[33mwarn[39m] : [33mRedis reconnect attempt #380, retrying in 3000ms[39m
+2026-03-11 16:04:54 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:04:57 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:04:57 [[33mwarn[39m] : [33mRedis reconnect attempt #381, retrying in 3000ms[39m
+2026-03-11 16:04:57 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:00 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:00 [[33mwarn[39m] : [33mRedis reconnect attempt #382, retrying in 3000ms[39m
+2026-03-11 16:05:00 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:03 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:03 [[33mwarn[39m] : [33mRedis reconnect attempt #383, retrying in 3000ms[39m
+2026-03-11 16:05:03 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:06 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:06 [[33mwarn[39m] : [33mRedis reconnect attempt #384, retrying in 3000ms[39m
+2026-03-11 16:05:06 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:09 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:09 [[33mwarn[39m] : [33mRedis reconnect attempt #385, retrying in 3000ms[39m
+2026-03-11 16:05:09 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:12 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:12 [[33mwarn[39m] : [33mRedis reconnect attempt #386, retrying in 3000ms[39m
+2026-03-11 16:05:12 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:15 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:15 [[33mwarn[39m] : [33mRedis reconnect attempt #387, retrying in 3000ms[39m
+2026-03-11 16:05:15 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:18 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:18 [[33mwarn[39m] : [33mRedis reconnect attempt #388, retrying in 3000ms[39m
+2026-03-11 16:05:18 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:21 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:21 [[33mwarn[39m] : [33mRedis reconnect attempt #389, retrying in 3000ms[39m
+2026-03-11 16:05:21 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:24 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:24 [[33mwarn[39m] : [33mRedis reconnect attempt #390, retrying in 3000ms[39m
+2026-03-11 16:05:24 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:27 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:27 [[33mwarn[39m] : [33mRedis reconnect attempt #391, retrying in 3000ms[39m
+2026-03-11 16:05:27 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:30 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:30 [[33mwarn[39m] : [33mRedis reconnect attempt #392, retrying in 3000ms[39m
+2026-03-11 16:05:30 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:33 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:33 [[33mwarn[39m] : [33mRedis reconnect attempt #393, retrying in 3000ms[39m
+2026-03-11 16:05:33 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:36 [[33mwarn[39m] : [33mRedis reconnect attempt #394, retrying in 3000ms[39m
+2026-03-11 16:05:36 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:39 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:39 [[33mwarn[39m] : [33mRedis reconnect attempt #395, retrying in 3000ms[39m
+2026-03-11 16:05:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:42 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:42 [[33mwarn[39m] : [33mRedis reconnect attempt #396, retrying in 3000ms[39m
+2026-03-11 16:05:42 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:45 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:45 [[33mwarn[39m] : [33mRedis reconnect attempt #397, retrying in 3000ms[39m
+2026-03-11 16:05:45 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:48 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:48 [[33mwarn[39m] : [33mRedis reconnect attempt #398, retrying in 3000ms[39m
+2026-03-11 16:05:48 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:51 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:51 [[33mwarn[39m] : [33mRedis reconnect attempt #399, retrying in 3000ms[39m
+2026-03-11 16:05:51 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:54 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:54 [[33mwarn[39m] : [33mRedis reconnect attempt #400, retrying in 3000ms[39m
+2026-03-11 16:05:54 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:05:57 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:05:57 [[33mwarn[39m] : [33mRedis reconnect attempt #401, retrying in 3000ms[39m
+2026-03-11 16:05:57 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:00 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:00 [[33mwarn[39m] : [33mRedis reconnect attempt #402, retrying in 3000ms[39m
+2026-03-11 16:06:00 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:03 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:03 [[33mwarn[39m] : [33mRedis reconnect attempt #403, retrying in 3000ms[39m
+2026-03-11 16:06:03 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:06 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:06 [[33mwarn[39m] : [33mRedis reconnect attempt #404, retrying in 3000ms[39m
+2026-03-11 16:06:06 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:09 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:09 [[33mwarn[39m] : [33mRedis reconnect attempt #405, retrying in 3000ms[39m
+2026-03-11 16:06:09 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:12 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:12 [[33mwarn[39m] : [33mRedis reconnect attempt #406, retrying in 3000ms[39m
+2026-03-11 16:06:12 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:15 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:15 [[33mwarn[39m] : [33mRedis reconnect attempt #407, retrying in 3000ms[39m
+2026-03-11 16:06:15 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:18 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:18 [[33mwarn[39m] : [33mRedis reconnect attempt #408, retrying in 3000ms[39m
+2026-03-11 16:06:18 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:21 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:21 [[33mwarn[39m] : [33mRedis reconnect attempt #409, retrying in 3000ms[39m
+2026-03-11 16:06:21 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:24 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:24 [[33mwarn[39m] : [33mRedis reconnect attempt #410, retrying in 3000ms[39m
+2026-03-11 16:06:24 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:27 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:27 [[33mwarn[39m] : [33mRedis reconnect attempt #411, retrying in 3000ms[39m
+2026-03-11 16:06:27 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:30 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:30 [[33mwarn[39m] : [33mRedis reconnect attempt #412, retrying in 3000ms[39m
+2026-03-11 16:06:30 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:33 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:33 [[33mwarn[39m] : [33mRedis reconnect attempt #413, retrying in 3000ms[39m
+2026-03-11 16:06:33 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-11 16:06:36 [[33mwarn[39m] : [33mRedis reconnect attempt #414, retrying in 3000ms[39m
+2026-03-11 16:06:36 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:39 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-11 16:06:39 [[31merror[39m] : [31mwrite EPIPE[39m
+2026-03-11 16:06:39 [[33mwarn[39m] : [33mRedis reconnect attempt #415, retrying in 3000ms[39m
+2026-03-11 16:06:39 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 16:06:42 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-11 16:06:42 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-11 18:57:31 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-11 18:57:31 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-11 18:57:32 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-11 18:57:32 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-11 18:57:32 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-11 18:57:32 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-11 18:57:32 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-11 18:57:32 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-11 19:01:23 [[33mwarn[39m] : [33mRedis reconnect attempt #1, retrying in 100ms[39m
+2026-03-11 19:01:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 19:01:23 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-11 19:01:23 [[31merror[39m] : [31mread ECONNRESET[39m
+2026-03-11 19:01:23 [[33mwarn[39m] : [33mRedis reconnect attempt #2, retrying in 200ms[39m
+2026-03-11 19:01:23 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 19:01:24 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-11 19:01:24 [[31merror[39m] : [31mwrite ECONNRESET[39m
+2026-03-11 19:01:24 [[33mwarn[39m] : [33mRedis reconnect attempt #3, retrying in 300ms[39m
+2026-03-11 19:01:24 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 19:01:24 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-11 19:01:24 [[31merror[39m] : [31mwrite EPIPE[39m
+2026-03-11 19:01:24 [[33mwarn[39m] : [33mRedis reconnect attempt #4, retrying in 400ms[39m
+2026-03-11 19:01:24 [[33mwarn[39m] : [33mRedis connection closed[39m
+2026-03-11 19:01:24 [[31merror[39m] : [31mReached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.[39m
+2026-03-24 15:38:32 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-24 15:38:33 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-24 15:38:33 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-24 15:38:33 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-24 15:38:33 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-24 15:38:33 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-24 15:38:33 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-24 15:38:33 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-24 15:40:59 [[32minfo[39m] : [32mReceived SIGINT. Starting graceful shutdown...[39m
+2026-03-24 15:40:59 [[32minfo[39m] : [32mHTTP server closed 1[39m
+2026-03-24 15:40:59 [[32minfo[39m] : [32mDatabase connection closed 1[39m
+2026-03-24 15:41:30 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-24 15:41:30 [[31merror[39m] : Error: Unknown database 'SCAFFSNAPP_SUPERADMIN'
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-03-24 15:41:30 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-24 15:42:09 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-24 15:42:09 [[31merror[39m] : Error: Unknown database 'SCAFFSNAPP_SUPERADMIN'
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-03-24 15:42:09 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-24 15:43:28 [[31merror[39m] : Error: Unknown database 'SCAFFSNAPP_SUPERADMIN'
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-03-24 15:45:37 [[31merror[39m] : Error: Unknown database 'SCAFFSNAPP_SUPERADMIN'
+    at Packet.asError (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packets/packet.js:739:17)
+    at ClientHandshake.execute (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:508:34)
+    at PacketParser.onPacket (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:93:12)
+    at PacketParser.executeStart (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/hritikbhadauria/scaffSnapp_microservices/services/superAdminServices/node_modules/mysql2/lib/base/connection.js:100:25)
+    at Socket.emit (node:events:524:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+2026-03-24 16:11:05 [[32minfo[39m] : [32mDefault SuperAdmin created successfully[39m
+2026-03-24 16:12:14 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-24 16:12:14 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-24 16:12:14 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-24 16:12:14 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-24 16:12:15 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-24 16:12:15 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-24 16:12:15 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-24 16:12:15 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-24 16:43:05 [[32minfo[39m] : [32mReceived SIGINT. Starting graceful shutdown...[39m
+2026-03-24 16:43:05 [[32minfo[39m] : [32mHTTP server closed 1[39m
+2026-03-24 16:43:05 [[32minfo[39m] : [32mDatabase connection closed 1[39m
+2026-03-24 16:43:05 [[32minfo[39m] : [32mRedis connection closed 1[39m
+2026-03-24 16:43:28 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-24 16:43:28 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-24 16:43:29 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-24 16:43:29 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-24 16:43:29 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-24 16:43:29 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-24 16:43:29 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-24 16:43:29 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-24 16:47:58 [[32minfo[39m] : [32mReceived SIGINT. Starting graceful shutdown...[39m
+2026-03-24 16:47:58 [[32minfo[39m] : [32mHTTP server closed 1[39m
+2026-03-24 16:47:58 [[32minfo[39m] : [32mDatabase connection closed 1[39m
+2026-03-24 16:48:21 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-24 16:48:22 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-24 16:48:22 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-24 16:48:22 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-24 16:48:22 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-24 16:48:22 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-24 16:48:22 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-24 16:48:22 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-25 11:24:05 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-25 12:14:36 [[32minfo[39m] : [32mReceived SIGINT. Starting graceful shutdown...[39m
+2026-03-25 12:14:36 [[32minfo[39m] : [32mHTTP server closed 1[39m
+2026-03-25 12:14:36 [[32minfo[39m] : [32mDatabase connection closed 1[39m
+2026-03-30 17:35:36 [[31merror[39m] : [31mconnect ECONNREFUSED 127.0.0.1:6380[39m
+2026-03-30 17:48:33 [[32minfo[39m] : [32mRedis connection established[39m
+2026-03-30 17:48:34 [[32minfo[39m] : [32mRedis ready to use[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mStarting infrastructure initialization...[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mRedis connected successfully[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mKafka producer connected[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mKafka connected successfully[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32mAll infrastructure initialized successfully ✅[39m
+2026-03-30 17:48:35 [[32minfo[39m] : [32msuperadmin-service is running on http://localhost:3001[39m
+2026-03-30 17:50:44 [[32minfo[39m] : [32mReceived SIGINT. Starting graceful shutdown...[39m
+2026-03-30 17:50:44 [[32minfo[39m] : [32mHTTP server closed 1[39m
+2026-03-30 17:50:44 [[32minfo[39m] : [32mDatabase connection closed 1[39m

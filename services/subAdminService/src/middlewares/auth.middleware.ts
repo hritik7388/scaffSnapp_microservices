@@ -2,13 +2,14 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { config } from '../config/config';
 import { redisClient } from '../config/redis';
+import { UserType } from '../entities/subAdmin.enities';
 
 // Use a Set for O(1) lookup
 const publicRoutes = new Set([
   '/',
   '/health',
   '/api/v1/subAdmin/register',
-  '/api/v1/subAdmin/subadminLogin', 
+  '/api/v1/subAdmin/subadminLogin',
 ].map(route => route.toLowerCase()));
 
 
@@ -17,7 +18,6 @@ export const verifyToken = async (
   res: Response,
   next: NextFunction
 ) => {
-  // Skip public routes
   if (publicRoutes.has(req.path.toLowerCase())) {
     return next();
   }
@@ -30,32 +30,24 @@ export const verifyToken = async (
 
     const token = authHeader.split(' ')[1];
     if (!token) return res.status(403).json({ message: 'Token missing' });
-
-    // Verify JWT
     const decoded: any = jwt.verify(token, config.JWT_ACCESS_SECRET);
-
-    // Check Redis token
     const redisKey = `auth:${decoded.id}:${token}`;
     const redisToken = await redisClient.get(redisKey);
     if (!redisToken) return res.status(401).json({ message: 'Unauthorized' });
-
-    // Attach user info
-   req.userId = decoded.sub;
-req.userRole = decoded.role;
-req.token = token;
+    req.userId = decoded.sub;
+    req.userRole = decoded.role;
+    req.token = token;
 
     next();
   } catch (error: any) {
-       console.log(`Exception while doing something: ${error}`);
+    console.log(`Exception while doing something: ${error}`);
     return res.status(401).json({ message: 'Unauthorized' });
   }
-  
+
+
 };
 
-export const requireSuperAdmin = (req: Request, res: Response, next: NextFunction) => {
-  if (req.userRole !== UserType.SUPER_ADMIN)
-    
-    { return res.status(403).json({ message: 'Only SuperAdmin can perform this action' }); } next();
+export const requireSubAdmin = (req: Request, res: Response, next: NextFunction) => {
+  if (req.userRole !== UserType.SUB_ADMIN) { return res.status(403).json({ message: 'Only SubAdmin can perform this action' }); } next();
 
 }
-

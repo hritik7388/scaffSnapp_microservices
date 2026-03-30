@@ -70,7 +70,6 @@ export const refreshTokenSchema = z.object({
     .trim()
     .min(5, "Device token is required"),
 });
-
 export const createSubAdminSchema = z.object({
   firstName: z
     .string()
@@ -141,9 +140,8 @@ export const createSubAdminSchema = z.object({
     })
     .optional(),
 });
-
 export type SuperAdminDTO = z.infer<typeof superAdminSchema>;
-export type ForgetPasswordDTO = z.infer<typeof forgetPasswordSchema>
-export type ResetPasswordDTO = z.infer<typeof resetPasswordSchema>
 export type RefreshTokenDTO = z.infer<typeof refreshTokenSchema>;
+export type ResetPasswordDTO = z.infer<typeof resetPasswordSchema>
+export type ForgetPasswordDTO = z.infer<typeof forgetPasswordSchema>
 export type CreateSubAdminDTO = z.infer<typeof createSubAdminSchema>;

@@ -1,11 +1,11 @@
 import cors, { CorsOptions } from 'cors';
-import { config } from '../config/config'; 
+import { config } from '../config/config';
 const allowedOrigins = new Set(
   config.ALLOWED_ORIGINS.split(',').map(origin => origin.trim())
 );
 
 const corsOptions: CorsOptions = {
-  origin: (origin, callback) => { 
+  origin: (origin, callback) => {
     if (!origin) return callback(null, true);
 
     // Check existence in the Set
@@ -16,7 +16,7 @@ const corsOptions: CorsOptions = {
     }
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE','PATCH', 'OPTIONS'],
   allowedHeaders: [
     'Origin',
     'X-Requested-With',
