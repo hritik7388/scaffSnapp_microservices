@@ -16,22 +16,22 @@ export class SuperAdminCredential {
   @PrimaryGeneratedColumn("increment")
   id: number;
 
-  @Column({ length: 255, unique: true }) // UNIQUE handled here
+  @Column({ length: 255, unique: true })  
   email: string;
 
   @Column({
     name: "password_hash",
     length: 255,
-    select: false, // 🔐 password never returned by default
+    select: false, 
   })
   passwordHash: string;
-  
-@Column({
+
+  @Column({
     name: "must_change_password",
-    default: true, // 🔥 by default true for new accounts
+    default: true,  
   })
   mustChangePassword: boolean;
-  // 🔐 Login security fields
+ 
   @Column({
     name: "failed_login_attempts",
     default: 0,
@@ -53,13 +53,13 @@ export class SuperAdminCredential {
 
   passwordChangedAt?: Date;
 
-  // 🔗 Relation
+ 
   @OneToOne(() => SuperAdmin, (superAdmin) => superAdmin.credential, {
     onDelete: "CASCADE",
   })
   user: SuperAdmin;
 
-  // 📅 Timestamps
+ 
   @CreateDateColumn({ name: "created_at" })
   createdAt: Date;
 

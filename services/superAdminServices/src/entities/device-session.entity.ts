@@ -47,7 +47,7 @@ export class DeviceSession {
   @Column({ name: "last_used_at", type: "timestamp", nullable: true })
   lastUsedAt?: Date;
 
-    @Column({ default: false })
+  @Column({ default: false })
   success: boolean;
 
   @CreateDateColumn({ name: "login_at" })

@@ -70,7 +70,7 @@ export const registerSubAdminSchema = z.object({
         .min(-180, "Longitude must be between -180 and 180")
         .max(180),
     })
-    .optional(), 
+    .optional(),
 });
 
 export const subAdminSchema = z.object({
@@ -103,7 +103,7 @@ export const subAdminSchema = z.object({
     .optional()
 });
 
- 
+
 
 export type RegisterSubAdminDTO = z.infer<typeof registerSubAdminSchema>;
 

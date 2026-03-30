@@ -62,8 +62,8 @@ export class SuperAdmin {
     address?: Record<string, any>;
 
     @Column({ type: "json", nullable: true })
-    coordinates?: { lat: number; lng: number }; 
-    
+    coordinates?: { lat: number; lng: number };
+
     @Column({ name: "profile_image", nullable: true })
     profileImage?: string;
 
