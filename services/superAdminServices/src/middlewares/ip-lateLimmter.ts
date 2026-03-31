@@ -19,8 +19,6 @@ export const loginRateLimiter = async (
       req.socket.remoteAddress;
 
     const email = req.body?.email || "unknown";
-
-    // 🔒 IP BASED LIMIT
     const ipKey = `rate_limit:ip:${ip}`;
     const ipCount = await redisClient.incr(ipKey);
 
@@ -34,7 +32,6 @@ export const loginRateLimiter = async (
       });
     }
 
-    // 🔐 IP + EMAIL LIMIT
     const comboKey = `rate_limit:combo:${ip}:${email}`;
     const comboCount = await redisClient.incr(comboKey);
 

@@ -8,9 +8,11 @@ import { UserType } from '../entities/superAdmin.enities';
 const publicRoutes = new Set([
   '/',
   '/health',
-  '/api/v1/subAdmin/register',
-  '/api/v1/subAdmin/subadminLogin',
-].map(route => route.toLowerCase()));
+  '/api/v1/superAdmin/login',
+  '/api/v1/superAdmin/forgotPassword',
+  '/api/v1/superAdmin/resetPassword',
+  '/api/v1/superAdmin/refreshToken',
+].map(r => r.toLowerCase()));
 
 
 export const verifyToken = async (
