@@ -26,9 +26,9 @@ app.use(express.json());
 
 app.use(verifyToken);
 
-
 app.use('/', indexRouter);
 app.use('/api/v1/superAdmin', authRouter);
+
 
 app.use(errorHandler);
 
