@@ -72,6 +72,23 @@ services:
       kafka:
         condition: service_started
 
+  api-gateway:
+    build:
+      context: .
+      dockerfile: services/api-gateway/Dockerfile
+    container_name: api-gateway
+    ports:
+      - "3000:3000"
+    env_file:
+      - services/api-gateway/.env.production
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      kafka:
+        condition: service_started        
+
   superadminservices:
     build:
       context: .
