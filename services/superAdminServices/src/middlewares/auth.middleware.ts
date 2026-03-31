@@ -4,49 +4,50 @@ import { config } from '../config/config';
 import { redisClient } from '../config/redis';
 import { UserType } from '../entities/superAdmin.enities';
 
-// Public routes (skip auth)
+// Use a Set for O(1) lookup
 const publicRoutes = new Set([
   '/',
   '/health',
-  '/api/v1/superAdmin/login',
-  '/api/v1/superAdmin/forgotPassword',
-  '/api/v1/superAdmin/resetPassword',
-  '/api/v1/superAdmin/refreshToken',
-].map(r => r.toLowerCase()));
+  '/api/v1/subAdmin/register',
+  '/api/v1/subAdmin/subadminLogin',
+].map(route => route.toLowerCase()));
+
 
 export const verifyToken = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  // Skip public routes
-  if (publicRoutes.has(req.path.toLowerCase())) return next();
+  if (publicRoutes.has(req.path.toLowerCase())) {
+    return next();
+  }
 
   try {
     const authHeader = req.headers['authorization'];
     if (!authHeader) {
-      return res.status(401).json({ message: 'Authorization header missing' });
+      return res.status(403).json({ message: 'Authorization header missing' });
     }
 
-    const token = authHeader.split(' ')[1]; // Bearer <token>
-    if (!token) {
-      return res.status(401).json({ message: 'Token missing' });
-    }
-
-    // Verify JWT
-    const decoded = jwt.verify(token, config.JWT_SECRET) as { userId: string, userType: UserType };
-
-    // Optional: Check Redis for blacklisted token
-    const isBlacklisted = await redisClient.get(`bl_${decoded.userId}`);
-    if (isBlacklisted) {
-      return res.status(401).json({ message: 'Token is revoked' });
-    }
-
-    // Attach user info to request
-    req.user = decoded;
+    const token = authHeader.split(' ')[1];
+    if (!token) return res.status(403).json({ message: 'Token missing' });
+    const decoded: any = jwt.verify(token, config.JWT_ACCESS_SECRET);
+    const redisKey = `auth:${decoded.id}:${token}`;
+    const redisToken = await redisClient.get(redisKey);
+    if (!redisToken) return res.status(401).json({ message: 'Unauthorized' });
+    req.userId = decoded.sub;
+    req.userRole = decoded.role;
+    req.token = token;
 
     next();
-  } catch (error) {
-    return res.status(401).json({ message: 'Invalid or expired token' });
+  } catch (error: any) {
+    console.log(`Exception while doing something: ${error}`);
+    return res.status(401).json({ message: 'Unauthorized' });
   }
+
+
 };
+
+export const requireSuperAdmin = (req: Request, res: Response, next: NextFunction) => {
+  if (req.userRole !== UserType.SUPER_ADMIN) { return res.status(403).json({ message: 'Only SuperAdmin can perform this action' }); } next();
+
+}
